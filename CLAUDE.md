@@ -32,6 +32,16 @@ Each entry in `maintenance.md` follows this format:
 - **Notes:** [optional]
 ```
 
+## README Dashboard
+
+`README.md` is the front page — it must reflect current state at all times. When updating any bike's `maintenance.md` or `parts.md`, also update the corresponding section in README:
+
+- **Bike table** — status column should reflect current rideable/not rideable state
+- **"What needs doing"** — mirrors the `## Pending` sections from each bike's `maintenance.md`, prioritized (Now → Soon → Later → Next season)
+- **"Shopping list"** — mirrors `## Needed` tables from each bike's `parts.md`
+
+If an item is completed, remove it from README. If a new item is added, add it to README in the right priority slot.
+
 ## Conventions
 
 - Dates are ISO 8601 (YYYY-MM-DD)
