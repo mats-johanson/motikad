@@ -79,6 +79,7 @@ Performed by M&M Motorcycles OÜ (motorem.ee), Paldski mnt 245g, Tallinn. **Tota
 | Part | Notes |
 |------|-------|
 | Rear shock | Stock is 23 years old. Rebuild or replace. |
+| Rain cover | Outdoor cover for parking. |
 
 ## Documents
 
