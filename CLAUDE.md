@@ -5,10 +5,14 @@ Personal maintenance log for tracking service history, parts, and upkeep across 
 ## Project Structure
 
 - `bikes/` — one directory per bike, named by make-model (e.g., `bikes/ducati-monster-797/`)
+- `shops.md` — local shop directory (shared across bikes)
 - Each bike directory contains:
-  - `README.md` — bike details (year, VIN, purchase date, mileage at purchase)
-  - `maintenance.md` — chronological maintenance log (newest first)
-  - `parts.md` — parts inventory and replacement history
+  - `README.md` — bike details, specs, known model quirks
+  - `maintenance.md` — chronological maintenance log (newest first), pending items at top
+  - `parts.md` — parts inventory: installed, on order, needed, consumables
+  - `technical-notes.md` — model-specific knowledge and reference
+  - `docs/` — manuals, invoices, spreadsheets (original files from seller, shops, etc.)
+  - `photos/` — bike photos
 
 ## Maintenance Log Format
 
