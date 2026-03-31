@@ -8,7 +8,8 @@
 - **Rear shock** — stock, likely 23 years old, only 172mm travel. Rebuild or replace (~€200–300).
 - **ARK re-inspection** — due 05/2026.
 - **Carb condition** — check for clogging from sitting unused. Ensure clean air filter.
-- **KOSO speedo accuracy** — verify against GPS on a known stretch.
+- **KOSO speedo configuration** — RPM reading currently way off. Needs proper setup (pulse count, cylinder config). Read [manual](docs/koso-db01r-manual.pdf) and configure. Also verify speed accuracy against GPS.
+- **DB killer install** — have the DB killer, needs to be fitted to the exhaust.
 - **Cold-start protocol:** choke on → start → 30–60s until idle smooths → gradually push choke off → ride gently first few minutes.
 - **Consider 21" front wheel** for next season if off-road ambitions grow. Compatibility with KTM forks needs verification.
 
