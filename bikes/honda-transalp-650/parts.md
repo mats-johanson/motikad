@@ -74,12 +74,18 @@ Performed by M&M Motorcycles OÜ (motorem.ee), Paldski mnt 245g, Tallinn. **Tota
 | Gear shift pedal repair (Käiguvahetuspedaali) | €20.49 |
 | Damaged parts disassembly + reassembly, 8h (Demontaaž; kokkupanek) | €327.87 |
 
+## On Order — moto24.ee (Order #2000007388)
+
+| Part | SKU | Price |
+|------|-----|-------|
+| Daytona Heated Grips Street 4-level / open end (22mm) | 290-88640 | €105 |
+| Oxford Aquatex cover XL (Camo) | CV214 | €49 |
+
 ## Needed
 
 | Part | Notes |
 |------|-------|
 | Rear shock | Stock is 23 years old. Rebuild or replace. |
-| Rain cover | Outdoor cover for parking. |
 
 ## Documents
 

@@ -27,6 +27,7 @@ Personal motorbike maintenance log.
 | Priority | Item | Type | Notes |
 |----------|------|------|-------|
 | **Now** | Stalls on side stand | diagnose | Fuel starvation at lean angle — dirty pilot jets or float levels |
+| Soon | Headlight aim | adjust | Beam pointing too high |
 | Soon | KOSO speedo config | configure | RPMs way off — set pulse count/cylinders, read [manual](bikes/honda-transalp-650/docs/koso-db01r-manual.pdf) |
 | Soon | Heated grips | diagnose | Intermittent — likely loose wire/connector |
 | Soon | Carb inspect/clean | routine | Addresses stalling + general carb health |
@@ -40,8 +41,6 @@ Personal motorbike maintenance log.
 
 | Item | Bike | Where to look | Est. cost |
 |------|------|---------------|-----------|
-| Number plate LED | SV650 | [Motodepoo](shops.md) / [Motohoov](shops.md) | — |
-| Rain cover | Transalp | [Motodepoo](shops.md) / online | — |
 | Rear shock | Transalp | Online | ~€200–300 |
 
 ---
