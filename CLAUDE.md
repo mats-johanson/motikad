@@ -42,6 +42,10 @@ Each entry in `maintenance.md` follows this format:
 
 If an item is completed, remove it from README. If a new item is added, add it to README in the right priority slot.
 
+## Git Workflow
+
+- Commit and push directly to main — no branches or PRs needed
+
 ## Conventions
 
 - Dates are ISO 8601 (YYYY-MM-DD)

@@ -27,9 +27,7 @@ Personal motorbike maintenance log.
 | Priority | Item | Type | Notes |
 |----------|------|------|-------|
 | **Now** | Stalls on side stand | diagnose | Fuel starvation at lean angle — dirty pilot jets or float levels |
-| **Now** | Chain adjustment | adjust | Very loose |
 | Soon | KOSO speedo config | configure | RPMs way off — set pulse count/cylinders, read [manual](bikes/honda-transalp-650/docs/koso-db01r-manual.pdf) |
-| Soon | DB killer install | install | Have the part, needs fitting |
 | Soon | Heated grips | diagnose | Intermittent — likely loose wire/connector |
 | Soon | Carb inspect/clean | routine | Addresses stalling + general carb health |
 | **Deadline** | ARK re-inspection | inspection | Due 05/2026 |
