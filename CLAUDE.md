@@ -44,7 +44,13 @@ If an item is completed, remove it from README. If a new item is added, add it t
 
 ## Git Workflow
 
-- Commit and push directly to main — no branches or PRs needed
+When asked to push, do everything in one go without pausing for confirmation:
+
+1. Create a feature branch from main
+2. Commit changes
+3. Push the branch
+4. Create a PR and merge it immediately
+5. Switch back to main and pull
 
 ## Conventions
 
