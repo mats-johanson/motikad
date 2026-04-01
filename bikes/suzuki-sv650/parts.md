@@ -18,11 +18,15 @@
 |------|--------|------|
 | Turn signal resistors (x4) | Unnecessary with LED relay — just waste power as heat | 2026-03-31 |
 
+## On Order — moto24.ee (Order #2000007388)
+
+| Part | SKU | Price |
+|------|-----|-------|
+| LED number plate light | 913690 | €12 |
+
 ## Needed
 
-| Part | Notes |
-|------|-------|
-| Number plate LED | Any universal E-marked, 2-pin white clip-in connector. Brown = power, Black/White = ground. |
+(none)
 
 ## Consumables Used
 
