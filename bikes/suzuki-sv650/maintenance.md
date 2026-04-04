@@ -1,3 +1,5 @@
+[← Home](../../README.md) · [Bike](README.md) · [Parts](parts.md) · [Tech Notes](technical-notes.md) · [Shops](../../shops.md)
+
 # Maintenance Log — 2009 Suzuki SV650
 
 ## Pending

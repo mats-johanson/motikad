@@ -1,3 +1,5 @@
+[← Home](../../README.md) · [Bike](README.md) · [Maintenance](maintenance.md) · [Tech Notes](technical-notes.md) · [Shops](../../shops.md)
+
 # Parts — 2009 Suzuki SV650
 
 ## Installed

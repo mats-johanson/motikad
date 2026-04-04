@@ -6,6 +6,10 @@ Personal maintenance log for tracking service history, parts, and upkeep across 
 
 - `bikes/` — one directory per bike, named by make-model (e.g., `bikes/ducati-monster-797/`)
 - `shops.md` — local shop directory (shared across bikes)
+- `riding/` — route planning, motocamping, and tools
+  - `routes.md` — routes organized by duration and bike suitability
+  - `motocamping.md` — camping sites, wild camping rules, gear checklist
+  - `apps.md` — navigation, camping, weather, and utility apps
 - Each bike directory contains:
   - `README.md` — bike details, specs, known model quirks
   - `maintenance.md` — chronological maintenance log (newest first), pending items at top
