@@ -53,13 +53,15 @@ Pick your bike, pick your time, go. All routes from Tartu.
 
 | Time | SV650 (road) | Transalp (adventure) |
 |------|-------------|---------------------|
-| **Half day** | [Otepää–Puka](riding/routes.md#otepääpuka-loop) (100 km, "Estonian Alps", top-rated) | [Lake Peipus Backroads](riding/routes.md#lake-peipus-backroads) (120 km, gravel shore) |
-| **Full day** | [Lake Peipus Loop](riding/routes.md#lake-peipus-loop) (150 km, Old Believers, churches) | [Haanja Highlands](riding/routes.md#haanja-highlands) (150 km, gravel + Suur Munamägi) |
-| **Full day** | [Tartu–Pärnu Scenic](riding/routes.md#tartupärnu-scenic) (360 km, corners + beach town) | [Soomaa NP](riding/routes.md#soomaa-national-park) (200 km, bogs + dirt) |
+| **Half day** | [Otepää–Puka](riding/routes.md#otepääpuka-loop) (100 km, "Estonian Alps", 5/5) | [Lake Peipus Backroads](riding/routes.md#lake-peipus-backroads) (120 km, gravel shore) |
+| **Half day** | [Postitee](riding/routes.md#postitee-route-15) (80 km, "Mecca for Estonian drivers") | [Setomaa & Saatse Boot](riding/routes.md#setomaa--saatse-boot) (120 km, road through Russia) |
+| **Full day** | [Lake Peipus Loop](riding/routes.md#lake-peipus-loop) (150 km, Old Believers, 5/5) | [Haanja Highlands](riding/routes.md#haanja-highlands) (150 km, gravel + hairpins) |
+| **Full day** | [Tartu–Pärnu Scenic](riding/routes.md#tartupärnu-scenic) (360 km, corners + beach) | [Soomaa NP](riding/routes.md#soomaa-national-park) (200 km, bogs + dirt) |
 | **Weekend** | [Tartu–Riga via Coast](riding/routes.md#tarturiga-via-coast-500-km-loop) (500 km loop) | [Gauja NP](riding/routes.md#gauja-national-park-latvia-350-km-rt) (350 km, Latvia via Valga) |
 | **Weekend** | [Lahemaa & North Coast](riding/routes.md#lahemaa--north-coast-400-km) (400 km) | [West Estonia & Islands](riding/routes.md#west-estonia--islands-500-km) (500 km + ferry) |
-| **3–4 days** | [Baltic Coastal Run](riding/routes.md#baltic-coastal-run-tartu--klaipėda-34-days) (Tartu → Klaipėda, 900 km) | [Vidzeme "Dangerous Roads"](riding/routes.md#vidzeme-dangerous-roads-latvia-23-days) (Latvia, 400 km gravel) |
-| **5–7 days** | [Nordic Loop via Finland](riding/routes.md#nordic-loop-via-finland-57-days) (ferries + Turku Archipelago) | [TET Baltic](riding/routes.md#tet-baltic-adventure-57-days) (3350 km off-road) |
+| **3–4 days** | [Latvia Deep Dive](riding/routes.md#latvia-deep-dive-34-days) (800 km, Vecpiebalga + Kuldīga) | [Vidzeme "Dangerous Roads"](riding/routes.md#vidzeme-dangerous-roads-latvia-23-days) (400 km gravel) |
+| **5–7 days** | [Finnish Lakeland](riding/routes.md#finnish-lakeland--saimaa-57-days) (Saimaa, Route 62, Punkaharju) | [TET Baltic](riding/routes.md#tet-baltic-adventure-57-days) (3350 km off-road) |
+| **7–10 days** | [Norway via Stockholm](riding/routes.md#norway-via-stockholm-710-days) (Trollstigen + Atlantic Road) | [Nordic Loop](riding/routes.md#nordic-loop-via-finland-57-days) (Archipelago + King's Road) |
 
 ### Pre-ride checklist
 

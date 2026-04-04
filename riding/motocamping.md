@@ -67,6 +67,10 @@ Remote Livonian coast. Simple campgrounds at the cape where two seas meet. Part 
 
 LVM forest sites throughout the highlands. Pair with the [Vidzeme "Dangerous Roads"](routes.md#vidzeme-dangerous-roads-latvia-23-days) route.
 
+#### Riga — Two Wheels Hotel
+
+[2w.lv](https://www.2w.lv/) — motorcycle-specific accommodation. 10 rooms in a 19th-century wooden building, 15 min walk from Old Town. Free guarded/roofed motorcycle parking, moto-adventure tours, motorcycle rental, laundry. Run by local riders; TET Latvia linesman Martins is connected here.
+
 ### Lithuania
 
 #### Curonian Spit — Nida Camping
@@ -124,8 +128,10 @@ Packing light — two bikes, limited luggage capacity.
 - **Mosquitoes:** Brutal near bogs and lakes June–July. Bring repellent and a tent with good mesh
 - **Water:** RMK sites sometimes have hand pumps. Carry a filter or purification tabs as backup
 - **Firewood:** RMK sites stock firewood. In Latvia, gather deadfall only
-- **Phone signal:** Surprisingly good across the Baltics, even rural areas. EU roaming works
+- **Ticks:** Vaccination for tick-borne encephalitis recommended — forests are the main riding terrain
+- **Phone signal:** Surprisingly good across the Baltics, even rural areas. EU roaming works. Telia has best rural coverage
 - **Border crossings:** No checks within Schengen (all three countries). Just ride through
+- **Off-road legality (Estonia):** Need landowner permission for off-road riding. State forests (RMK) require contacting RMK directly. Stick to established trails
 
 ---
 
