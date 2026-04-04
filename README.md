@@ -45,4 +45,38 @@ Personal motorbike maintenance log.
 
 ---
 
+## Riding
+
+Pick your bike, pick your time, go.
+
+### Quick picks
+
+| Time | SV650 (road) | Transalp (adventure) |
+|------|-------------|---------------------|
+| **Half day** | [Paldiski–Keila-Joa](riding/routes.md#paldiskikeila-joa) (70 km, waterfall + Soviet ruins) | [Soomaa NP](riding/routes.md#soomaa-national-park) (80 km, bogs + dirt) |
+| **Full day** | [Lahemaa Loop](riding/routes.md#lahemaa-loop) (200 km, coast + manors) | [Haanja Highlands](riding/routes.md#haanja-highlands) (150 km, gravel + Suur Munamägi) |
+| **Full day** | [Otepää–Puka](riding/routes.md#otepääpuka-loop) (100 km, "Estonian Alps", top-rated) | [Hiiumaa Lighthouses](riding/routes.md#hiiumaa-lighthouse-tour) (120 km + ferry, 3 lighthouses) |
+| **Weekend** | [Tallinn–Riga Coastal](riding/routes.md#tallinnriga-coastal-run-450-km-scenic) (450 km) | [South Estonia Highlands](riding/routes.md#south-estonia-highlands-400-km) (400 km) |
+| **3–4 days** | [Baltic Coastal Run](riding/routes.md#baltic-coastal-run-tallinn--klaipėda-34-days) (Tallinn → Klaipėda, 1000 km) | [Vidzeme "Dangerous Roads"](riding/routes.md#vidzeme-dangerous-roads-latvia-23-days) (Latvia, 300 km gravel) |
+| **5–7 days** | [Nordic Loop via Finland](riding/routes.md#nordic-loop-via-finland-57-days) (ferries + Turku Archipelago) | [TET Baltic](riding/routes.md#tet-baltic-adventure-57-days) (3350 km off-road) |
+
+### Pre-ride checklist
+
+- [ ] Route picked and loaded in [Kurviger](riding/apps.md#kurviger--primary) or GPX on phone
+- [ ] Offline maps downloaded ([OsmAnd](riding/apps.md#osmand--offline-maps-critical) — EST/LV/LT)
+- [ ] Weather checked ([Yr.no](riding/apps.md#yrno--primary) + [Windy](riding/apps.md#windycom--radar))
+- [ ] Camping spots marked ([RMK app](riding/apps.md#rmk-loodusega-koos--essential-for-estonia) for Estonia)
+- [ ] Ferry booked if needed ([connections](riding/routes.md#ferry-connections))
+- [ ] [Motocamping gear](riding/motocamping.md#motocamping-gear-checklist) packed
+- [ ] Tank full, tire pressure checked
+- [ ] Phone charged, power bank packed
+- [ ] Rain gear accessible (not buried in bags)
+- [ ] Someone knows your rough plan
+
+### Links
+
+[Routes](riding/routes.md) · [Motocamping](riding/motocamping.md) · [Apps & tools](riding/apps.md)
+
+---
+
 [Shops & contacts](shops.md) · [Conventions](CLAUDE.md)

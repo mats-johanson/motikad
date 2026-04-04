@@ -1,3 +1,5 @@
+[← Home](../../README.md) · [Bike](README.md) · [Maintenance](maintenance.md) · [Shops](../../shops.md)
+
 # Parts — 2003 Honda XL 650V Transalp
 
 ## Installed (at purchase)

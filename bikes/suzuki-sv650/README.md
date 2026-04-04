@@ -1,3 +1,7 @@
+[← Home](../../README.md) · [Maintenance](maintenance.md) · [Parts](parts.md) · [Tech Notes](technical-notes.md) · [Shops](../../shops.md) · [Riding](../../riding/routes.md)
+
+**Docs:** [Service Manual](docs/service-manual/) · [Wiring Diagram](docs/service-manual/SV650S-E03-wiring.pdf) · [Parts Fiche](docs/service-manual/sv650PartsFiche.pdf) · [Torque Specs](docs/service-manual/sv650TorqueSpecs.pdf) · [Maintenance Schedule](docs/service-manual/sv650MaintenanceSchedule.pdf)
+
 # 2009 Suzuki SV650 Naked
 
 - **Year:** 2009

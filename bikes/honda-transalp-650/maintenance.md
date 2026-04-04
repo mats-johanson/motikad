@@ -1,3 +1,5 @@
+[← Home](../../README.md) · [Bike](README.md) · [Parts](parts.md) · [Shops](../../shops.md)
+
 # Maintenance Log — 2003 Honda XL 650V Transalp
 
 ## Pending

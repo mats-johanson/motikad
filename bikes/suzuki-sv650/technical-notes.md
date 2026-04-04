@@ -1,3 +1,7 @@
+[← Home](../../README.md) · [Bike](README.md) · [Maintenance](maintenance.md) · [Parts](parts.md) · [Shops](../../shops.md)
+
+**Docs:** [Service Manual](docs/service-manual/) · [Wiring Diagram](docs/service-manual/SV650S-E03-wiring.pdf) · [Torque Specs](docs/service-manual/sv650TorqueSpecs.pdf)
+
 # Technical Notes — 2009 Suzuki SV650
 
 ## Dual-Spark Ignition (2007+)
