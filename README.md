@@ -28,7 +28,7 @@ Personal motorbike maintenance log.
 |----------|------|------|-------|
 | **Now** | Stalls on side stand | diagnose | Fuel starvation at lean angle — dirty pilot jets or float levels |
 | Soon | Headlight aim | adjust | Beam pointing too high |
-| Soon | KOSO speedo config | configure | RPMs way off — set pulse count/cylinders, read [manual](bikes/honda-transalp-650/docs/koso-db01r-manual.pdf) |
+| Later | KOSO tach over-read | investigate | Speed/fuel/odo understood. Tach reads ~1.5× high; pulse=1.5 didn't help. [Details](bikes/honda-transalp-650/technical-notes.md#tach-over-read) |
 | Soon | Heated grips | diagnose | Intermittent — likely loose wire/connector |
 | Soon | Carb inspect/clean | routine | Addresses stalling + general carb health |
 | **Deadline** | ARK re-inspection | inspection | Due 05/2026 |

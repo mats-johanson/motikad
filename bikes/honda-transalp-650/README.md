@@ -11,7 +11,7 @@
 - **Transmission:** 5-speed, chain drive
 - **Registration:** 91BY (Estonia)
 - **Purchased:** March 2026, ~€3,000–3,500
-- **Odometer at purchase:** ~68,000 km
+- **Odometer:** ~72,000 km estimated (Maanteeamet 68,000 km at last ARK ~2024; Koso external reads 72,663 km — see [odometer reconciliation](technical-notes.md#odometer-reconciliation))
 - **ARK inspection valid until:** 05/2026
 - **Colour:** Black (matt black wrap over original)
 
