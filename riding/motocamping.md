@@ -120,6 +120,23 @@ Packing light — two bikes, limited luggage capacity.
 - [ ] Extra warm layer for evenings
 - [ ] Lock + chain
 
+### Roadside tool kit
+
+- [ ] 8, 10, 12, 14 mm combination wrenches
+- [ ] 5, 6 mm Allen keys
+- [ ] Phillips + flathead screwdriver (or stubby 2-in-1)
+- [ ] Spark plug socket (18 mm deep) + gap tool
+- [ ] Needle-nose pliers
+- [ ] Tire pressure gauge
+- [ ] Tire levers (2–3) + plug kit + CO2 inflator (tubeless) or spare tubes + patch kit (tubed)
+- [ ] 12V mini compressor or frame pump
+- [ ] Pocket multimeter
+- [ ] Spare fuses (matching your fuse box)
+- [ ] Electrical tape + wire connectors
+- [ ] Chain lube
+- [ ] Small bottle of engine oil (~200 ml)
+- [ ] Zip ties, duct tape, bailing wire
+
 ---
 
 ## Tips
