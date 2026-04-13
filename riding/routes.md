@@ -2,8 +2,6 @@
 
 All routes start and end in **Tartu**. Pick your bike and available time.
 
-* {:toc}
-
 ## Day trips (2–6 hours)
 
 ### Road bike (SV650)
@@ -32,11 +30,7 @@ All routes start and end in **Tartu**. Pick your bike and available time.
 ## Route details
 
 <details markdown="1">
-<summary>
-
-### Otepää–Puka Loop
-
-</summary>
+<summary>Otepää–Puka Loop</summary>
 
 Tartu → road 44 south to Otepää → Puka → Kanepi → back to Tartu
 
@@ -48,11 +42,7 @@ Tartu → road 44 south to Otepää → Puka → Kanepi → back to Tartu
 </details>
 
 <details markdown="1">
-<summary>
-
-### Postitee (Route 15)
-
-</summary>
+<summary>Postitee (Route 15)</summary>
 
 Tartu → road 44 south toward Põlva → Route 15 (Postitee) between Põlva and Võru counties → Võru → return
 
@@ -65,11 +55,7 @@ Tartu → road 44 south toward Põlva → Route 15 (Postitee) between Põlva and
 </details>
 
 <details markdown="1">
-<summary>
-
-### Lake Peipus Loop
-
-</summary>
+<summary>Lake Peipus Loop</summary>
 
 Tartu → road 43 northeast to Alatskivi → Kolkja → Alja → Mustvee → south shore → back to Tartu
 
@@ -82,11 +68,7 @@ Tartu → road 43 northeast to Alatskivi → Kolkja → Alja → Mustvee → sou
 </details>
 
 <details markdown="1">
-<summary>
-
-### Old Põlva Highway
-
-</summary>
+<summary>Old Põlva Highway</summary>
 
 Tartu → Puskaru → Ihamaru → Karilatsi → Võrekula → return
 
@@ -98,11 +80,7 @@ Tartu → Puskaru → Ihamaru → Karilatsi → Võrekula → return
 </details>
 
 <details markdown="1">
-<summary>
-
-### Tartu–Pärnu Scenic
-
-</summary>
+<summary>Tartu–Pärnu Scenic</summary>
 
 Avoid E263. Take smaller roads through Viljandi county — road 92 via Põltsamaa or road 49 via Viljandi.
 
@@ -114,11 +92,7 @@ Avoid E263. Take smaller roads through Viljandi county — road 92 via Põltsama
 </details>
 
 <details markdown="1">
-<summary>
-
-### Rakvere–Rannapungerja
-
-</summary>
+<summary>Rakvere–Rannapungerja</summary>
 
 Tartu → road 36 north to Jõgeva → road 39 to Rakvere → east through Ida-Viru county to Rannapungerja lighthouse → return via Mustvee/Peipus shore
 
@@ -130,11 +104,7 @@ Tartu → road 36 north to Jõgeva → road 39 to Rakvere → east through Ida-V
 </details>
 
 <details markdown="1">
-<summary>
-
-### Haanja Highlands
-
-</summary>
+<summary>Haanja Highlands</summary>
 
 Tartu → road 44 to Otepää → Võru → Haanja → Rõuge → Vastseliina → Setomaa → Põlva → Tartu
 
@@ -147,11 +117,7 @@ Tartu → road 44 to Otepää → Võru → Haanja → Rõuge → Vastseliina �
 </details>
 
 <details markdown="1">
-<summary>
-
-### Setomaa & Saatse Boot
-
-</summary>
+<summary>Setomaa & Saatse Boot</summary>
 
 Tartu → Põlva → Võõpsu → Värska → Saatse → Obinitsa → Meremäe → Luhamaa → return via Põlva
 
@@ -164,11 +130,7 @@ Tartu → Põlva → Võõpsu → Värska → Saatse → Obinitsa → Meremäe �
 </details>
 
 <details markdown="1">
-<summary>
-
-### Lake Peipus Backroads
-
-</summary>
+<summary>Lake Peipus Backroads</summary>
 
 Tartu → east to Luunja → gravel roads along the western shore → Alatskivi → Kolkja → Mustvee → return
 
@@ -180,11 +142,7 @@ Tartu → east to Luunja → gravel roads along the western shore → Alatskivi 
 </details>
 
 <details markdown="1">
-<summary>
-
-### Soomaa National Park
-
-</summary>
+<summary>Soomaa National Park</summary>
 
 Tartu → road 49 to Viljandi (~80 km) → south to Soomaa → visitor center → return via Põltsamaa
 
@@ -195,11 +153,7 @@ Tartu → road 49 to Viljandi (~80 km) → south to Soomaa → visitor center �
 </details>
 
 <details markdown="1">
-<summary>
-
-### Otepää–Kanepi Gravel
-
-</summary>
+<summary>Otepää–Kanepi Gravel</summary>
 
 Tartu → Otepää → forest tracks south toward Kanepi → Põlva → Tartu
 
@@ -210,11 +164,7 @@ Tartu → Otepää → forest tracks south toward Kanepi → Põlva → Tartu
 </details>
 
 <details markdown="1">
-<summary>
-
-### Enduro near Tartu
-
-</summary>
+<summary>Enduro near Tartu</summary>
 
 Not a route but worth knowing — **Kukemetsa Quarry** is the closest enduro terrain to Tartu. Forest trails and overgrown gravel pits with sand, waves, technical sections. Regular training occurs here. Also: **Rõiu/Uniküla Forest** (~3–4 km past Vooremäed) has fairly hilly forest trails.
 
@@ -225,11 +175,7 @@ Not a route but worth knowing — **Kukemetsa Quarry** is the closest enduro ter
 ## Weekend trips (1–2 days)
 
 <details markdown="1">
-<summary>
-
-### Lahemaa & North Coast (~400 km)
-
-</summary>
+<summary>Lahemaa & North Coast (~400 km)</summary>
 
 - **Day 1:** Tartu → road 36 north through Jõgeva → Lahemaa NP. Palmse Manor → Sagadi → Altja → Käsmu → overnight in the park or Loksa
 - **Day 2:** Coast west to Tallinn or east to Rakvere → return to Tartu via inland roads
@@ -241,11 +187,7 @@ Not a route but worth knowing — **Kukemetsa Quarry** is the closest enduro ter
 </details>
 
 <details markdown="1">
-<summary>
-
-### West Estonia & Islands (~500 km)
-
-</summary>
+<summary>West Estonia & Islands (~500 km)</summary>
 
 - **Day 1:** Tartu → Viljandi → Pärnu → Virtsu → ferry to Muhu → causeway to Saaremaa → Kuressaare. Overnight Kuressaare
 - **Day 2:** Saaremaa circuit (Kaali crater, Angla windmills, Sõrve Peninsula, Orissaare–Kalmu coastal road) → ferry back → return via Pärnu or Viljandi
@@ -257,11 +199,7 @@ Not a route but worth knowing — **Kukemetsa Quarry** is the closest enduro ter
 </details>
 
 <details markdown="1">
-<summary>
-
-### Hiiumaa Lighthouses (~450 km)
-
-</summary>
+<summary>Hiiumaa Lighthouses (~450 km)</summary>
 
 - **Day 1:** Tartu → Pärnu (~180 km) → Rohuküla → ferry to Heltermaa (~1.5h) → Kõpu Lighthouse → overnight Kärdla
 - **Day 2:** Ristna Lighthouse → Tahkuna Lighthouse → Kassari island → ferry back → return to Tartu
@@ -272,11 +210,7 @@ Not a route but worth knowing — **Kukemetsa Quarry** is the closest enduro ter
 </details>
 
 <details markdown="1">
-<summary>
-
-### Gauja National Park (Latvia, ~350 km RT)
-
-</summary>
+<summary>Gauja National Park (Latvia, ~350 km RT)</summary>
 
 - **Day 1:** Tartu → Valga (border, ~80 km) → Valmiera → Sigulda → Gauja NP. Sigulda–Līgatne trail 30 km along river. Overnight Sigulda
 - **Day 2:** Turaida Castle → Cēsis medieval town → return via Valga to Tartu
@@ -288,11 +222,7 @@ Not a route but worth knowing — **Kukemetsa Quarry** is the closest enduro ter
 </details>
 
 <details markdown="1">
-<summary>
-
-### Tartu–Riga via Coast (~500 km loop)
-
-</summary>
+<summary>Tartu–Riga via Coast (~500 km loop)</summary>
 
 - **Day 1:** Tartu → Pärnu (scenic inland roads) → coastal road south → Ikla–Häädemeeste rannatee (30 km) → Jūrmala → Riga
 - **Day 2:** Riga old town morning → return via Gauja NP (Cēsis/Valmiera) → Valga → Tartu
@@ -304,11 +234,7 @@ Not a route but worth knowing — **Kukemetsa Quarry** is the closest enduro ter
 </details>
 
 <details markdown="1">
-<summary>
-
-### Tallinn Coast Day (~400 km RT)
-
-</summary>
+<summary>Tallinn Coast Day (~400 km RT)</summary>
 
 - **Day 1:** Tartu → Tallinn via Piibe Road/Route 13 (~205 km scenic) → Paldiski → Keila-Joa waterfall → Tallinn coast → overnight
 - **Day 2:** Tallinn → scenic return to Tartu via Lahemaa or Paide

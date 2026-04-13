@@ -1,7 +1,5 @@
 # Trip Prep
 
-* {:toc}
-
 ## Camping
 
 ### Wild camping rules
