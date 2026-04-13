@@ -1,6 +1,6 @@
-# Routes
-
 [← Home](../README.md) · [Motocamping](motocamping.md) · [Apps & Tools](apps.md)
+
+# Routes
 
 All routes start and end in **Tartu**. Pick your bike and available time.
 

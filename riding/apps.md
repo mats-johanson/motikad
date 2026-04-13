@@ -1,6 +1,6 @@
-# Apps & Tools
-
 [← Home](../README.md) · [Routes](routes.md) · [Motocamping](motocamping.md)
+
+# Apps & Tools
 
 Recommended stack for Baltic moto touring. Validated against what riders in this region actually use.
 
