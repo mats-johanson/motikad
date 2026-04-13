@@ -11,13 +11,58 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body{% if page.url == "/" or page.url == "/index.html" %} class="home"{% endif %}>
-  <header>
+{% assign url = page.url %}
+<body{% if url == '/' or url == '/index.html' %} class="home"{% endif %}>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <aside class="sidebar">
+    <div class="sidebar-head">
+      <a href="{{ '/' | relative_url }}" class="site-title">motikad</a>
+    </div>
+    <nav>
+      <a href="{{ '/' | relative_url }}" {% if url == '/' or url == '/index.html' %}class="active"{% endif %}>Dashboard</a>
+
+      <h4>Bikes</h4>
+      <div class="nav-bike">
+        <a href="{{ '/bikes/suzuki-sv650/' | relative_url }}" {% if url contains '/suzuki-sv650' %}class="active"{% endif %}>SV650</a>
+        <div class="nav-sub">
+          <a href="{{ '/bikes/suzuki-sv650/maintenance.html' | relative_url }}" {% if url contains '/suzuki-sv650/maintenance' %}class="active"{% endif %}>Maintenance</a>
+          <a href="{{ '/bikes/suzuki-sv650/parts.html' | relative_url }}" {% if url contains '/suzuki-sv650/parts' %}class="active"{% endif %}>Parts</a>
+          <a href="{{ '/bikes/suzuki-sv650/technical-notes.html' | relative_url }}" {% if url contains '/suzuki-sv650/technical-notes' %}class="active"{% endif %}>Tech notes</a>
+        </div>
+      </div>
+      <div class="nav-bike">
+        <a href="{{ '/bikes/honda-transalp-650/' | relative_url }}" {% if url contains '/honda-transalp-650' %}class="active"{% endif %}>Transalp</a>
+        <div class="nav-sub">
+          <a href="{{ '/bikes/honda-transalp-650/maintenance.html' | relative_url }}" {% if url contains '/honda-transalp-650/maintenance' %}class="active"{% endif %}>Maintenance</a>
+          <a href="{{ '/bikes/honda-transalp-650/parts.html' | relative_url }}" {% if url contains '/honda-transalp-650/parts' %}class="active"{% endif %}>Parts</a>
+          <a href="{{ '/bikes/honda-transalp-650/technical-notes.html' | relative_url }}" {% if url contains '/honda-transalp-650/technical' %}class="active"{% endif %}>Tech notes</a>
+        </div>
+      </div>
+
+      <h4>Riding</h4>
+      <a href="{{ '/riding/routes.html' | relative_url }}" {% if url contains '/riding/routes' %}class="active"{% endif %}>Routes</a>
+      <a href="{{ '/riding/motocamping.html' | relative_url }}" {% if url contains '/riding/motocamping' %}class="active"{% endif %}>Motocamping</a>
+      <a href="{{ '/riding/apps.html' | relative_url }}" {% if url contains '/riding/apps' %}class="active"{% endif %}>Apps & tools</a>
+      <a href="{{ '/riding/menus.html' | relative_url }}" {% if url contains '/riding/menus' %}class="active"{% endif %}>Camp menus</a>
+
+      <h4>Other</h4>
+      <a href="{{ '/shops.html' | relative_url }}" {% if url contains '/shops' %}class="active"{% endif %}>Shops & contacts</a>
+    </nav>
+  </aside>
+
+  <div class="mobile-bar">
+    <label for="nav-toggle" class="burger"><span></span><span></span><span></span></label>
     <a href="{{ '/' | relative_url }}" class="site-title">motikad</a>
-  </header>
+  </div>
+
+  <label for="nav-toggle" class="overlay"></label>
+
   <main>
     {{ content }}
   </main>
+
   <script>
   document.querySelectorAll('table').forEach(function(t){
     var w=document.createElement('div');

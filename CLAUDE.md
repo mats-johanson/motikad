@@ -37,15 +37,14 @@ Each entry in `maintenance.md` follows this format:
 - **Notes:** [optional]
 ```
 
-## README Dashboard
+## Dashboard
 
-`README.md` is the front page — it must reflect current state at all times. When updating any bike's `maintenance.md` or `parts.md`, also update the corresponding section in README:
+`index.html` is the website homepage dashboard — it must reflect current state at all times. When updating any bike's `maintenance.md` or `parts.md`, also update the corresponding section in `index.html`:
 
-- **Bike table** — status column should reflect current rideable/not rideable state
-- **"What needs doing"** — mirrors the `## Pending` sections from each bike's `maintenance.md`, prioritized (Now → Soon → Later → Next season)
-- **"Shopping list"** — mirrors `## Needed` tables from each bike's `parts.md`
+- **Bike cards** — status should reflect current rideable/not rideable state
+- **"What needs doing"** — mirrors the `## Pending` sections from each bike's `maintenance.md`
 
-If an item is completed, remove it from README. If a new item is added, add it to README in the right priority slot.
+`README.md` is the GitHub landing page — keep it minimal (bikes + link to website). Don't duplicate the dashboard there.
 
 ## Git Workflow
 
@@ -62,8 +61,9 @@ When asked to push, do everything in one go without pausing for confirmation:
 - Site served via GitHub Pages with Jekyll, auto-built from main branch
 - Layout: `_layouts/default.html`, styles: `assets/css/style.css`, config: `_config.yml`
 - No build step — push to main and GitHub builds automatically
-- GitHub Pages plugins handle everything: `jekyll-optional-front-matter` (no front matter needed), `jekyll-relative-links` (.md links work), `jekyll-readme-index` (README.md → index.html), `jekyll-titles-from-headings` (titles from h1)
-- Existing .md files need zero modification to render as web pages
+- Homepage is `index.html` (HTML, not markdown) — full layout control with cards, grids, sidebar nav
+- Sub-pages render from markdown via GitHub Pages plugins: `jekyll-optional-front-matter`, `jekyll-relative-links`, `jekyll-titles-from-headings`
+- `README.md` is excluded from build (GitHub-only landing page)
 
 ## Conventions
 
