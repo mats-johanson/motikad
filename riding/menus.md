@@ -1,5 +1,3 @@
-[← Home](../README.md) · [Motocamping](motocamping.md) · [Routes](routes.md)
-
 # Camp Menus
 
 Meals for 2, made with a 1L pot, small pan, and a gas stove or fire.
@@ -24,7 +22,3 @@ Meals for 2, made with a 1L pot, small pan, and a gas stove or fire.
 5. Top with shredded cheese
 
 **Why it works:** Pasta and sausage are light and don't crush. Smoked sausage survives a day without refrigeration. Tomato paste tubes last forever. Hard cheese keeps without a cooler.
-
----
-
-[← Home](../README.md) · [Motocamping](motocamping.md) · [Routes](routes.md)
