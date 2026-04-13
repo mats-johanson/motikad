@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <a href="{{ '/' | relative_url }}" class="site-title">motikad</a>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <script>
+  document.querySelectorAll('table').forEach(function(t){
+    var w=document.createElement('div');
+    w.className='table-wrap';
+    t.parentNode.insertBefore(w,t);
+    w.appendChild(t);
+  });
+  </script>
+</body>
+</html>

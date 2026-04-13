@@ -1,0 +1,24 @@
+title: motikad
+description: Motorbike maintenance log
+url: https://mats-johanson.github.io
+baseurl: /motikad
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-readme-index
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+
+titles_from_headings:
+  strip_title: false
+
+exclude:
+  - CLAUDE.md
+  - "*.iml"
+  - .idea
+  - .claude
