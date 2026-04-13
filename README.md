@@ -1,6 +1,6 @@
 # motikad
 
-Personal motorbike maintenance log. [View site](https://mats-johanson.github.io/motikad)
+Personal motorbike maintenance log.
 
 ## Bikes
 
@@ -18,23 +18,23 @@ Rideable, needs carb work — [maintenance](bikes/honda-transalp-650/maintenance
 
 ### SV650 — [full list](bikes/suzuki-sv650/maintenance.md)
 
-- **Now** — Radiator repair. Call [radiator guy](shops.md) (+372 5558 7005)
-- **After radiator** — Coolant refill. ~1.5L 50/50 premix
-- **Quick** — Number plate LED. Any universal E-marked, 2-pin connector
-- **Quick** — Idle adjustment. 1500 → 1200–1300 RPM, CCW on idle knob
+- <b class="p now">Now</b> Radiator repair. Call [radiator guy](shops.md) (+372 5558 7005)
+- <b class="p now">After radiator</b> Coolant refill. ~1.5L 50/50 premix
+- <b class="p soon">Quick</b> Number plate LED. Any universal E-marked, 2-pin connector
+- <b class="p soon">Quick</b> Idle adjustment. 1500 → 1200–1300 RPM, CCW on idle knob
 
 ### Transalp — [full list](bikes/honda-transalp-650/maintenance.md)
 
-- **Now** — Stalls on side stand. Fuel starvation at lean angle — dirty pilot jets or float levels
-- **Soon** — Oil on bash plate. Oil gathering on left side — check level, clean, ride, find source
-- **Soon** — Front brake fluid. No fluid visible in reservoir window — brakes work, check pads + leaks
-- **Soon** — Headlight aim. Beam pointing too high
-- **Soon** — Heated grips. Intermittent — likely loose wire/connector
-- **Soon** — Carb inspect/clean. Addresses stalling + general carb health
-- **Later** — KOSO tach over-read. Tach reads ~1.5× high. [Details](bikes/honda-transalp-650/technical-notes.md#tach-over-read)
-- **Deadline** — ARK re-inspection. Due 05/2026
-- **Later** — Rear shock. Stock, 23 years old (~€200–300)
-- **Next season** — 21" front wheel. Needs KTM fork compatibility check
+- <b class="p now">Now</b> Stalls on side stand. Fuel starvation at lean angle — dirty pilot jets or float levels
+- <b class="p soon">Soon</b> Oil on bash plate. Oil gathering on left side — check level, clean, ride, find source
+- <b class="p soon">Soon</b> Front brake fluid. No fluid visible in reservoir window — brakes work, check pads + leaks
+- <b class="p soon">Soon</b> Headlight aim. Beam pointing too high
+- <b class="p soon">Soon</b> Heated grips. Intermittent — likely loose wire/connector
+- <b class="p soon">Soon</b> Carb inspect/clean. Addresses stalling + general carb health
+- <b class="p later">Later</b> KOSO tach over-read. Tach reads ~1.5× high. [Details](bikes/honda-transalp-650/technical-notes.md#tach-over-read)
+- <b class="p now">Deadline</b> ARK re-inspection. Due 05/2026
+- <b class="p later">Later</b> Rear shock. Stock, 23 years old (~€200–300)
+- <b class="p later">Next season</b> 21" front wheel. Needs KTM fork compatibility check
 
 ---
 

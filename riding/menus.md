@@ -1,6 +1,6 @@
-# Camp Menus
-
 [← Home](../README.md) · [Motocamping](motocamping.md) · [Routes](routes.md)
+
+# Camp Menus
 
 Meals for 2, made with a 1L pot, small pan, and a gas stove or fire.
 
