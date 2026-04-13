@@ -1,0 +1,73 @@
+---
+layout: default
+title: "Active Issues — Transalp"
+---
+
+<section class="page-section">
+  <h2>Active Issues</h2>
+
+  <div class="entry" id="tach-over-read">
+    <div class="entry-head">
+      <h3>Tach over-read</h3>
+      <span class="badge badge-warn">investigating</span>
+    </div>
+    <p><strong>Status:</strong> investigating — next step: try pulse=2</p>
+    <p><strong>Observed (2026-04-08):</strong> tach reads ~1.5x higher than reality.</p>
+    <table>
+      <thead>
+        <tr><th>Condition</th><th>Koso shows</th><th>Likely actual</th><th>Factor</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Warm idle</td><td>2,000 RPM</td><td>~1,300 RPM</td><td>~1.54</td></tr>
+        <tr><td>Cold idle (choke on)</td><td>3,000 RPM</td><td>~1,900 RPM</td><td>~1.58</td></tr>
+        <tr><td>Full revs</td><td>pegs 10k+</td><td>~8,500 redline</td><td>~1.5</td></tr>
+      </tbody>
+    </table>
+
+    <h4>Confirmed correct settings</h4>
+    <ul>
+      <li>Pulse = 1 (book value for 4C-2P, 4-stroke V-twin)</li>
+      <li>Polarity = Hi</li>
+      <li>Bar range = 10,000 RPM</li>
+    </ul>
+
+    <h4>What was tried</h4>
+    <p>Changed pulse from 1 → <strong>1.5</strong>. Verified the setting saved (re-entered settings menu, saw 1.5). Idle reading <strong>did not change</strong> from 2,000 RPM. This rules out a simple pulse-multiplier error — if pulse values affected the display linearly, going from 1 to 1.5 should have dropped the reading by ~33%. It didn't move at all.</p>
+
+    <h4>Interpretation</h4>
+    <p>The Koso may be treating 1.5 as a no-op (no engine type mapped to it in the manual's table), or the tach isn't deriving its reading from the actual coil pulse frequency at all. Either way, the fix is not likely a software-only setting tweak.</p>
+
+    <h4>Next steps to try, in order</h4>
+    <ol>
+      <li><strong>Pulse = 2.</strong> This corresponds to a valid engine type (4C-4P) and should <em>definitely</em> halve the reading if the setting does anything. If idle drops from 2,000 to ~1,000 → the setting system works but the correct value is somewhere else (try 1.5 again, or accept the 2x and note the scale). If idle still shows 2,000 → the Koso isn't reading pulse count, and the fix is hardware.</li>
+      <li><strong>Polarity Lo.</strong> Toggle step 6 from Hi → Lo and see if reading changes at all. If it goes to 0, wrong polarity. If it goes erratic, signal noise.</li>
+      <li><strong>Confirm spark plugs are R-type.</strong> XL650V OEM is NGK DPR8EA-9 — the "R" is the resistor. Non-resistor plugs cause RFI that the Koso tach circuit picks up as extra pulses. The Koso manual explicitly calls this out. Pull a plug and check the part number.</li>
+      <li><strong>Trace the RPM wire back to its tap.</strong> The book assumes the tap is on <em>one</em> coil + pin. If this install is on a shared +12V bus feeding both coils, the Koso sees both coils' pulses and over-reads. Fix = move the tap to the + pin of a single coil.</li>
+      <li><strong>Check for noise pickup.</strong> If the RPM wire runs near HT leads or the coil secondaries, capacitive coupling can inject extra pulses. Reroute or shield.</li>
+      <li><strong>Verify real idle with an independent source</strong> — a timing-light tach or the front cylinder's coil output on a scope — to confirm what the actual idle RPM is and how far off the Koso really is.</li>
+    </ol>
+  </div>
+
+  <div class="entry" id="fuel-gauge-lean-over-dip">
+    <div class="entry-head">
+      <h3>Fuel gauge lean-over dip</h3>
+      <span class="badge badge-ok">understood</span>
+    </div>
+    <p><strong>Status:</strong> understood — no fix needed, use Trip A as primary fuel gauge</p>
+    <p><strong>Observed:</strong> the fuel gauge drops to empty for a while when the bike is leaned over (cornering or on the side stand).</p>
+
+    <h4>Cause</h4>
+    <p>Physical, not electrical. The Honda fuel sender in the tank is a float-on-arm resistive sensor. When the bike leans, fuel sloshes to the low side of the tank. If the sender sits on the high side, the float drops into an empty pocket and the sender reports empty. The Koso is faithfully displaying what the sender sends. Nothing is wrong with the dash or the sender.</p>
+
+    <h4>Workaround — use Trip A as the primary fuel gauge</h4>
+    <ul>
+      <li>Reset Trip A at every fill-up: on the main screen, press Adjust once to see Trip A, then hold Adjust 3s to reset.</li>
+      <li>Tank capacity: 19.6 L. Consumption: 4.2–5.2 L/100km. Range: 280–350 km.</li>
+      <li><strong>Rule of thumb: refuel by 250 km</strong> and you always have reserve.</li>
+      <li>Leave Trip B untouched as a trip/week accumulator.</li>
+      <li>Treat the fuel bars as a secondary sanity check, not a source of truth.</li>
+    </ul>
+
+    <p><strong>Not the same issue as</strong> <a href="{{ '/bikes/honda-transalp-650/todo.html' | relative_url }}">stalls on side stand</a> — that's actual fuel starvation at the pilot jets at extreme lean angle (a carburetor problem). Both involve fuel slosh in a tilted tank, but the fixes are unrelated: the gauge dip has no fix, the stall does.</p>
+  </div>
+</section>

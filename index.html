@@ -9,9 +9,22 @@ title: motikad
     <div class="card">
       <div class="card-head">
         <h3><a href="{{ '/bikes/suzuki-sv650/overview.html' | relative_url }}">Suzuki SV650 Naked</a></h3>
-        <span class="meta">2009</span>
+        <span class="badge badge-warn">pending items</span>
       </div>
-      <p>Rideable, pending items</p>
+      <div class="status-bar">
+        <div class="metric">
+          <span class="metric-label">Last service</span>
+          <span class="metric-value" data-date="2026-03-31">2026-03-31</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Year</span>
+          <span class="metric-value">2009</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Engine</span>
+          <span class="metric-value">645cc V-twin</span>
+        </div>
+      </div>
       <div class="card-links">
         <a href="{{ '/bikes/suzuki-sv650/todo.html' | relative_url }}">To do</a>
         <a href="{{ '/bikes/suzuki-sv650/history.html' | relative_url }}">History</a>
@@ -22,9 +35,22 @@ title: motikad
     <div class="card">
       <div class="card-head">
         <h3><a href="{{ '/bikes/honda-transalp-650/overview.html' | relative_url }}">Honda XL 650V Transalp</a></h3>
-        <span class="meta">2003</span>
+        <span class="badge badge-warn">needs carb work</span>
       </div>
-      <p>Rideable, needs carb work</p>
+      <div class="status-bar">
+        <div class="metric">
+          <span class="metric-label">Last service</span>
+          <span class="metric-value" data-date="2026-04-01">2026-04-01</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">ARK expires</span>
+          <span class="metric-value" data-deadline="2026-05-31">05/2026</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Odometer</span>
+          <span class="metric-value">~72,000 km</span>
+        </div>
+      </div>
       <div class="card-links">
         <a href="{{ '/bikes/honda-transalp-650/todo.html' | relative_url }}">To do</a>
         <a href="{{ '/bikes/honda-transalp-650/history.html' | relative_url }}">History</a>
@@ -45,10 +71,10 @@ title: motikad
         <a href="{{ '/bikes/suzuki-sv650/todo.html' | relative_url }}" class="meta">full list →</a>
       </div>
       <ul class="todo-list">
-        <li><b class="p now">Now</b> Radiator repair. Call <a href="{{ '/shops.html' | relative_url }}">radiator guy</a></li>
-        <li><b class="p now">After radiator</b> Coolant refill. ~1.5L 50/50 premix</li>
-        <li><b class="p soon">Quick</b> Number plate LED. Any universal E-marked</li>
-        <li><b class="p soon">Quick</b> Idle adjustment. 1500 → 1200–1300 RPM</li>
+        <li><b class="p now">Now</b> Radiator repair — call <a href="{{ '/shops.html' | relative_url }}">radiator guy</a> <span class="meta">(+372 5558 7005)</span></li>
+        <li><b class="p now">After radiator</b> Coolant refill — ~1.5L 50/50 premix</li>
+        <li><b class="p soon">Quick</b> Number plate LED — any universal E-marked</li>
+        <li><b class="p soon">Quick</b> Idle adjustment — 1500 → 1200–1300 RPM</li>
       </ul>
     </div>
     <div class="card">
@@ -58,12 +84,10 @@ title: motikad
       </div>
       <ul class="todo-list">
         <li><b class="p now">Now</b> Stalls on side stand — fuel starvation at lean angle</li>
-        <li><b class="p soon">Soon</b> Oil on bash plate — check level, clean, ride</li>
-        <li><b class="p soon">Soon</b> Front brake fluid — no fluid visible in reservoir</li>
-        <li><b class="p soon">Soon</b> Headlight aim · Heated grips · Carb inspect</li>
-        <li><b class="p later">Later</b> KOSO tach · Rear shock</li>
-        <li><b class="p now">Deadline</b> ARK re-inspection — due 05/2026</li>
-        <li><b class="p later">Next season</b> 21" front wheel</li>
+        <li><b class="p soon">Soon</b> Oil on bash plate · Front brake fluid · Headlight aim</li>
+        <li><b class="p soon">Soon</b> Heated grips · Carb inspect/clean</li>
+        <li><b class="p now">Deadline</b> ARK re-inspection — <span data-deadline="2026-05-31">05/2026</span></li>
+        <li><b class="p later">Later</b> KOSO tach · Rear shock · 21" wheel</li>
       </ul>
     </div>
   </div>
@@ -71,7 +95,7 @@ title: motikad
 
 <section>
   <h2>Riding</h2>
-  <p>Pick your bike, pick your time. All routes from Tartu.</p>
+  <p>All routes from Tartu. Pick your time.</p>
   <div class="grid-2">
     <div>
       <h4>Half day</h4>
@@ -116,16 +140,19 @@ title: motikad
   <details class="checklist">
     <summary>Pre-ride checklist</summary>
     <ul>
-      <li>Route loaded in <a href="{{ '/riding/trip-prep.html' | relative_url }}#kurviger--primary">Kurviger</a> or GPX</li>
-      <li>Offline maps — <a href="{{ '/riding/trip-prep.html' | relative_url }}#osmand--offline-maps-critical">OsmAnd</a></li>
-      <li>Weather — <a href="{{ '/riding/trip-prep.html' | relative_url }}#yrno--primary-baltics">Yr.no</a> + <a href="{{ '/riding/trip-prep.html' | relative_url }}#windycom--radar--decisions">Windy</a></li>
-      <li>Camping spots — <a href="{{ '/riding/trip-prep.html' | relative_url }}#rmk-loodusega-koos--essential-for-estonia">RMK app</a></li>
-      <li>Ferry booked if needed</li>
-      <li><a href="{{ '/riding/trip-prep.html' | relative_url }}#gear-checklist">Gear</a> packed</li>
-      <li>Tank full, tire pressure checked</li>
-      <li>Phone + power bank charged</li>
-      <li>Rain gear accessible</li>
-      <li>Someone knows your plan</li>
+      <li><label><input type="checkbox" data-persist="preride-1"> Route loaded in <a href="{{ '/riding/trip-prep.html' | relative_url }}#kurviger--primary">Kurviger</a> or GPX</label></li>
+      <li><label><input type="checkbox" data-persist="preride-2"> Offline maps — <a href="{{ '/riding/trip-prep.html' | relative_url }}#osmand--offline-maps-critical">OsmAnd</a></label></li>
+      <li><label><input type="checkbox" data-persist="preride-3"> Weather checked</label></li>
+      <li><label><input type="checkbox" data-persist="preride-4"> Camping spots marked</label></li>
+      <li><label><input type="checkbox" data-persist="preride-5"> Ferry booked if needed</label></li>
+      <li><label><input type="checkbox" data-persist="preride-6"> <a href="{{ '/riding/trip-prep.html' | relative_url }}#gear-checklist">Gear</a> packed</label></li>
+      <li><label><input type="checkbox" data-persist="preride-7"> Tank full, tire pressure checked</label></li>
+      <li><label><input type="checkbox" data-persist="preride-8"> Phone + power bank charged</label></li>
+      <li><label><input type="checkbox" data-persist="preride-9"> Rain gear accessible</label></li>
+      <li><label><input type="checkbox" data-persist="preride-10"> Someone knows your plan</label></li>
     </ul>
+    <div class="checklist-controls">
+      <button class="btn-reset" data-reset="preride">Reset all</button>
+    </div>
   </details>
 </section>
