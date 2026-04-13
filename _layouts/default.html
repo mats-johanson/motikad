@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: site.title }}</title>
+  {% assign _parts = content | split: '</h1>' %}
+  {% if page.title %}{% assign _t = page.title %}
+  {% elsif _parts.size > 1 %}{% assign _t = _parts[0] | split: '>' | last | strip %}
+  {% endif %}
+  <title>{% if _t and _t != site.title %}{{ _t }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
