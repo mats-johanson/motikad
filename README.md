@@ -27,6 +27,8 @@ Personal motorbike maintenance log.
 | Priority | Item | Type | Notes |
 |----------|------|------|-------|
 | **Now** | Stalls on side stand | diagnose | Fuel starvation at lean angle — dirty pilot jets or float levels |
+| **Soon** | Oil on bash plate | inspect | Oil gathering on left side — check level, clean, ride, find source |
+| **Soon** | Front brake fluid | check + top up | No fluid visible in reservoir window — brakes work, check pads + leaks |
 | Soon | Headlight aim | adjust | Beam pointing too high |
 | Later | KOSO tach over-read | investigate | Speed/fuel/odo understood. Tach reads ~1.5× high; pulse=1.5 didn't help. [Details](bikes/honda-transalp-650/technical-notes.md#tach-over-read) |
 | Soon | Heated grips | diagnose | Intermittent — likely loose wire/connector |
