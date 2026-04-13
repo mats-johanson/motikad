@@ -1,0 +1,89 @@
+---
+layout: default
+title: "Reference — SV650"
+---
+
+<section class="page-section">
+  <h2>Reference — SV650</h2>
+
+  <p class="doc-links">
+    <a href="{{ '/bikes/suzuki-sv650/docs/service-manual/index.html' | relative_url }}">Service Manual</a> ·
+    <a href="{{ '/bikes/suzuki-sv650/docs/service-manual/SV650S-E03-wiring.pdf' | relative_url }}">Wiring Diagram</a> ·
+    <a href="{{ '/bikes/suzuki-sv650/docs/service-manual/sv650TorqueSpecs.pdf' | relative_url }}">Torque Specs</a>
+  </p>
+
+  <h2>Known Model Quirks</h2>
+  <ul>
+    <li><strong>Dual-spark (2007+):</strong> 4 plugs, not 2. Both plugs per cylinder fire simultaneously.</li>
+    <li><strong>No chassis ground:</strong> Aluminium frame — all grounds via wiring harness (black/white wires) back to battery. Main ground: battery negative → 8mm engine case bolt in front of swingarm.</li>
+    <li><strong>No spark plug drain hole</strong> on 2007+ dual-spark heads. Dual-spark design is Suzuki's fix for water ingress — if top plug drowns, side plug keeps firing.</li>
+    <li><strong>Regulator/rectifier:</strong> Known failure point on gen 2. Currently fine (14.5V). Inspect periodically.</li>
+    <li><strong>V-twin idle character:</strong> Uneven firing order by design. Slight lumpiness is normal.</li>
+    <li><strong>Headlight bracket clamps</strong> can slide on smooth chrome fork tubes — fix with rubber shim.</li>
+  </ul>
+
+  <h2>Dual-Spark Ignition (2007+)</h2>
+  <ul>
+    <li>4 plugs total, 2 per cylinder (top + side)</li>
+    <li>Both plugs per cylinder fire simultaneously</li>
+    <li>Disconnecting one plug shows no idle change — must disconnect both on same cylinder to hear a difference</li>
+    <li>No spark plug drain hole on 2007+ heads — dual-spark design is Suzuki's fix for water ingress</li>
+    <li>Pack plug boots with dielectric grease for rain protection</li>
+  </ul>
+
+  <h2>Spark Plug Access</h2>
+  <ul>
+    <li><strong>Rear top:</strong> straightforward</li>
+    <li><strong>Front right:</strong> straightforward</li>
+    <li><strong>Front top (behind radiator):</strong> loosen radiator (unbolt, push forward, don't drain), thin-wall 16mm socket + extension</li>
+    <li><strong>Rear side:</strong> lift fuel tank, tight space</li>
+    <li>Torque: &lt;10 ft-lb, always finger-thread first (aluminium heads)</li>
+  </ul>
+
+  <details>
+    <summary>Grounding System</summary>
+    <ul>
+      <li>Aluminium frame — no chassis ground (galvanic corrosion risk)</li>
+      <li>All grounds via wiring harness, black/white stripe wires, back to battery</li>
+      <li>Main ground cable: battery negative → 8mm engine case bolt in front of swingarm</li>
+      <li>Bad grounds cause voltage spikes that kill LEDs</li>
+      <li>Cleaning the rear ground junction under seat fixed intermittent brake light flickering</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>OEM Flasher Relay</summary>
+    <ul>
+      <li>7-pin thermal/bimetallic relay under seat</li>
+      <li>Needs incandescent-level current to heat bimetallic strip and cycle</li>
+      <li>LEDs alone: not enough current → no flash</li>
+      <li>With resistors: hazards OK (4 signals = enough load), single-side hyperflash (2 signals = half load)</li>
+      <li>LED relay fix: electronic relay flashes regardless of load, remove resistors after install</li>
+    </ul>
+  </details>
+
+  <h2>Idle</h2>
+  <ul>
+    <li>Spec: 1200–1300 RPM</li>
+    <li>Adjuster: knob on left side of throttle body area</li>
+    <li>Counter-clockwise = lower RPM</li>
+    <li>90° V-twin has uneven firing order by design — slight lumpiness is normal, not a misfire</li>
+  </ul>
+
+  <h2>Exhaust</h2>
+  <ul>
+    <li>Aftermarket Akrapovic knockoff, carbon fiber look, flared/funnel tip</li>
+    <li>48mm internal diameter, straight (not angled)</li>
+    <li>~150mm available depth</li>
+    <li>Screw hole on bottom for DB killer retention bolt</li>
+    <li>DB killer adjustable: cap at innermost hole = quietest, cap at tip = louder but controlled</li>
+    <li>Less backpressure with aftermarket exhaust → rear cylinder runs slightly rich (sooty plug, normal)</li>
+  </ul>
+
+  <h2>Regulator/Rectifier</h2>
+  <ul>
+    <li>Known failure point on gen 2 SV650</li>
+    <li>Currently healthy: 14.5V running</li>
+    <li>Inspect periodically — failure causes overcharging or undercharging</li>
+  </ul>
+</section>
