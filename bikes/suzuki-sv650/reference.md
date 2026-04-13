@@ -1,7 +1,5 @@
 # Reference — SV650
 
-* {:toc}
-
 **Docs:** [Service Manual](docs/service-manual/) · [Wiring Diagram](docs/service-manual/SV650S-E03-wiring.pdf) · [Torque Specs](docs/service-manual/sv650TorqueSpecs.pdf)
 
 ## Known Model Quirks

@@ -1,7 +1,5 @@
 # Reference — Transalp
 
-* {:toc}
-
 **Docs:** [Service Manual](docs/service-manual.pdf) · [KOSO DB-01R+ Manual](docs/koso-db01r-manual.pdf)
 
 ## Cold-start protocol
