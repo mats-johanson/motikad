@@ -1,6 +1,6 @@
 # Motocamping
 
-[← Home](../README.md) · [Routes](routes.md) · [Apps & Tools](apps.md)
+[← Home](../README.md) · [Routes](routes.md) · [Apps & Tools](apps.md) · [Camp Menus](menus.md)
 
 ## Wild camping rules
 
@@ -152,4 +152,4 @@ Packing light — two bikes, limited luggage capacity.
 
 ---
 
-[← Home](../README.md) · [Routes](routes.md) · [Apps & Tools](apps.md)
+[← Home](../README.md) · [Routes](routes.md) · [Apps & Tools](apps.md) · [Camp Menus](menus.md)
