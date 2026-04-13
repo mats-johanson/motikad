@@ -57,6 +57,14 @@ When asked to push, do everything in one go without pausing for confirmation:
 4. Create a PR and merge it immediately
 5. Switch back to main and pull
 
+## Hosting
+
+- Site served via GitHub Pages with Jekyll, auto-built from main branch
+- Layout: `_layouts/default.html`, styles: `assets/css/style.css`, config: `_config.yml`
+- No build step — push to main and GitHub builds automatically
+- GitHub Pages plugins handle everything: `jekyll-optional-front-matter` (no front matter needed), `jekyll-relative-links` (.md links work), `jekyll-readme-index` (README.md → index.html), `jekyll-titles-from-headings` (titles from h1)
+- Existing .md files need zero modification to render as web pages
+
 ## Conventions
 
 - Dates are ISO 8601 (YYYY-MM-DD)
