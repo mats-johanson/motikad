@@ -10,6 +10,8 @@
 - **ARK re-inspection** — due 05/2026.
 - **Carb condition** — check for clogging from sitting unused. Ensure clean air filter.
 - **KOSO tach over-reads ~1.5×** — speed (2065 mm circumference) and fuel (100 Ω) are correct, odometer context understood. Tach shows 2k at idle (real ~1.3k), pegs 10k+ at redline (real ~8.5k). Book pulse=1 confirmed; tried 1.5 with no change in reading. See [technical notes → Tach over-read](technical-notes.md#tach-over-read) for full diagnosis and next steps (try pulse=2, verify R-type spark plugs, trace RPM wire tap).
+- **Oil on bash plate (left side)** — could be oil filter leak, nearby gasket, or just chain lube sling-off. Check oil level, clean the area, ride, and see where it reappears. Oil filter is on the left side of the engine.
+- **Front brake fluid low** — reservoir window shows no visible fluid. Brakes still feel fine. Top up with DOT 4, check for leaks at master cylinder, banjo bolts, and caliper. If pads are worn, fluid level drops as pistons extend — inspect pad thickness.
 - **Headlight aim too high** — adjust beam down.
 - **Cold-start protocol:** choke on → start → 30–60s until idle smooths → gradually push choke off → ride gently first few minutes.
 - **Consider 21" front wheel** for next season if off-road ambitions grow. Compatibility with KTM forks needs verification.
