@@ -23,28 +23,28 @@
     <nav>
       <a href="{{ '/' | relative_url }}" {% if url == '/' or url == '/index.html' %}class="active"{% endif %}>Dashboard</a>
 
-      <h4>Bikes</h4>
-      <div class="nav-bike">
-        <a href="{{ '/bikes/suzuki-sv650/' | relative_url }}" {% if url contains '/suzuki-sv650' %}class="active"{% endif %}>SV650</a>
-        <div class="nav-sub">
-          <a href="{{ '/bikes/suzuki-sv650/maintenance.html' | relative_url }}" {% if url contains '/suzuki-sv650/maintenance' %}class="active"{% endif %}>Maintenance</a>
-          <a href="{{ '/bikes/suzuki-sv650/parts.html' | relative_url }}" {% if url contains '/suzuki-sv650/parts' %}class="active"{% endif %}>Parts</a>
-          <a href="{{ '/bikes/suzuki-sv650/technical-notes.html' | relative_url }}" {% if url contains '/suzuki-sv650/technical-notes' %}class="active"{% endif %}>Tech notes</a>
-        </div>
+      <h4>SV650</h4>
+      <a href="{{ '/bikes/suzuki-sv650/overview.html' | relative_url }}" {% if url contains '/suzuki-sv650/overview' or url contains '/suzuki-sv650/index' %}class="active"{% endif %}>Overview</a>
+      <div class="nav-sub">
+        <a href="{{ '/bikes/suzuki-sv650/todo.html' | relative_url }}" {% if url contains '/suzuki-sv650/todo' %}class="active"{% endif %}>To do</a>
+        <a href="{{ '/bikes/suzuki-sv650/history.html' | relative_url }}" {% if url contains '/suzuki-sv650/history' %}class="active"{% endif %}>History</a>
+        <a href="{{ '/bikes/suzuki-sv650/parts.html' | relative_url }}" {% if url contains '/suzuki-sv650/parts' %}class="active"{% endif %}>Parts</a>
+        <a href="{{ '/bikes/suzuki-sv650/reference.html' | relative_url }}" {% if url contains '/suzuki-sv650/reference' %}class="active"{% endif %}>Reference</a>
       </div>
-      <div class="nav-bike">
-        <a href="{{ '/bikes/honda-transalp-650/' | relative_url }}" {% if url contains '/honda-transalp-650' %}class="active"{% endif %}>Transalp</a>
-        <div class="nav-sub">
-          <a href="{{ '/bikes/honda-transalp-650/maintenance.html' | relative_url }}" {% if url contains '/honda-transalp-650/maintenance' %}class="active"{% endif %}>Maintenance</a>
-          <a href="{{ '/bikes/honda-transalp-650/parts.html' | relative_url }}" {% if url contains '/honda-transalp-650/parts' %}class="active"{% endif %}>Parts</a>
-          <a href="{{ '/bikes/honda-transalp-650/technical-notes.html' | relative_url }}" {% if url contains '/honda-transalp-650/technical' %}class="active"{% endif %}>Tech notes</a>
-        </div>
+
+      <h4>Transalp</h4>
+      <a href="{{ '/bikes/honda-transalp-650/overview.html' | relative_url }}" {% if url contains '/honda-transalp-650/overview' or url contains '/honda-transalp-650/index' %}class="active"{% endif %}>Overview</a>
+      <div class="nav-sub">
+        <a href="{{ '/bikes/honda-transalp-650/todo.html' | relative_url }}" {% if url contains '/honda-transalp-650/todo' %}class="active"{% endif %}>To do</a>
+        <a href="{{ '/bikes/honda-transalp-650/history.html' | relative_url }}" {% if url contains '/honda-transalp-650/history' %}class="active"{% endif %}>History</a>
+        <a href="{{ '/bikes/honda-transalp-650/parts.html' | relative_url }}" {% if url contains '/honda-transalp-650/parts' %}class="active"{% endif %}>Parts</a>
+        <a href="{{ '/bikes/honda-transalp-650/reference.html' | relative_url }}" {% if url contains '/honda-transalp-650/reference' %}class="active"{% endif %}>Reference</a>
+        <a href="{{ '/bikes/honda-transalp-650/issues.html' | relative_url }}" {% if url contains '/honda-transalp-650/issues' %}class="active"{% endif %}>Issues</a>
       </div>
 
       <h4>Riding</h4>
       <a href="{{ '/riding/routes.html' | relative_url }}" {% if url contains '/riding/routes' %}class="active"{% endif %}>Routes</a>
-      <a href="{{ '/riding/motocamping.html' | relative_url }}" {% if url contains '/riding/motocamping' %}class="active"{% endif %}>Motocamping</a>
-      <a href="{{ '/riding/apps.html' | relative_url }}" {% if url contains '/riding/apps' %}class="active"{% endif %}>Apps & tools</a>
+      <a href="{{ '/riding/trip-prep.html' | relative_url }}" {% if url contains '/riding/trip-prep' %}class="active"{% endif %}>Trip prep</a>
       <a href="{{ '/riding/menus.html' | relative_url }}" {% if url contains '/riding/menus' %}class="active"{% endif %}>Camp menus</a>
 
       <h4>Other</h4>
