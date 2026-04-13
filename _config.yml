@@ -18,6 +18,7 @@ titles_from_headings:
   strip_title: false
 
 exclude:
+  - README.md
   - CLAUDE.md
   - "*.iml"
   - .idea
