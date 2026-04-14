@@ -287,7 +287,7 @@ a:hover { text-decoration: underline; }
 
 .badge {
   display: inline-block;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -383,6 +383,15 @@ a:hover { text-decoration: underline; }
   font-size: 0.95rem;
 }
 
+.card-head a.meta {
+  color: var(--text-2);
+  transition: color 0.15s;
+}
+
+.card-head a.meta:hover {
+  color: var(--accent);
+}
+
 .card-links {
   display: flex;
   gap: 1rem;
@@ -418,6 +427,7 @@ a:hover { text-decoration: underline; }
 .todo-list li {
   padding: 0.4rem 0;
   font-size: 0.85rem;
+  color: #78716c;
   border-bottom: 1px solid var(--border);
   line-height: 1.5;
 }
@@ -443,7 +453,12 @@ a:hover { text-decoration: underline; }
 .route-list .meta {
   margin-left: auto;
   white-space: nowrap;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
+}
+
+.section-riding h4 {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
 }
 
 /* ---- Priority labels ---- */
@@ -588,6 +603,13 @@ details > :last-child {
 
 .home main section h2 {
   margin: 0 0 0.5rem;
+}
+
+.home main .section-bikes { margin-bottom: 1.5rem; }
+.home main .section-todo { margin-bottom: 4rem; }
+
+.section-bikes .card {
+  border-top: 3px solid var(--accent);
 }
 
 /* ---- Lists (markdown) ---- */

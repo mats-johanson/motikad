@@ -3,7 +3,7 @@ layout: default
 title: motikad
 ---
 
-<section>
+<section class="section-bikes">
   <h2>Bikes</h2>
   <div class="grid-2">
     <div class="card">
@@ -16,20 +16,6 @@ title: motikad
           <span class="metric-label">Last service</span>
           <span class="metric-value" data-date="2026-03-31">2026-03-31</span>
         </div>
-        <div class="metric">
-          <span class="metric-label">Year</span>
-          <span class="metric-value">2009</span>
-        </div>
-        <div class="metric">
-          <span class="metric-label">Engine</span>
-          <span class="metric-value">645cc V-twin</span>
-        </div>
-      </div>
-      <div class="card-links">
-        <a href="{{ '/bikes/suzuki-sv650/todo.html' | relative_url }}">To do</a>
-        <a href="{{ '/bikes/suzuki-sv650/history.html' | relative_url }}">History</a>
-        <a href="{{ '/bikes/suzuki-sv650/parts.html' | relative_url }}">Parts</a>
-        <a href="{{ '/bikes/suzuki-sv650/reference.html' | relative_url }}">Reference</a>
       </div>
     </div>
     <div class="card">
@@ -51,18 +37,11 @@ title: motikad
           <span class="metric-value">~72,000 km</span>
         </div>
       </div>
-      <div class="card-links">
-        <a href="{{ '/bikes/honda-transalp-650/todo.html' | relative_url }}">To do</a>
-        <a href="{{ '/bikes/honda-transalp-650/history.html' | relative_url }}">History</a>
-        <a href="{{ '/bikes/honda-transalp-650/parts.html' | relative_url }}">Parts</a>
-        <a href="{{ '/bikes/honda-transalp-650/reference.html' | relative_url }}">Reference</a>
-        <a href="{{ '/bikes/honda-transalp-650/issues.html' | relative_url }}">Issues</a>
-      </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="section-todo">
   <h2>What needs doing</h2>
   <div class="grid-2">
     <div class="card">
@@ -71,10 +50,10 @@ title: motikad
         <a href="{{ '/bikes/suzuki-sv650/todo.html' | relative_url }}" class="meta">full list →</a>
       </div>
       <ul class="todo-list">
-        <li><b class="p now">Now</b> Radiator repair — call <a href="{{ '/shops.html' | relative_url }}">radiator guy</a> <span class="meta">(+372 5558 7005)</span></li>
-        <li><b class="p now">After radiator</b> Coolant refill — ~1.5L 50/50 premix</li>
-        <li><b class="p soon">Quick</b> Number plate LED — any universal E-marked</li>
-        <li><b class="p soon">Quick</b> Idle adjustment — 1500 → 1200–1300 RPM</li>
+        <li><b class="p now">Now</b> <strong>Radiator repair</strong> — call <a href="{{ '/shops.html' | relative_url }}">radiator guy</a> <span class="meta">(+372 5558 7005)</span></li>
+        <li><b class="p now">After radiator</b> <strong>Coolant refill</strong> — ~1.5L 50/50 premix</li>
+        <li><b class="p soon">Quick</b> <strong>Number plate LED</strong> — any universal E-marked</li>
+        <li><b class="p soon">Quick</b> <strong>Idle adjustment</strong> — 1500 → 1200–1300 RPM</li>
       </ul>
     </div>
     <div class="card">
@@ -83,59 +62,19 @@ title: motikad
         <a href="{{ '/bikes/honda-transalp-650/todo.html' | relative_url }}" class="meta">full list →</a>
       </div>
       <ul class="todo-list">
-        <li><b class="p now">Now</b> Stalls on side stand — fuel starvation at lean angle</li>
-        <li><b class="p soon">Soon</b> Oil on bash plate · Front brake fluid · Headlight aim</li>
-        <li><b class="p soon">Soon</b> Heated grips · Carb inspect/clean</li>
-        <li><b class="p now">Deadline</b> ARK re-inspection — <span data-deadline="2026-05-31">05/2026</span></li>
-        <li><b class="p later">Later</b> KOSO tach · Rear shock · 21" wheel</li>
+        <li><b class="p now">Now</b> <strong>Stalls on side stand</strong> — fuel starvation at lean angle</li>
+        <li><b class="p soon">Soon</b> <strong>Oil on bash plate · Front brake fluid · Headlight aim</strong></li>
+        <li><b class="p soon">Soon</b> <strong>Heated grips · Carb inspect/clean</strong></li>
+        <li><b class="p now">Deadline</b> <strong>ARK re-inspection</strong> — <span data-deadline="2026-05-31">05/2026</span></li>
+        <li><b class="p later">Later</b> <strong>KOSO tach · Rear shock · 21" wheel</strong></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section>
+<section class="section-riding">
   <h2>Riding</h2>
-  <p>All routes from Tartu. Pick your time.</p>
-  <div class="grid-2">
-    <div>
-      <h4>Half day</h4>
-      <ul class="route-list">
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#otepääpuka-loop">Otepää–Puka</a> <span class="meta">SV650 · 100 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#postitee-route-15">Postitee</a> <span class="meta">SV650 · 80 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#lake-peipus-backroads">Lake Peipus Backroads</a> <span class="meta">Transalp · 120 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#setomaa--saatse-boot">Setomaa & Saatse Boot</a> <span class="meta">Transalp · 120 km</span></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Full day</h4>
-      <ul class="route-list">
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#lake-peipus-loop">Lake Peipus Loop</a> <span class="meta">SV650 · 150 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#tartupärnu-scenic">Tartu–Pärnu</a> <span class="meta">SV650 · 360 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#haanja-highlands">Haanja Highlands</a> <span class="meta">Transalp · 150 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#soomaa-national-park">Soomaa NP</a> <span class="meta">Transalp · 200 km</span></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Weekend</h4>
-      <ul class="route-list">
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#tarturiga-via-coast-500-km-loop">Tartu–Riga via Coast</a> <span class="meta">SV650 · 500 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#lahemaa--north-coast-400-km">Lahemaa & North Coast</a> <span class="meta">SV650 · 400 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#gauja-national-park-latvia-350-km-rt">Gauja NP</a> <span class="meta">Transalp · 350 km</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#west-estonia--islands-500-km">West Estonia & Islands</a> <span class="meta">Transalp · 500 km</span></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Multi-day</h4>
-      <ul class="route-list">
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#latvia-deep-dive-34-days">Latvia Deep Dive</a> <span class="meta">SV650 · 3–4d</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#finnish-lakeland--saimaa-57-days">Finnish Lakeland</a> <span class="meta">SV650 · 5–7d</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#norway-via-stockholm-710-days">Norway via Stockholm</a> <span class="meta">SV650 · 7–10d</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#vidzeme-dangerous-roads-latvia-23-days">Vidzeme Gravel</a> <span class="meta">Transalp · 2–3d</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#tet-baltic-adventure-57-days">TET Baltic</a> <span class="meta">Transalp · 5–7d</span></li>
-        <li><a href="{{ '/riding/routes.html' | relative_url }}#nordic-loop-via-finland-57-days">Nordic Loop</a> <span class="meta">Transalp · 5–7d</span></li>
-      </ul>
-    </div>
-  </div>
+  <p>All routes from Tartu. <a href="{{ '/riding/routes.html' | relative_url }}">Browse routes →</a></p>
 
   <details class="checklist">
     <summary>Pre-ride checklist</summary>
