@@ -694,19 +694,17 @@ img {
 /* ---- Gallery ---- */
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 1.5rem;
+  columns: 2;
+  column-gap: 1.5rem;
 }
 
 .gallery figure {
-  margin: 0;
+  margin: 0 0 1.5rem;
+  break-inside: avoid;
 }
 
 .gallery img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
   border-radius: 8px;
   border: 1px solid var(--border);
   margin: 0;
@@ -748,6 +746,9 @@ img {
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+  }
+  .gallery {
+    columns: 1;
   }
 }
 
