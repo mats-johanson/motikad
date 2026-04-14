@@ -6,4 +6,4 @@
 _site/
 .jekyll-cache/
 .playwright-mcp/
-*.png
+/*.png
