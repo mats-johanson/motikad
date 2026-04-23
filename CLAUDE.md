@@ -50,6 +50,8 @@ Each item in `todo.md` uses priority pills:
 
 Priority classes: `now` (red), `deadline` (red), `soon`/`quick` (amber), `later`/`next` (grey).
 
+Todo items with meaningful diagnostic context should link to a detailed entry in `issues.html` (anchored by id). The todo stays concise — one-liner with a link. The issues page holds the full write-up: observations, diagnosis, what was tried, next steps.
+
 ## Dashboard
 
 `index.html` is the website homepage dashboard — it must reflect current state at all times. When updating any bike's `todo.md` or `parts.md`, also update the corresponding section in `index.html`:

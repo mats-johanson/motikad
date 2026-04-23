@@ -6,6 +6,227 @@ title: "Active Issues — Transalp"
 <section class="page-section">
   <h2>Active Issues</h2>
 
+  <div class="entry" id="carb-service">
+    <div class="entry-head">
+      <h3>Carb service (+ lean stall)</h3>
+      <span class="badge badge-warn">not started</span>
+    </div>
+    <p><strong>Status:</strong> not started — needs carb pull and service</p>
+
+    <h4>Symptoms</h4>
+    <ul>
+      <li><strong>Stalls at idle when leaned over</strong> — on either side, even fully warm. Idles fine when vertical. Dies slowly (not instant kill), throttle keeps it alive.</li>
+      <li><strong>General carb condition unknown</strong> — bike sat unused for an unknown period before purchase. Carbs may have varnish or partial clogging from stale fuel.</li>
+    </ul>
+
+    <h4>Diagnosis</h4>
+    <p>The slow die-off on <em>either</em> side confirms fuel starvation, not electrical — the sidestand switch would be an instant kill and only triggers on the left. At lean angles, fuel shifts away from the pilot jets. Dirty or partially blocked pilots make the idle circuit marginal — upright it barely works, leaned over it can't sustain combustion.</p>
+
+    <h4>Carb specs (XL650V)</h4>
+    <table>
+      <thead>
+        <tr><th>Spec</th><th>Value</th><th>Source</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Type</td><td>2× Keihin CV, 34mm bore</td><td>Haynes 1-1</td></tr>
+        <tr><td>Main jet</td><td>#132</td><td>Keyster kit / forums</td></tr>
+        <tr><td>Pilot (slow) jet</td><td>#38</td><td>Keyster kit / forums</td></tr>
+        <tr><td>Idle speed</td><td>1200 ± 100 rpm</td><td>Haynes 1-1</td></tr>
+        <tr><td>Carb sync tolerance</td><td>≤ 20mm Hg difference</td><td>Haynes 1-1</td></tr>
+        <tr><td>Throttle freeplay</td><td>2–6 mm</td><td>Haynes 1-2</td></tr>
+      </tbody>
+    </table>
+
+    <h4>Service procedure</h4>
+    <ol>
+      <li>Remove carbs (loosen airbox clamps and intake boots, disconnect throttle/choke cables, fuel lines, drain bowls)</li>
+      <li>Disassemble bowls. Note mixture screw turns-out before removal (do not force)</li>
+      <li>Clean all jets — especially pilot jets (#38). Use carb cleaner and compressed air through all passages</li>
+      <li>Inspect float height, needle valve seats, diaphragms for tears</li>
+      <li>Check air filter — replace if degraded (due every 18,000 km per Haynes schedule)</li>
+      <li>Reinstall, sync carbs with vacuum gauge (max 20mm Hg difference between cylinders)</li>
+      <li>Set idle to 1200 rpm</li>
+    </ol>
+
+    <h4>Context</h4>
+    <p>Haynes maintenance schedule calls for carb sync every 12,000 km. At ~72,000 km with no documented carb work, this is long overdue. The prior owner's parts list shows piston rings and clutch kit replaced (2024–2025), suggesting the engine was apart, but no mention of carb service.</p>
+  </div>
+
+  <div class="entry" id="brake-fluid">
+    <div class="entry-head">
+      <h3>Front brake fluid low</h3>
+      <span class="badge badge-warn">needs attention</span>
+    </div>
+    <p><strong>Status:</strong> not started — should do before <a href="#ark-prep">ARK inspection</a></p>
+    <p><strong>Observed:</strong> front reservoir window shows no visible fluid. Brakes still feel fine.</p>
+
+    <h4>Likely cause</h4>
+    <p>Normal pad wear is the most common reason. As pads thin, caliper pistons extend further, drawing fluid from the reservoir. If pads are at or near minimum thickness, the reservoir will appear empty. This is by design — it's telling you to check the pads.</p>
+
+    <h4>Less likely but check</h4>
+    <ul>
+      <li><strong>Leak at master cylinder, banjo bolt, or caliper</strong> — look for wet spots along the brake line. Per Haynes: "if either fluid reservoir requires repeated topping-up there could be a hydraulic leak which must be investigated immediately."</li>
+      <li><strong>Caliper slide pin seizure</strong> — <a href="https://www.xrv.org.uk/threads/brake-binding-problem.169235/">common on winter-ridden Transalps</a>. Causes uneven pad wear and binding. Check both pins slide freely, clean and grease with copperslip during reassembly.</li>
+    </ul>
+
+    <h4>Procedure (Haynes 0-18)</h4>
+    <ol>
+      <li>Support bike upright. Turn handlebars so reservoir is level</li>
+      <li>Level must be above LOWER line in window</li>
+      <li>If below: undo 2 reservoir cover screws, remove cover, diaphragm plate, and diaphragm</li>
+      <li>Top up with <strong>DOT 4</strong> to the ridge on the inside front wall of the reservoir. Do not overfill</li>
+      <li>Ensure diaphragm is correctly seated before reinstalling cover</li>
+      <li>Check pad thickness — Haynes Section 3 for wear limits</li>
+      <li>If brakes feel spongy after topping up → air in system, bleed required (Haynes Chapter 7)</li>
+    </ol>
+
+    <h4>Brake fluid change interval</h4>
+    <p>Haynes schedule: change every <strong>2 years or 18,000 km</strong>. With unknown service history, the fluid is almost certainly old. Old DOT 4 absorbs moisture (hygroscopic), which lowers boiling point and causes internal corrosion. <strong>Recommendation: do a full fluid change, not just a top-up.</strong> This means bleeding through fresh fluid at all calipers.</p>
+
+    <h4>Warning</h4>
+    <p>DOT 4 damages painted surfaces. Wrap a rag around the reservoir when working. Do not use fluid from an already-opened container that's been sitting — it will have absorbed moisture.</p>
+  </div>
+
+  <div class="entry" id="headlight-barrel">
+    <div class="entry-head">
+      <h3>Headlight aim + steering lock blocked</h3>
+      <span class="badge badge-warn">needs solution</span>
+    </div>
+    <p><strong>Status:</strong> investigated — ignition barrel relocation needed</p>
+    <p><strong>Observed (2026-04-23):</strong> headlight aims too high, blinding following riders at night. Cannot turn key to steering lock position.</p>
+
+    <h4>What was tried</h4>
+    <p>Removed front cowling to adjust headlight downward. Two clearance conflicts found:</p>
+    <ol>
+      <li><strong>Ignition barrel blocks headlight rotation</strong> — the barrel body physically prevents tilting the Flashpoint LED 7" headlight further down</li>
+      <li><strong>KOSO speedo blocks steering lock</strong> — the speedo body prevents the key from turning to the lock position</li>
+    </ol>
+    <p>Both trace to the ignition barrel position being incompatible with the aftermarket headlight bracket and KOSO mount. Relocating the barrel fixes both.</p>
+
+    <h4>HISS immobilizer constraint</h4>
+    <p>The XL650V uses Honda's <strong>HISS (Honda Ignition Security System)</strong>. The HISS antenna ring sits around the ignition barrel and reads the transponder chip in the key. <a href="https://www.xrv.org.uk/threads/transalp-650-new-ignition-lock-does-not-work-with-hiss-what-do-i-do.169558/">Per xrv.org.uk</a>: the antenna ring must stay physically around the barrel — it cannot be separated. When relocating, the barrel + HISS ring move together as one unit.</p>
+
+    <h4>Relocation approach</h4>
+    <ul>
+      <li>No off-the-shelf relocation kits exist for the Transalp. Need a custom bracket.</li>
+      <li>Possible mounting points: side of the top yoke, frame tube below the tank, or a panel-mount solution</li>
+      <li>The wiring harness needs enough slack to reach the new position — check loom length before committing to a location</li>
+      <li>The steering lock mechanism is built into the frame at the stock barrel location — relocating the barrel means losing the steering lock entirely (acceptable tradeoff for a custom build, but consider a disc lock instead)</li>
+    </ul>
+
+    <h4>ARK consideration</h4>
+    <p>Headlight aim that's too high could fail the <a href="#ark-prep">ARK roadworthiness inspection</a>. This should be resolved before the 05/2026 deadline. Even a temporary fix (shimming the headlight bracket) may be worth doing if the barrel relocation takes time.</p>
+  </div>
+
+  <div class="entry" id="oil-bash-plate">
+    <div class="entry-head">
+      <h3>Oil on bash plate (left side)</h3>
+      <span class="badge badge-warn">not started</span>
+    </div>
+    <p><strong>Status:</strong> not started — needs clean-and-ride test</p>
+    <p><strong>Observed:</strong> oil residue on the left side of the bash plate.</p>
+
+    <h4>Most common sources (XL650V forums)</h4>
+    <ol>
+      <li><strong>Valve cover (rocker cover) gasket</strong> — most frequently reported oil leak on this engine. Oil trickles down the cylinder and collects below. Gasket hardens with age and heat cycles.</li>
+      <li><strong>Starter motor O-ring</strong> — single O-ring at crankcase/starter interface on the left side. Can weep under vibration or high revs.</li>
+      <li><strong>Oil drain plug washer</strong> — reused or compressed crush washer. Drain plug torque: 30 Nm (Haynes).</li>
+      <li><strong>Chain lube sling-off</strong> — benign, but can look like a leak.</li>
+    </ol>
+
+    <h4>Oil spec</h4>
+    <table>
+      <thead>
+        <tr><th>Spec</th><th>Value</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Type</td><td>API grade SE, SF or SG</td></tr>
+        <tr><td>Viscosity</td><td>SAE 10W40</td></tr>
+        <tr><td>Oil change capacity</td><td>2.4 L</td></tr>
+        <tr><td>Oil + filter change</td><td>2.6 L</td></tr>
+        <tr><td>Drain plug torque</td><td>30 Nm</td></tr>
+        <tr><td>Oil filter torque</td><td>10 Nm</td></tr>
+      </tbody>
+    </table>
+
+    <h4>Diagnostic procedure</h4>
+    <ol>
+      <li>Check oil level first — dipstick on right-side crankcase cover, rest on threads (do not screw in)</li>
+      <li>Clean the entire left side of the engine and bash plate thoroughly with degreaser</li>
+      <li>Ride for 30–50 km</li>
+      <li>Inspect: trace the fresh oil trail from highest wet point downward. Highest point = source</li>
+      <li>If valve cover gasket: replace gasket, clean mating surfaces</li>
+      <li>If starter O-ring: pull starter motor, replace O-ring</li>
+    </ol>
+    <p>Per Haynes: "If you have to add oil frequently, check whether you have any oil leaks from the engine joints, seals and gaskets."</p>
+  </div>
+
+  <div class="entry" id="ark-prep">
+    <div class="entry-head">
+      <h3>ARK re-inspection preparation</h3>
+      <span class="badge badge-warn">deadline 05/2026</span>
+    </div>
+    <p><strong>Status:</strong> not started — due <span data-deadline="2026-05-31">05/2026</span></p>
+    <p>Items that could affect passing the Estonian roadworthiness inspection (ARK / tehnoülevaatus):</p>
+
+    <h4>Likely fail points</h4>
+    <ul>
+      <li><strong>Headlight aim too high</strong> — will fail beam pattern check. See <a href="#headlight-barrel">headlight/barrel issue</a>. At minimum, need a temporary fix before the inspection even if the barrel relocation isn't done yet.</li>
+      <li><strong>Brake fluid empty</strong> — visible through reservoir window. Inspector may flag this. See <a href="#brake-fluid">brake fluid issue</a>.</li>
+    </ul>
+
+    <h4>Should check before inspection</h4>
+    <ul>
+      <li><strong>All lights functioning</strong> — headlight, tail light, brake light (front + rear lever), turn signals, number plate light</li>
+      <li><strong>Horn working</strong></li>
+      <li><strong>Tires</strong> — tread depth minimum 1.6mm (Mitas E-09 Dakar should be fine if not worn)</li>
+      <li><strong>Chain condition</strong> — adjusted to spec (35–45mm slack per Haynes), no excessive wear</li>
+      <li><strong>Mirrors</strong> — both present and secure</li>
+      <li><strong>Exhaust noise</strong> — DB killer is installed (done 2026-04-01), should be acceptable</li>
+      <li><strong>Oil leaks</strong> — visible leak may be flagged. See <a href="#oil-bash-plate">oil leak issue</a>. Clean up before inspection at minimum.</li>
+    </ul>
+
+    <h4>Timing</h4>
+    <p>The headlight and brake fluid are the blockers. Both should be resolved before booking the inspection. Everything else is a quick pre-inspection check.</p>
+  </div>
+
+  <div class="entry" id="rear-shock">
+    <div class="entry-head">
+      <h3>Rear shock — stock, 23 years old</h3>
+      <span class="badge badge-info">upgrade</span>
+    </div>
+    <p><strong>Status:</strong> low priority — ride it and evaluate</p>
+
+    <h4>Current state</h4>
+    <p>Stock Pro-Link single shock, original to the 2003 bike. 187mm travel (per Haynes). Has spring preload and compression damping adjustment (XL650V-specific — the XL600V only had preload). After 23 years and 72,000 km, internal seals and damping oil are almost certainly degraded.</p>
+
+    <h4>Forum consensus</h4>
+    <p>The stock rear shock is the most commonly cited weak point on the Transalp. Two upgrade paths recommended by owners:</p>
+    <table>
+      <thead>
+        <tr><th>Option</th><th>Pros</th><th>Cons</th><th>Price range</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>YSS Z-Series</strong></td>
+          <td>Integrated gas, adjustable preload + rebound, bolt-on fit, ~30mm extra lift over stock</td>
+          <td>Higher cost</td>
+          <td>~€250–350</td>
+        </tr>
+        <tr>
+          <td><strong>Hagon</strong></td>
+          <td>Built to order for rider weight/luggage/use, reworkable if needs change, lower cost</td>
+          <td>Longer lead time</td>
+          <td>~€150–250</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Eye-to-eye length is ~360mm — confirm before ordering. A remote preload adjuster is a popular addition for touring/luggage use.</p>
+
+    <h4>Assessment</h4>
+    <p>Not urgent — the bike is rideable. But if the rear feels wallowy, bottoms out with luggage, or the ride quality is noticeably poor, this is the fix. Prioritize after the carb service and brake fluid work.</p>
+  </div>
+
   <div class="entry" id="tach-over-read">
     <div class="entry-head">
       <h3>Tach over-read</h3>
@@ -23,6 +244,7 @@ title: "Active Issues — Transalp"
         <tr><td>Full revs</td><td>pegs 10k+</td><td>~8,500 redline</td><td>~1.5</td></tr>
       </tbody>
     </table>
+    <p><em>Note: Haynes confirms XL650V idle speed is 1200 ± 100 rpm, which aligns with the "likely actual" column above.</em></p>
 
     <h4>Confirmed correct settings</h4>
     <ul>
@@ -68,6 +290,6 @@ title: "Active Issues — Transalp"
       <li>Treat the fuel bars as a secondary sanity check, not a source of truth.</li>
     </ul>
 
-    <p><strong>Not the same issue as</strong> <a href="{{ '/bikes/honda-transalp-650/todo.html' | relative_url }}">stalls on side stand</a> — that's actual fuel starvation at the pilot jets at extreme lean angle (a carburetor problem). Both involve fuel slosh in a tilted tank, but the fixes are unrelated: the gauge dip has no fix, the stall does.</p>
+    <p><strong>Not the same issue as</strong> <a href="#carb-service">lean stall</a> — that's actual fuel starvation at the pilot jets at extreme lean angle (a carburetor problem). Both involve fuel slosh in a tilted tank, but the fixes are unrelated: the gauge dip has no fix, the stall does.</p>
   </div>
 </section>
