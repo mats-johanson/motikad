@@ -2,6 +2,13 @@
 
 Personal maintenance log for tracking service history, parts, and upkeep across motorbikes.
 
+## Bike Nicknames
+
+- **Kärbes** — Suzuki SV650 Naked (2009), directory: `bikes/suzuki-sv650/`
+- **Porikärbes** — Honda XL 650V Transalp (2003), directory: `bikes/honda-transalp-650/`
+
+Use nicknames in all user-facing text (titles, headings, nav, routes). Keep formal make/model as subtitle on overview pages. Directory names stay as make-model.
+
 ## Project Structure
 
 - `bikes/` — one directory per bike, named by make-model

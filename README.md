@@ -4,8 +4,8 @@ Personal motorbike maintenance log. **[View site →](https://mats-johanson.gith
 
 ## Bikes
 
-- [Suzuki SV650 Naked](bikes/suzuki-sv650/overview.md) — 2009
-- [Honda XL 650V Transalp](bikes/honda-transalp-650/overview.md) — 2003
+- [Kärbes — Suzuki SV650 Naked](bikes/suzuki-sv650/overview.md) — 2009
+- [Porikärbes — Honda XL 650V Transalp](bikes/honda-transalp-650/overview.md) — 2003
 
 ## Links
 

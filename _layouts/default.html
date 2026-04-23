@@ -23,7 +23,7 @@
     <nav>
       <a href="{{ '/' | relative_url }}" {% if url == '/' or url == '/index.html' %}class="active"{% endif %}>Dashboard</a>
 
-      <h4>SV650</h4>
+      <h4>Kärbes</h4>
       <a href="{{ '/bikes/suzuki-sv650/overview.html' | relative_url }}" {% if url contains '/suzuki-sv650/overview' or url contains '/suzuki-sv650/index' %}class="active"{% endif %}>Overview</a>
       <div class="nav-sub">
         <a href="{{ '/bikes/suzuki-sv650/todo.html' | relative_url }}" {% if url contains '/suzuki-sv650/todo' %}class="active"{% endif %}>To do</a>
@@ -33,7 +33,7 @@
         <a href="{{ '/bikes/suzuki-sv650/gallery.html' | relative_url }}" {% if url contains '/suzuki-sv650/gallery' %}class="active"{% endif %}>Gallery</a>
       </div>
 
-      <h4>Transalp</h4>
+      <h4>Porikärbes</h4>
       <a href="{{ '/bikes/honda-transalp-650/overview.html' | relative_url }}" {% if url contains '/honda-transalp-650/overview' or url contains '/honda-transalp-650/index' %}class="active"{% endif %}>Overview</a>
       <div class="nav-sub">
         <a href="{{ '/bikes/honda-transalp-650/todo.html' | relative_url }}" {% if url contains '/honda-transalp-650/todo' %}class="active"{% endif %}>To do</a>
