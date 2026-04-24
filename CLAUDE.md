@@ -22,7 +22,8 @@ Use nicknames in all user-facing text (titles, headings, nav, routes). Keep form
   - `todo.md` — prioritized pending items with full diagnostic context
   - `history.md` — completed maintenance log (newest first) + prior owner work
   - `parts.md` — parts inventory grouped by category: installed, on order, needed
-  - `reference.md` — stable knowledge: mods, specs, procedures, KOSO dash, troubleshooting
+  - `reference.md` — stable knowledge: mods, specs, KOSO dash, troubleshooting
+  - `procedures.md` — reusable step-by-step how-to guides (tank removal, idle tuning, etc.); linked from `todo`, `issues`, and the homepage
   - `issues.md` — active investigations with status (Transalp only, currently)
   - `docs/` — manuals, invoices, spreadsheets
   - `photos/` — bike photos
@@ -65,6 +66,7 @@ Todo items with meaningful diagnostic context should link to a detailed entry in
 
 - **Bike cards** — status should reflect current rideable/not rideable state
 - **"What needs doing"** — mirrors each bike's `todo.md`
+- **"Procedures"** — lists key entries from each bike's `procedures.html` (top-level anchors only, not every section)
 
 `README.md` is the GitHub landing page — keep it minimal. Don't duplicate the dashboard there.
 
@@ -86,6 +88,18 @@ When asked to push, do everything in one go without pausing for confirmation:
 - Homepage is `index.html` (HTML, not markdown) — sidebar nav, card grids, dashboard layout
 - Sub-pages render from markdown via GitHub Pages plugins: `jekyll-optional-front-matter`, `jekyll-relative-links`, `jekyll-titles-from-headings`
 - `README.md` is excluded from build (GitHub-only landing page)
+
+## Local preview
+
+No Ruby/Jekyll install required — there's a minimal Liquid renderer in `_preview/preview.py`:
+
+```
+python3 _preview/preview.py --serve
+```
+
+Builds every `.html` file with front matter into `.preview/` (gitignored), then starts `http.server` on port 4001. Open e.g. `http://localhost:4001/.preview/bikes/honda-transalp-650/procedures.html`. Re-run the script (without `--serve`) after edits to refresh.
+
+Limitations: `{% if %}` / `{% for %}` / `{% assign %}` are stripped, so dynamic layout bits (sidebar active highlight) won't render. Static content, CSS, and images all work.
 
 ## Conventions
 
