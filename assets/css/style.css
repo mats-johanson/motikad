@@ -713,6 +713,35 @@ img {
   margin: 0.75rem 0;
 }
 
+/* ---- Procedure figures ---- */
+
+.procedure-figure {
+  margin: 1rem 0;
+  max-width: 760px;
+}
+
+.procedure-figure a {
+  display: block;
+  border-bottom: none;
+}
+
+.procedure-figure img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.procedure-figure figcaption {
+  font-size: 0.85rem;
+  color: var(--text-3);
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
+.procedure-figure figcaption strong {
+  color: var(--text-2);
+}
+
 /* ---- Gallery ---- */
 
 .gallery {

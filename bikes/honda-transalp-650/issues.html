@@ -30,16 +30,15 @@ title: "Active Issues — Porikärbes"
     <p>Clogged pilot jets are <a href="https://www.randakksblog.com/the-single-most-common-carburetor-problem-clogged-pilot-jets-and-how-to-fix-by-ari-henning/">"the single most common carburetor problem"</a> (Randakk / Ari Henning). But the PO's own note suggests the screws may just be set too lean — a 5-minute fix with a screwdriver.</p>
 
     <h4>Step 0 — Mixture screw test (do this before anything else)</h4>
-    <p>If enrichening the pilot mixture fixes the stall, the circuits are clean and no disassembly is needed. Free test, takes 15 minutes.</p>
+    <p>If enrichening the pilot mixture fixes the stall, the circuits are clean and no disassembly is needed. Free test, ~30 minutes including tank prop.</p>
     <ol>
-      <li>Warm the engine fully — idle/mixture only means anything at operating temp</li>
-      <li>Locate the mixture screws (Estonian: <em>segu kruvid</em>) — one per carb, accessed from below with a long flat screwdriver. Standard for Keihin CV carbs on XL650V.</li>
-      <li><strong>Baseline:</strong> gently seat each screw clockwise, counting turns to bottom. Do not force. Then back out the exact same number of turns to restore the original position. Record both values.</li>
-      <li>Back both screws out an additional <strong>¼ turn</strong> (equal on both — keeps the carbs balanced)</li>
-      <li>Re-check idle at 1200 ± 100 RPM; adjust idle knob if enrichening raised it</li>
-      <li>Test lean left. If improved but not fixed, back each screw another ¼ turn (½ turn total from baseline)</li>
-      <li>Stall gone → done. Log final mixture screw position in <code>history.html</code>.</li>
-      <li>No change after ½ turn out on both → proceed to full carb service below.</li>
+      <li><a href="procedures.html#tank-access">Prop the tank</a> for access to the carbs.</li>
+      <li>Warm the engine fully — mixture only means anything at operating temp.</li>
+      <li>Confirm <a href="procedures.html#idle-tuning">idle is at 1200 ± 100 rpm</a>.</li>
+      <li>Follow the <a href="procedures.html#mixture-tuning">pilot screw tuning procedure</a>. For this stall, <strong>Strategy C (symmetric enrich)</strong> is the right starting point — the suspect is the rear (left cylinder) carb's pilot circuit, but keeping both carbs balanced preserves sync.</li>
+      <li>Rear carb pilot screw is on the <strong>left side</strong> of the carb bank (suspect side). Front carb on the right.</li>
+      <li>Log final turn-out values per carb in <code>history.html</code>.</li>
+      <li>No change after ½ turn past PO baseline on both → proceed to full carb service below.</li>
     </ol>
 
     <h4>Carb specs (XL650V)</h4>
