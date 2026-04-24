@@ -8,19 +8,39 @@ title: "Active Issues — Porikärbes"
 
   <div class="entry" id="carb-service">
     <div class="entry-head">
-      <h3>Carb service (+ lean stall)</h3>
+      <h3>Left lean stall / carb service</h3>
       <span class="badge badge-warn">not started</span>
     </div>
-    <p><strong>Status:</strong> not started — needs carb pull and service</p>
+    <p><strong>Status:</strong> not started — try mixture screw adjustment first (Step 0 below). Carb pull only if that fails.</p>
 
     <h4>Symptoms</h4>
     <ul>
-      <li><strong>Stalls at idle when leaned over</strong> — on either side, even fully warm. Idles fine when vertical. Dies slowly (not instant kill), throttle keeps it alive.</li>
-      <li><strong>General carb condition unknown</strong> — bike sat unused for an unknown period before purchase. Carbs may have varnish or partial clogging from stale fuel.</li>
+      <li><strong>Stalls at idle only when leaned LEFT</strong> — right lean is fine, no RPM dip. Fast left lean dies quickly. Upright idle holds but feels marginal.</li>
+      <li><strong>Throttle keeps it alive</strong> even when leaned left — giving gas sustains the engine regardless of lean angle.</li>
+      <li><strong>Previous owner's note:</strong> admitted he may have set the mixture screws too lean during a past idle adjustment — "Maybe I once turned it too tight while adjusting idle."</li>
     </ul>
 
     <h4>Diagnosis</h4>
-    <p>The slow die-off on <em>either</em> side confirms fuel starvation, not electrical — the sidestand switch would be an instant kill and only triggers on the left. At lean angles, fuel shifts away from the pilot jets. Dirty or partially blocked pilots make the idle circuit marginal — upright it barely works, leaned over it can't sustain combustion.</p>
+    <p>Points to the <strong>left carburetor's pilot (idle) circuit being marginal</strong> — either set too lean or partially blocked:</p>
+    <ul>
+      <li><strong>Left-only stall</strong> rules out symmetric problems (both pilots equally dirty, tank pickup, fuel line). When leaned left, fuel shifts in the left carb's bowl away from its pilot jet pickup. Left cylinder drops out, and a V-twin at idle can't sustain on one cylinder alone — it dies.</li>
+      <li><strong>Throttle keeps it alive</strong> rules out electrical cuts. The sidestand switch would be an instant kill regardless of RPM. Above idle, the main jet circuit takes over and bypasses the marginal pilot, so the left cylinder still gets fuel when you give gas.</li>
+      <li><strong>Petcock ruled out.</strong> Vacuum petcock is on the left underside of the tank — leaning left increases hydrostatic head above it, so flow would increase, not decrease. Plus tank is full, so pickup is submerged at any angle.</li>
+    </ul>
+    <p>Clogged pilot jets are <a href="https://www.randakksblog.com/the-single-most-common-carburetor-problem-clogged-pilot-jets-and-how-to-fix-by-ari-henning/">"the single most common carburetor problem"</a> (Randakk / Ari Henning). But the PO's own note suggests the screws may just be set too lean — a 5-minute fix with a screwdriver.</p>
+
+    <h4>Step 0 — Mixture screw test (do this before anything else)</h4>
+    <p>If enrichening the pilot mixture fixes the stall, the circuits are clean and no disassembly is needed. Free test, takes 15 minutes.</p>
+    <ol>
+      <li>Warm the engine fully — idle/mixture only means anything at operating temp</li>
+      <li>Locate the mixture screws (Estonian: <em>segu kruvid</em>) — one per carb, accessed from below with a long flat screwdriver. Standard for Keihin CV carbs on XL650V.</li>
+      <li><strong>Baseline:</strong> gently seat each screw clockwise, counting turns to bottom. Do not force. Then back out the exact same number of turns to restore the original position. Record both values.</li>
+      <li>Back both screws out an additional <strong>¼ turn</strong> (equal on both — keeps the carbs balanced)</li>
+      <li>Re-check idle at 1200 ± 100 RPM; adjust idle knob if enrichening raised it</li>
+      <li>Test lean left. If improved but not fixed, back each screw another ¼ turn (½ turn total from baseline)</li>
+      <li>Stall gone → done. Log final mixture screw position in <code>history.html</code>.</li>
+      <li>No change after ½ turn out on both → proceed to full carb service below.</li>
+    </ol>
 
     <h4>Carb specs (XL650V)</h4>
     <table>
@@ -31,25 +51,35 @@ title: "Active Issues — Porikärbes"
         <tr><td>Type</td><td>2× Keihin CV, 34mm bore</td><td>Haynes 1-1</td></tr>
         <tr><td>Main jet</td><td>#132</td><td>Keyster kit / forums</td></tr>
         <tr><td>Pilot (slow) jet</td><td>#38</td><td>Keyster kit / forums</td></tr>
+        <tr><td>Float height</td><td>7 mm</td><td>Haynes</td></tr>
         <tr><td>Idle speed</td><td>1200 ± 100 rpm</td><td>Haynes 1-1</td></tr>
         <tr><td>Carb sync tolerance</td><td>≤ 20mm Hg difference</td><td>Haynes 1-1</td></tr>
         <tr><td>Throttle freeplay</td><td>2–6 mm</td><td>Haynes 1-2</td></tr>
       </tbody>
     </table>
 
-    <h4>Service procedure</h4>
+    <h4>Service procedure (if Step 0 fails)</h4>
     <ol>
-      <li>Remove carbs (loosen airbox clamps and intake boots, disconnect throttle/choke cables, fuel lines, drain bowls)</li>
-      <li>Disassemble bowls. Note mixture screw turns-out before removal (do not force)</li>
-      <li>Clean all jets — especially pilot jets (#38). Use carb cleaner and compressed air through all passages</li>
-      <li>Inspect float height, needle valve seats, diaphragms for tears</li>
+      <li>Remove both carbs (loosen airbox clamps and intake boots, disconnect throttle/choke cables, fuel lines, drain bowls)</li>
+      <li>Disassemble bowls. Record final Step 0 mixture screw positions before removal.</li>
+      <li>Clean all jets (Estonian: <em>žiklöörid</em>) — focus on the <strong>left carb's pilot jet (#38)</strong> and its air/fuel passages. Carb cleaner + compressed air through every passage, not just the jet.</li>
+      <li><strong>Measure float height against Haynes spec (7 mm).</strong> Lay carb on its side, float resting lightly on valve without compressing the spring, measure from gasket face to top of float. Known Transalp issue: some measured at 15 mm (too low → low bowl fuel → lean-angle sensitive). Adjust by bending the float tang if needed.</li>
+      <li>Inspect needle valve seats and CV diaphragms for tears — replace any that look suspect</li>
       <li>Check air filter — replace if degraded (due every 18,000 km per Haynes schedule)</li>
-      <li>Reinstall, sync carbs with vacuum gauge (max 20mm Hg difference between cylinders)</li>
-      <li>Set idle to 1200 rpm</li>
+      <li>Reinstall, sync carbs with vacuum gauge (≤ 20mm Hg difference between cylinders)</li>
+      <li>Set idle to 1200 rpm, final mixture screw fine-tune</li>
     </ol>
 
+    <h4>Parts needed (only if pulling carbs)</h4>
+    <ul>
+      <li><strong>Keyster carb repair kit for XL650V</strong> — covers both carbs: jets (#132 main, #38 pilot), float valve needles, gaskets, o-rings</li>
+      <li>Carb cleaner aerosol (with straw nozzle for jet passages)</li>
+      <li>Air filter (inspect first, replace if degraded)</li>
+      <li>Possibly: CV diaphragms (not in every Keyster kit — inspect first)</li>
+    </ul>
+
     <h4>Context</h4>
-    <p>Haynes maintenance schedule calls for carb sync every 12,000 km. At ~72,000 km with no documented carb work, this is long overdue. The prior owner's parts list shows piston rings and clutch kit replaced (2024–2025), suggesting the engine was apart, but no mention of carb service.</p>
+    <p>Haynes maintenance schedule calls for carb sync every 12,000 km. At ~72,000 km with no documented carb work, any carb service is overdue. The prior owner's parts list shows piston rings and clutch kit replaced (2024–2025), suggesting the engine was apart, but no mention of carb service.</p>
   </div>
 
   <div class="entry" id="brake-fluid">
