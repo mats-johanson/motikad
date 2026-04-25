@@ -202,6 +202,7 @@ title: "Active Issues — Porikärbes"
     <ul>
       <li><strong>Headlight aim too high</strong> — will fail beam pattern check. See <a href="#headlight-barrel">headlight/barrel issue</a>. At minimum, need a temporary fix before the inspection even if the barrel relocation isn't done yet.</li>
       <li><strong>Brake fluid empty</strong> — visible through reservoir window. Inspector may flag this. See <a href="#brake-fluid">brake fluid issue</a>.</li>
+      <li><strong>Turn signals flaky</strong> — cancel button over-sensitive, sometimes won't activate, flickers. See <a href="#left-switchgear">left switchgear issue</a>. Inspector tests all four indicators.</li>
     </ul>
 
     <h4>Should check before inspection</h4>
@@ -254,6 +255,46 @@ title: "Active Issues — Porikärbes"
 
     <h4>Assessment</h4>
     <p>Not urgent — the bike is rideable. But if the rear feels wallowy, bottoms out with luggage, or the ride quality is noticeably poor, this is the fix. Prioritize after the carb service and brake fluid work.</p>
+  </div>
+
+  <div class="entry" id="left-switchgear">
+    <div class="entry-head">
+      <h3>Left switchgear — flaky turn signal + stuck high beam</h3>
+      <span class="badge badge-warn">not started</span>
+    </div>
+    <p><strong>Status:</strong> not started — likely an <a href="#ark-prep">ARK</a> fail point if not fixed.</p>
+
+    <h4>Observed</h4>
+    <ul>
+      <li><strong>Turn signal cancel button</strong> cancels on a light touch (no full press needed). Sometimes <strong>doesn't activate</strong> the indicator at all. Sometimes <strong>flickers</strong> when held.</li>
+      <li><strong>High beam button</strong> gets stuck in the pressed-in position and doesn't pop out on its own.</li>
+    </ul>
+
+    <h4>Likely cause</h4>
+    <p>Two failure modes inside one 23-year-old switch cluster:</p>
+    <ul>
+      <li><strong>Oxidised / worn contacts</strong> on the turn-signal switch. Old copper or brass contacts develop a non-conductive oxide layer; intermittent or no signal until the surfaces wipe each other clean. The "cancels on light touch" symptom suggests the cancel contact is over-eager because the actuator spring is weak or the detent is gummed, letting it return-to-cancel under almost any pressure.</li>
+      <li><strong>Gummed detent / return spring</strong> on the high-beam switch. The pop-out mechanism is a small spring + detent inside the housing; old grease or dirt thickens up and the spring can't push the actuator back. Common on every aging Japanese bike.</li>
+    </ul>
+
+    <h4>Fix ladder — gentlest first</h4>
+    <ol>
+      <li><strong>In-situ contact cleaner flush.</strong> Spray <strong>DeoxIT D5</strong> or generic electrical contact cleaner into the switch through the actuator gap and any visible seams. Work each switch 50+ times to scrub the contacts. Let dry. Test. This alone fixes most flaky old switchgear.</li>
+      <li><strong>Open the cluster.</strong> 2 small Phillips screws on the underside of the housing. Half-shells separate. Inside: small contact pads (clean with contact cleaner + cotton swab, light scrub if oxidised), springs (check tension — replace if collapsed), detent balls/pins (apply a tiny amount of <strong>dielectric grease</strong>, never copper grease). Reassemble carefully — small parts will spring loose if the housing is opened upside-down.</li>
+      <li><strong>Replace the cluster</strong> if contacts are pitted/eroded or a spring is broken. Used OEM XL650V left switch cluster on eBay or forums (~€30–60). Aftermarket universal clusters work but the connector pinout will need to be matched manually.</li>
+    </ol>
+
+    <h4>Tools</h4>
+    <ul>
+      <li>Small Phillips screwdriver (PH1)</li>
+      <li>Electrical contact cleaner — DeoxIT D5 preferred, brake cleaner is NOT suitable (residue, plastic-incompatible)</li>
+      <li>Cotton swabs</li>
+      <li>Dielectric grease (small tube, ~€5)</li>
+      <li>Tray or magnetic mat to catch tiny springs and detent balls</li>
+    </ul>
+
+    <h4>ARK relevance</h4>
+    <p>Estonian roadworthiness inspection tests all lights including turn signals. A flaky indicator that doesn't activate reliably or flickers is a likely fail. Add to <a href="#ark-prep">ARK pre-inspection checks</a>; resolve before booking.</p>
   </div>
 
   <div class="entry" id="tach-over-read">
