@@ -6,12 +6,95 @@ title: "Active Issues — Porikärbes"
 <section class="page-section">
   <h2>Active Issues</h2>
 
+  <div class="entry" id="rear-cylinder-dead">
+    <div class="entry-head">
+      <h3>Rear cylinder dead — after carb cleaner on stuck pilot screw</h3>
+      <span class="badge badge-warn">investigating — bike not rideable</span>
+    </div>
+    <p><strong>Status:</strong> investigating (2026-04-27). Diagnosis depends on plug inspection. Bike currently runs on one cylinder only.</p>
+
+    <h4>Observed (2026-04-27)</h4>
+    <ul>
+      <li>Bike runs on <strong>one cylinder only</strong> — very little power, needs constant throttle to stay alive.</li>
+      <li><strong>Choke no longer raises RPM.</strong> Used to work normally before this.</li>
+      <li>Symptom appeared after several days of spraying carb cleaner into the <strong>rear carb's stuck pilot screw</strong> (left side of bike) and wiggling the screw to try to free it. Screw still only moves about a quarter turn.</li>
+    </ul>
+
+    <h4>Two main candidate causes (both consistent with the symptoms)</h4>
+    <ol>
+      <li><strong>Both rear plugs drowned with carb cleaner.</strong> Repeated solvent spray past the screw reaches the rear cylinder via the pilot (idle) circuit. Both plugs in that cylinder get coated, neither fires, cylinder goes dead. The choke can't help because the choke just adds more fuel — and a drowned plug won't ignite the fuel anyway. The XL650V has <a href="procedures.html#spark-plugs">two plugs per cylinder</a> sharing one combustion chamber, so it takes both being fouled to kill the cylinder — repeated dousing is enough to do that.</li>
+      <li><strong>The pilot screw's rubber seal (o-ring) is damaged.</strong> Carb cleaner attacks NBR rubber. Days of soaking + wiggling can swell or crack the seal. Without an intact seal the screw can no longer control the fuel/air mix at idle — that cylinder runs unmetered (effectively a permanent vacuum leak), too lean to fire. Direct precedent on a different Honda: <a href="https://www.cbr250.com/threads/pilot-screw-missing-o-ring-and-washer-can-foul-plug.11270/">CBR250 forum thread</a> — single carb's pilot screw with a missing seal dropped only that one cylinder, recurring until the seal was replaced. Haynes 4-13 §21 explicitly lists the o-ring as a wear/damage check item.</li>
+    </ol>
+    <p>A third, less likely possibility: the <strong>rear ignition coil</strong> (or its HT lead) has died. The XL650V has one coil per cylinder, firing both plugs at once via a Y-shaped lead (Haynes 5-2 §1). A coil failure kills both plugs simultaneously and looks like a dead cylinder. Easy to rule out with a <a href="procedures.html#coil-test">multimeter coil test</a>.</p>
+
+    <h4>Why this happened</h4>
+    <p>The <a href="procedures.html#mixture-tuning">stuck-pilot-screw procedure</a> documents that carb cleaner is the wrong tool here — the right approach is a real penetrating oil (50/50 power steering fluid + acetone, or Kroil, or PB Blaster), then heat, then re-cutting the screw slot, then pulling the carb. The conversational guidance that drove the days-of-spraying approach contradicted the documented procedure. Both the procedure and its "do not use" list have been tightened so this advice can't repeat.</p>
+
+    <h4>Diagnostic next step — pull rear cylinder LEFT plug</h4>
+    <p>Of the four plugs on this bike, the rear cylinder's left-hand plug is the only one accessible without propping the tank (Haynes 1-11 §5.3 — "easy and unrestricted"). Both plugs in the rear cylinder share the same combustion chamber, so whichever cause is at work, it should show on this easy-access plug.</p>
+    <p>Read the plug using the <a href="procedures.html#plug-reading">plug-reading guide</a>:</p>
+    <table>
+      <thead>
+        <tr><th>What the plug looks like</th><th>What it tells you</th><th>Next step</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wet, black, smells of carb cleaner / solvent</td>
+          <td>Drowning theory holds. Cylinder is fouled, not broken.</td>
+          <td>Pull rear right plug too (needs <a href="procedures.html#tank-access">tank prop</a>) to confirm both look the same. Clean or replace both plugs. Stop spraying carb cleaner. Then re-test the bike.</td>
+        </tr>
+        <tr>
+          <td>White / chalky / very clean and dry</td>
+          <td>Lean misfire. Strongly points at a damaged pilot-screw rubber seal letting unmetered air in.</td>
+          <td>Pull the pilot screw assembly from the rear carb. Replace the o-ring (and ideally the whole 4-piece assembly) — Hippotech XL650V kit (~€10–20 on Amazon, includes 2 of each part).</td>
+        </tr>
+        <tr>
+          <td>Wet with raw fuel, no soot, smells of petrol (not solvent)</td>
+          <td>No spark on this cylinder. Coil-side problem.</td>
+          <td>Run the <a href="procedures.html#coil-test">coil test</a>. Likely outcome: bad rear coil or HT lead.</td>
+        </tr>
+        <tr>
+          <td>Healthy tan and dry</td>
+          <td>This plug is firing fine. The "dead cylinder" diagnosis may be wrong, or only one plug is dead.</td>
+          <td>Confirm which cylinder is actually dead with a "pull-cap" test: with engine running, pull each plug cap one at a time. The cap on the dead cylinder won't change engine note when removed. Both caps on a live cylinder need to be removed to kill it.</td>
+        </tr>
+        <tr>
+          <td>Oily wet, brown sheen, smells like burnt oil</td>
+          <td>Engine oil leaking into the chamber — top-end issue.</td>
+          <td>Different problem entirely. Check valve seals and piston rings — out of scope for this issue.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>What to stop doing immediately</h4>
+    <ul>
+      <li><strong>Stop spraying carb cleaner</strong> at the stuck pilot screw. It's not freeing the screw and it's the suspected cause of the new symptoms.</li>
+      <li>Don't run the bike longer than necessary on one cylinder. The live (front) cylinder is doing 100% of the work that was being shared — running hotter and harder than designed. Meanwhile the dead cylinder pumps unburned fuel into the crankcase past the piston rings ("fuel wash"), thinning the oil and reducing its ability to lubricate. On a 23-year-old engine you don't want to accelerate that. <strong>Porikärbes has no catalytic converter</strong> (Arrow direct-through, see <a href="parts.html">parts</a>), so the cat-cooking risk that applies to a stock XL650V isn't a factor here. Riding it as transport is still a no — half power, won't idle, not safe in traffic. Brief idling for diagnosis (under a minute or two) is fine.</li>
+    </ul>
+
+    <h4>Parts likely needed (whichever branch wins)</h4>
+    <ul>
+      <li><strong>Hippotech XL650V pilot-screw kit</strong> (Amazon, ~€10–20) — includes 2× of: pilot screw, spring, washer, o-ring. Cheap insurance, fits both carbs. Order now even if the diagnosis is "drowning" — the o-ring on the rear carb has had several days of solvent exposure and is suspect anyway.</li>
+      <li>Spare NGK DPR8EA-9 spark plugs — if the drowning branch wins, easier to swap than to clean. Buy 4 (whole set) since they're cheap.</li>
+      <li>If pulling the carb: <strong>Keyster XL650V '00–06 carb kit</strong> (nrp-carbs.co.uk) — full set of jets, gaskets, o-rings.</li>
+      <li><strong>50/50 power steering fluid + acetone</strong> (or Kroil, or PB Blaster) — for the stuck-screw work, replacing the carb cleaner approach.</li>
+    </ul>
+
+    <h4>Sources</h4>
+    <ul>
+      <li>Honda Haynes 3919 — page 1-11 §5 (spark plug access), 4-13 §21 (o-ring as wear item), 4-15 §10 step 3 (pilot screw assembly), 5-1 (coil specs), 5-2 §1 (one coil per cylinder).</li>
+      <li><a href="https://www.cbr250.com/threads/pilot-screw-missing-o-ring-and-washer-can-foul-plug.11270/">CBR250 forum thread</a> — direct precedent for single-cylinder drop from a damaged pilot-screw o-ring.</li>
+      <li><a href="https://www.svrider.com/threads/symptoms-of-a-missing-air-fuel-screw-o-ring.165860/">SVrider thread</a> — symptoms catalogue for damaged pilot-screw o-rings on CV carbs.</li>
+      <li><a href="https://www.xrv.org.uk/threads/why-two-spark-plugs-per-cylinder.84958/">xrv.org.uk "Why two spark plugs per cylinder?"</a> — confirms twin-plug head architecture.</li>
+    </ul>
+  </div>
+
   <div class="entry" id="carb-service">
     <div class="entry-head">
       <h3>Left lean stall / carb service</h3>
       <span class="badge badge-warn">not started</span>
     </div>
-    <p><strong>Status:</strong> not started — try mixture screw adjustment first (Step 0 below). Carb pull only if that fails.</p>
+    <p><strong>Status:</strong> on hold pending <a href="#rear-cylinder-dead">rear cylinder dead</a> diagnosis (2026-04-27). Step 0 (mixture screw test) was attempted in-situ but the rear carb's pilot screw seized after a partial turn; the in-situ recovery approach (carb cleaner flushing) caused the rear cylinder to drop. Continue here only after the rear-cylinder-dead issue is resolved.</p>
 
     <h4>Symptoms</h4>
     <ul>
@@ -40,6 +123,9 @@ title: "Active Issues — Porikärbes"
       <li>Log final turn-out values per carb in <code>history.html</code>.</li>
       <li>No change after ½ turn past PO baseline on both → proceed to full carb service below.</li>
     </ol>
+
+    <h4>If a pilot screw is stuck — STOP, read this first</h4>
+    <p>If either pilot screw will only turn part of a revolution (a "stuck" or "seized" screw), do <strong>not</strong> try to free it with carb cleaner, brake cleaner, or repeated wiggling. Both solvents attack the screw's NBR rubber seal — the o-ring inside the carb (Haynes 4-13 §21). Days of in-situ flushing destroy the seal even if the screw eventually moves, and on a twin-plug head like the XL650V the failure mode is a <strong>dead cylinder</strong> with no warning fouled-plug stage. This already happened once on Porikärbes — see <a href="#rear-cylinder-dead">rear cylinder dead (2026-04-27)</a>. Use the <a href="procedures.html#mixture-tuning">stuck-pilot-screw ladder</a> in the procedures page: real penetrating oil (50/50 power steering fluid + acetone, Kroil, or PB Blaster), then heat, then re-cut the slot, then pull the carb. Hard limit: two soak-cycle rounds with no progress = escalate, don't repeat.</p>
 
     <h4>Carb specs (XL650V)</h4>
     <table>
@@ -332,7 +418,7 @@ title: "Active Issues — Porikärbes"
     <ol>
       <li><strong>Pulse = 2.</strong> This corresponds to a valid engine type (4C-4P) and should <em>definitely</em> halve the reading if the setting does anything. If idle drops from 2,000 to ~1,000 → the setting system works but the correct value is somewhere else (try 1.5 again, or accept the 2x and note the scale). If idle still shows 2,000 → the Koso isn't reading pulse count, and the fix is hardware.</li>
       <li><strong>Polarity Lo.</strong> Toggle step 6 from Hi → Lo and see if reading changes at all. If it goes to 0, wrong polarity. If it goes erratic, signal noise.</li>
-      <li><strong>Confirm spark plugs are R-type.</strong> XL650V OEM is NGK DPR8EA-9 — the "R" is the resistor. Non-resistor plugs cause RFI that the Koso tach circuit picks up as extra pulses. The Koso manual explicitly calls this out. Pull a plug and check the part number.</li>
+      <li><strong>Confirm all four spark plugs are R-type.</strong> XL650V is a <a href="procedures.html#spark-plugs">twin-plug head</a> — two plugs per cylinder, four total. OEM is NGK DPR8EA-9: the "R" is the resistor that suppresses radio noise from the spark. A single non-resistor plug anywhere on the bike causes RFI that the KOSO tach circuit picks up as extra pulses. The KOSO manual explicitly calls this out. Pull any plug (rear-left is easiest, no tank work) and check the part number — but verify all four match before ruling this branch in or out.</li>
       <li><strong>Trace the RPM wire back to its tap.</strong> The book assumes the tap is on <em>one</em> coil + pin. If this install is on a shared +12V bus feeding both coils, the Koso sees both coils' pulses and over-reads. Fix = move the tap to the + pin of a single coil.</li>
       <li><strong>Check for noise pickup.</strong> If the RPM wire runs near HT leads or the coil secondaries, capacitive coupling can inject extra pulses. Reroute or shield.</li>
       <li><strong>Verify real idle with an independent source</strong> — a timing-light tach or the front cylinder's coil output on a scope — to confirm what the actual idle RPM is and how far off the Koso really is.</li>

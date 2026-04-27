@@ -9,8 +9,10 @@ title: "Procedures — Porikärbes"
 
   <div class="doc-links">
     <a href="#tank-access">Fuel tank — prop or remove</a>
+    <a href="#spark-plugs">Spark plugs — pull, inspect, replace</a>
     <a href="#idle-tuning">Idle speed tuning</a>
     <a href="#mixture-tuning">Pilot (mixture) screw tuning</a>
+    <a href="#coil-test">Ignition coil test</a>
   </div>
 
   <div class="entry" id="tank-access">
@@ -111,6 +113,93 @@ title: "Procedures — Porikärbes"
     <p>Haynes §2 "Fuel tank and tap — removal and installation" — XL650V procedure on page 4-3 (steps 7–13 for removal, step 11 explicitly covers propping with a wood block).</p>
   </div>
 
+  <div class="entry" id="spark-plugs">
+    <div class="entry-head">
+      <h3>Spark plugs — pull, inspect, replace</h3>
+    </div>
+    <p><strong>Applies to:</strong> XL650V Transalp.</p>
+
+    <h4>The bike has FOUR spark plugs</h4>
+    <p>Each cylinder has <strong>two plugs</strong> (Haynes 1-11 §5.1 says verbatim: "Note that each cylinder has two spark plugs"). This is called a "twin-plug head". One ignition coil per cylinder fires both of that cylinder's plugs at the same instant, through a Y-shaped high-tension lead (Haynes 5-2 §1). Two flame-fronts burn the fuel/air mix faster and more evenly than one. Total: front cyl R + L plugs, rear cyl R + L plugs = 4 plugs.</p>
+    <p><strong>Why this matters when you're diagnosing a problem:</strong></p>
+    <ul>
+      <li>If <em>one</em> plug fouls (gets coated/wet), the other plug on the same cylinder usually keeps that cylinder running. So a single fouled plug rarely kills a cylinder outright.</li>
+      <li>If a <em>whole cylinder</em> goes dead, the cause is usually <strong>both plugs</strong> at once — drowned by carb cleaner, running far too rich, or the coil that feeds them is dead. Both plugs share the same combustion chamber, so most causes affect them together.</li>
+    </ul>
+
+    <h4>Plug spec</h4>
+    <table>
+      <thead>
+        <tr><th>Spec</th><th>Value</th><th>Source</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Standard plug</td><td>NGK DPR8EA-9 (or Denso X24EPR-U9)</td><td>Haynes 1-1</td></tr>
+        <tr><td>Cold-climate plug (below 5 °C)</td><td>NGK DPR7EA-9 (or Denso X22EPR-U9)</td><td>Haynes 1-1</td></tr>
+        <tr><td>Quantity needed</td><td>4 (two per cylinder)</td><td>Haynes 1-11 §5.1</td></tr>
+        <tr><td>Electrode gap</td><td>0.8–0.9 mm</td><td>Haynes 1-1</td></tr>
+        <tr><td>Tightening torque</td><td>14 Nm</td><td>Haynes 1-2</td></tr>
+        <tr><td>Inspection interval</td><td>every 6,000 km</td><td>Haynes 1-3</td></tr>
+        <tr><td>Renewal interval</td><td>every 12,000 km</td><td>Haynes 1-3</td></tr>
+      </tbody>
+    </table>
+    <p><strong>The "R" matters:</strong> the "R" in DPR8EA-9 means the plug has a built-in resistor that suppresses radio noise from the spark. Non-resistor plugs cause electrical interference that confuses the KOSO tach (<a href="issues.html#tach-over-read">see tach over-read</a>).</p>
+
+    <h4>How to access each plug</h4>
+    <p>The two carbs sit between the cylinders, taking up most of the central space. Each cylinder's two plugs are reached from opposite sides of the bike. On a stock Transalp, the fairings hide the front plugs and the tank covers the rear ones. Porikärbes is stripped (no fairings, no shrouds), which makes the front pair easy.</p>
+    <table>
+      <thead>
+        <tr><th>Plug</th><th>HT lead label</th><th>Access</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Rear cylinder, LEFT side of bike</td><td>RR-L</td><td><strong>Easiest of the four.</strong> No tank work needed. Approach from the left side (Haynes 1-11 §5.3 calls this one "easy and unrestricted").</td></tr>
+        <tr><td>Rear cylinder, RIGHT side of bike</td><td>RR-R</td><td><strong>Hardest.</strong> Needs the <a href="#tank-access">tank propped up</a> for clean access (Haynes 1-11 §5.3).</td></tr>
+        <tr><td>Front cylinder, RIGHT side of bike</td><td>FR-R</td><td>Reachable from the right side without tank work on Porikärbes. Stock bikes need the right-hand fairing panel off (Haynes 1-11 §5.2).</td></tr>
+        <tr><td>Front cylinder, LEFT side of bike</td><td>FR-L</td><td>Reachable from the left side without tank work on Porikärbes. Watch the radiator fins — easy to bend (Haynes 1-11 §5.4).</td></tr>
+      </tbody>
+    </table>
+    <p>Each HT lead is marked at the coil end — e.g. <strong>FR-R</strong> = front cylinder, right-hand plug — so if you pull the leads off the coils you can put them back on the right plug (Haynes 5-4 §3.20).</p>
+
+    <h4>Tools</h4>
+    <ul>
+      <li>Spark plug socket — the right size lives in the Honda toolkit under the seat (Haynes 1-11 §5.1)</li>
+      <li>Ratchet or T-handle</li>
+      <li>Feeler gauge for the 0.8–0.9 mm electrode gap (the wire-loop type works best on plugs)</li>
+      <li>Compressed air or a clean rag — to blow grit out of the plug well before pulling</li>
+      <li>Torque wrench (optional — 14 Nm is light, hand-feel works fine if you're careful)</li>
+    </ul>
+
+    <h4>Procedure (per plug)</h4>
+    <ol>
+      <li>Engine cold. Hot plugs strip threads — the cylinder head is aluminium and easy to damage.</li>
+      <li>Blow or wipe any grit, leaves or dust out of the well around the plug. Anything that falls into the cylinder when you open it will scratch the bore.</li>
+      <li>Pull the spark plug cap off straight up. If it's stuck, twist gently while pulling — never yank the lead.</li>
+      <li>Loosen with the socket. Once it's finger-loose, finish unscrewing by hand to feel for any cross-threading.</li>
+      <li>Inspect — see "reading a plug" below.</li>
+      <li>To reinstall: thread the plug in by hand first to avoid cross-threading the soft head. Snug it, then torque to 14 Nm. If you don't have a torque wrench: snug the plug by hand, then ⅛–¼ turn for a re-used plug, ½ turn for a new plug.</li>
+      <li>Refit the cap. Make sure it clicks fully onto the plug — a loose cap arcs to ground and ruins the lead.</li>
+    </ol>
+
+    <h4 id="plug-reading">Reading a plug — what each colour means</h4>
+    <table>
+      <thead>
+        <tr><th>What you see</th><th>What it means</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tan or light brown, dry, electrode sharp</td><td>Healthy. Engine is running clean.</td></tr>
+        <tr><td>Black, dry, sooty (looks like fireplace soot)</td><td>Running too rich (too much fuel). Causes: pilot screw set too rich, choke stuck partly on, blocked air filter.</td></tr>
+        <tr><td>Black, wet, smells of <strong>carb cleaner / solvent</strong></td><td>The cylinder has been drowned with solvent. Common after repeated carb-cleaner spraying. Clean or replace the plug, but fix the source first or it'll just foul again.</td></tr>
+        <tr><td>Wet with raw fuel, smells of petrol (not solvent), no soot</td><td>No spark — the plug itself isn't firing. Coil, HT lead, or cap problem. See <a href="#coil-test">coil test</a>.</td></tr>
+        <tr><td>White or chalky, very clean, electrode dry</td><td>Running too lean (not enough fuel, or air leak). On Porikärbes the most likely cause is a damaged pilot-screw rubber seal letting unmetered air past.</td></tr>
+        <tr><td>Oily wet, brownish sheen, smells like burnt oil</td><td>Engine oil is leaking into the cylinder past worn valve seals or piston rings. Top-end work needed.</td></tr>
+        <tr><td>Centre electrode rounded off, ceramic cracked</td><td>The plug is just worn out or damaged. Replace.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Compare side-to-side.</strong> Both plugs in the <em>same</em> cylinder should look similar — they share the chamber. Big differences between the front cylinder's plugs and the rear cylinder's plugs (e.g. front clean, rear sooty) point to a problem with one carb or one coil, not the engine as a whole.</p>
+
+    <h4>Manual reference</h4>
+    <p>Haynes §5 "Spark plugs — check and adjustment" on page 1-11 (every 6,000 km). Renewal Section 11 (every 12,000 km). Specs page 1-1. HT lead labelling page 5-4 §3.20. Plug colour chart at the back of the manual.</p>
+  </div>
+
   <div class="entry" id="idle-tuning">
     <div class="entry-head">
       <h3>Idle speed — check and adjustment</h3>
@@ -178,7 +267,7 @@ title: "Procedures — Porikärbes"
       <h3>Pilot (mixture) screw tuning</h3>
     </div>
     <p><strong>Applies to:</strong> XL650V Transalp, both carbs. Keihin CV type, pilot screw per carb, factory spec <strong>3 turns out</strong> from lightly seated.</p>
-    <p><strong>Warning:</strong> XL650V has a catalytic converter — running too rich can cook it. Stay within ±½ turn of factory spec unless using an exhaust gas analyser (Haynes 4-8). Running slightly lean is safer for the cat than slightly rich, but too lean causes stalling and burnt valves long-term.</p>
+    <p><strong>Warning:</strong> the stock XL650V has a catalytic converter and Haynes 4-8 warns against running rich because it cooks the cat. <strong>Porikärbes has an aftermarket Arrow 72068PD direct-through exhaust with no cat</strong> (see <a href="parts.html">parts</a>) — so the cat-cooking risk doesn't apply here. Two reasons to still stay within ±½ turn of factory spec without an exhaust gas analyser: (1) too lean burns valves long-term, and (2) too rich wastes fuel and fouls plugs. Running slightly lean is safer for the engine than slightly rich.</p>
 
     <h4>When to tune</h4>
     <ul>
@@ -193,7 +282,7 @@ title: "Procedures — Porikärbes"
     <ol>
       <li>Valve clearances in spec (Haynes 1-19, spec in Chapter 1).</li>
       <li>Air filter clean.</li>
-      <li>Spark plugs good (NGK DPR8EA-9 — R-type resistor plugs).</li>
+      <li>All four spark plugs good — twin-plug head, two per cylinder, NGK DPR8EA-9 with R-type resistor (<a href="#spark-plugs">spark plugs procedure</a>).</li>
       <li>Carbs synchronised (Haynes 1-20 §17).</li>
       <li>Idle speed at 1200 ± 100 rpm (<a href="#idle-tuning">idle tuning procedure</a>).</li>
       <li><strong>Then</strong> mixture screws.</li>
@@ -231,7 +320,7 @@ title: "Procedures — Porikärbes"
         <tr><td>Pilot screw baseline</td><td>3 turns out from lightly seated</td><td>Haynes 4-1</td></tr>
         <tr><td>Pilot jet</td><td>#38</td><td>Haynes 4-2</td></tr>
         <tr><td>Idle speed</td><td>1200 ± 100 rpm</td><td>Haynes 4-1</td></tr>
-        <tr><td>Safe adjustment range</td><td>±½ turn from factory spec (without gas analyser)</td><td>Haynes 4-8 (cat converter warning)</td></tr>
+        <tr><td>Safe adjustment range</td><td>±½ turn from factory spec (without gas analyser)</td><td>Haynes 4-8 — see Porikärbes-specific note above (no cat, valves still at risk if too lean)</td></tr>
       </tbody>
     </table>
 
@@ -248,7 +337,9 @@ title: "Procedures — Porikärbes"
     <p><strong>Ladder — gentlest first, escalate only if the previous step doesn't free it:</strong></p>
     <ol>
       <li><strong>Cycle the slop.</strong> Work the screw back and forth within its available range, 20–30 cycles. Rubs solvent into the threads without force. Re-try after each batch.</li>
-      <li><strong>Solvent soak + tap.</strong> Best penetrant on 20+ year carbs per the widely cited Machinist's Workshop test: 50/50 ATF + acetone. Ranking reported in that test: ATF/acetone &gt; Kroil &gt; Liquid Wrench &gt; PB Blaster &gt; WD-40. Apply at the base of the screw with a cotton swab or syringe, screw pointing up so fluid sits on the threads, wait 15+ minutes, tap the screwdriver handle lightly 5–10 times to shock the threads, cycle the slop, try again. Acetone alone, brake cleaner, lighter fluid, or even fresh gasoline from your tank are fallbacks. Overnight to multi-day soaks are normal for badly seized screws — patience is cheaper than a snapped tip.</li>
+      <li><strong>Penetrating oil soak + tap.</strong> A real penetrating oil — designed to creep into corroded threads — is the right tool. The Machinist's Workshop magazine penetrant test (April/May 2007) ranked, best to worst, force needed to break a rusted fit free: <strong>50/50 power steering fluid (or ATF) + acetone (53 lb)</strong> &gt; Kroil (106) &gt; Liquid Wrench (127) &gt; PB Blaster (214) &gt; WD-40 (238) &gt; nothing (516). Apply at the base of the screw with a cotton swab or syringe, screw pointing up so fluid sits on the threads. Wait 15+ minutes. Tap the screwdriver handle lightly 5–10 times to shock the threads. Cycle the slop. Try again.
+        <br><strong>Hard escalation limit:</strong> two soak-cycle-tap rounds (≈30 min total) with no progress = stop in-situ work. Escalate to heat (step 3) or pull the carb (step 5). Repeat-flushing without progress is the failure mode that caused the <a href="issues.html#rear-cylinder-dead">2026-04 rear-cylinder-dead incident</a> on this bike — multiple days of carb cleaner ingestion, no movement of the screw, plus likely damage to the rubber seal.
+        <br><strong>Do not use carb cleaner or brake cleaner as the soak fluid.</strong> Both are aggressive solvents that attack the pilot screw's NBR rubber seal (Haynes 4-13 §21 lists the o-ring as a wear/damage check item). Repeated exposure swells or cracks the seal — and on a twin-plug head like the XL650V you don't get the early warning of a fouled plug, the cylinder just dies. Carb cleaner is for cleaning <em>removed</em> components in a bowl off the bike (Haynes 4-13 §17–19), not in-situ soaking.</li>
       <li><strong>Localised heat on the aluminium boss, not the screw.</strong> Hair dryer, heat gun on LOW, or hot soldering-iron tip touched against the metal <em>around</em> the screw. Aluminium expands faster than brass and loosens the grip. Short bursts — don't melt nearby rubber. Try turning while warm.</li>
       <li><strong>Re-cut the slot BEFORE any real torque.</strong> File the screw head flat with a small file, cut a fresh deep slot with a hacksaw blade, use a hollow-ground screwdriver that fully fills the new slot. Cammed-out slots are the most common way a stuck screw becomes a destroyed screw.</li>
       <li><strong>Pull the carb.</strong> Transalp forum consensus (xrv.org.uk, transalp.org): if heat + overnight ATF/acetone didn't free it, stop working in situ. In-situ work is the single biggest predictor of a snapped tip. Remove the carb, invert it, soak from underneath overnight, work it loose on a bench with a vise.</li>
@@ -256,9 +347,10 @@ title: "Procedures — Porikärbes"
 
     <p><strong>Do not use:</strong></p>
     <ul>
+      <li><strong>Carb cleaner or brake cleaner as a multi-hour or multi-day soak.</strong> Both attack NBR rubber (the pilot screw's seal). Repeated in-situ application swells/cracks the seal. The Cleaning section of Haynes Chapter 4 (page 4-13) endorses <em>petroleum-based solvent</em> only, and only on <em>removed</em> components in a bowl — not in-situ flushing. One brief pass-through during cleaning of disassembled parts is fine; days of in-situ dousing at a stuck screw is what destroys the o-ring (and on a twin-plug head, kills the whole cylinder — see <a href="issues.html#rear-cylinder-dead">this incident</a>). Use a real penetrating oil instead (step 2).</li>
       <li><strong>Impact drivers on an undamaged slot</strong> — they destroy the slot before shocking the screw loose. Only consider after step 4 above (fresh slot cut).</li>
       <li><strong>Spiral screw extractors</strong> — wedge the screw harder, not looser.</li>
-      <li><strong>WD-40 as primary solvent</strong> — it's a water displacer, not a varnish dissolver. Fine as a last-resort lubricant if nothing else is on hand, but budget much longer soak time.</li>
+      <li><strong>WD-40 (original Multi-Use) as primary penetrant</strong> — its name stands for <em>Water Displacement</em>, not penetrating oil. WD-40's own marketing emphasises moisture displacement and light lubrication, not deep penetration. The Machinist's Workshop test ranked it slowest of all penetrants tested — barely better than nothing. WD-40 sells a separate "Specialist Penetrant" product that's a different formulation; use that or any of the better options in step 2 instead.</li>
     </ul>
 
     <p><strong>If you end up replacing the screw assembly:</strong> pilot screw + spring + washer + o-ring is <em>not</em> a standalone OEM part for the XL650V — it only ships in rebuild kits. Options: Keyster XL650V '00–06 carb kit (nrp-carbs.co.uk), or generic Hippotech pilot-screw kits on Amazon (includes 2× of each part, fits both carbs).</p>
@@ -320,5 +412,62 @@ title: "Procedures — Porikärbes"
 
     <h4>Manual reference</h4>
     <p>Haynes §5 "Air/fuel mixture adjustment — general information" on page 4-8. Pilot screw location photo 5.1a. Specifications (turns-out values per model) on page 4-1. Pilot screw reassembly order: page 4-15 §10 step 3.</p>
+  </div>
+
+  <div class="entry" id="coil-test">
+    <div class="entry-head">
+      <h3>Ignition coil — basic test (multimeter)</h3>
+    </div>
+    <p><strong>Applies to:</strong> XL650V Transalp.</p>
+
+    <h4>What this tests, and why it matters here</h4>
+    <p>The XL650V has <strong>one ignition coil per cylinder</strong>, each one driving both plugs on that cylinder via a Y-shaped HT lead (Haynes 5-2 §1). If a coil dies, BOTH plugs on its cylinder lose spark and the whole cylinder goes dead — the same symptom as carb-cleaner drowning, but with a totally different fix. This procedure tells you which it is, in five minutes, without removing anything.</p>
+
+    <h4>Tools</h4>
+    <ul>
+      <li>Cheap digital multimeter, set to the resistance (Ω) range</li>
+    </ul>
+
+    <h4>Specs (XL650V, at 20 °C)</h4>
+    <table>
+      <thead>
+        <tr><th>What you measure</th><th>How to measure it</th><th>Acceptable range</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Primary winding</td><td>Probes on the coil's two small primary terminals (the wiring-connector side, not the thick HT leads)</td><td>2.2–2.6 Ω</td></tr>
+        <tr><td>Secondary, with plug caps fitted</td><td>One probe inside one plug cap, the other probe inside the other plug cap on the SAME coil</td><td>30–36 kΩ</td></tr>
+        <tr><td>Secondary, plug caps unscrewed off</td><td>Probes touching the bare HT lead ends</td><td>25–30 kΩ</td></tr>
+        <tr><td>Plug cap on its own</td><td>Probes on the two ends of one removed cap</td><td>~5 kΩ</td></tr>
+      </tbody>
+    </table>
+    <p>Source: Haynes 5-1 "Specifications" — these are XL650V/XRV750 T-onwards values, not the older XL600V values listed alongside.</p>
+
+    <h4>Reading the result</h4>
+    <ul>
+      <li><strong>All numbers in spec:</strong> coil is electrically healthy. The dead-cylinder cause is somewhere else.</li>
+      <li><strong>Primary reads 0 Ω, or open / "OL" / "1.":</strong> primary winding shorted or broken. Coil dead — replace.</li>
+      <li><strong>Secondary very high or open:</strong> secondary winding broken. Coil dead — replace.</li>
+      <li><strong>Caps in spec but secondary-without-caps reads low or 0:</strong> internal short between primary and secondary. Coil dead — replace.</li>
+      <li><strong>Coil readings OK but cap readings out of spec:</strong> just replace the suspect cap (it unscrews off the HT lead).</li>
+    </ul>
+
+    <h4>Where the coils are mounted</h4>
+    <ul>
+      <li><strong>Front coil:</strong> on the frame near the front cylinder. Easiest from above with the <a href="#tank-access">tank propped up</a> (Haynes 5-4 photo 3.18b shows the location on an XL650V).</li>
+      <li><strong>Rear coil:</strong> near the rear cylinder, also tank-up access (Haynes 5-4 photo 3.18c).</li>
+    </ul>
+
+    <h4>Quick alternative — visual spark check</h4>
+    <p>If you don't have a multimeter, you can confirm a coil is firing by looking at the spark itself:</p>
+    <ol>
+      <li>Pull a plug, leave it connected to its cap and HT lead.</li>
+      <li>Lay the threaded body of the plug against any clean bare metal on the engine (a head bolt, a fin) so it's grounded.</li>
+      <li>Crank the engine on the starter for 1–2 seconds with the kill switch in the run position.</li>
+      <li>You should see a fat, blue, snappy spark jump the gap. Thin yellow spark, intermittent spark, or no spark = coil, cap or lead problem.</li>
+    </ol>
+    <p><strong>Safety:</strong> don't hold the plug or HT lead with bare hands during the test — coil voltage is in the tens of thousands of volts. Use insulated pliers, or wrap a thick rag around the plug.</p>
+
+    <h4>Manual reference</h4>
+    <p>Haynes §3 "Ignition HT coils — check, removal and installation" on page 5-3 (resistance and peak voltage tests). Specs page 5-1. Coil topology summary page 5-2 §1. HT lead labelling page 5-4 §3.20.</p>
   </div>
 </section>
