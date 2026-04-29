@@ -182,19 +182,21 @@ title: "Procedures — Porikärbes"
     <h4 id="plug-reading">Reading a plug — what each colour means</h4>
     <table>
       <thead>
-        <tr><th>What you see</th><th>What it means</th></tr>
+        <tr><th>What you see</th><th>What it means</th><th>Reusable after cleaning?</th></tr>
       </thead>
       <tbody>
-        <tr><td>Tan or light brown, dry, electrode sharp</td><td>Healthy. Engine is running clean.</td></tr>
-        <tr><td>Black, dry, sooty (looks like fireplace soot)</td><td>Running too rich (too much fuel). Causes: pilot screw set too rich, choke stuck partly on, blocked air filter.</td></tr>
-        <tr><td>Black, wet, smells of <strong>carb cleaner / solvent</strong></td><td>The cylinder has been drowned with solvent. Common after repeated carb-cleaner spraying. Clean or replace the plug, but fix the source first or it'll just foul again.</td></tr>
-        <tr><td>Wet with raw fuel, smells of petrol (not solvent), no soot</td><td>No spark — the plug itself isn't firing. Coil, HT lead, or cap problem. See <a href="#coil-test">coil test</a>.</td></tr>
-        <tr><td>White or chalky, very clean, electrode dry</td><td>Running too lean (not enough fuel, or air leak). On Porikärbes the most likely cause is a damaged pilot-screw rubber seal letting unmetered air past.</td></tr>
-        <tr><td>Oily wet, brownish sheen, smells like burnt oil</td><td>Engine oil is leaking into the cylinder past worn valve seals or piston rings. Top-end work needed.</td></tr>
-        <tr><td>Centre electrode rounded off, ceramic cracked</td><td>The plug is just worn out or damaged. Replace.</td></tr>
+        <tr><td>Tan or light brown, dry, electrode sharp</td><td>Healthy. Engine is running clean.</td><td>Yes — nothing to do.</td></tr>
+        <tr><td>Black, dry, sooty (looks like fireplace soot), smells of fuel</td><td>Running too rich (too much fuel). Causes: pilot screw set too rich, choke stuck partly on, blocked air filter, float level too high, breached pilot-screw o-ring leaking fuel.</td><td><strong>Yes</strong> — wire-brush, wipe, re-gap to 0.8–0.9 mm, reinstall. But it'll re-foul until the rich condition is fixed.</td></tr>
+        <tr><td>Black, wet, smells of <strong>carb cleaner / solvent</strong></td><td>The cylinder has been drowned with solvent. Common after repeated carb-cleaner spraying.</td><td><strong>Yes</strong> — dry it (compressed air or just leave it out a few minutes), reinstall. Stop spraying carb cleaner.</td></tr>
+        <tr><td>Wet with raw fuel, smells of petrol (not solvent), no soot</td><td>No spark — the plug itself isn't firing. Coil, HT lead, or cap problem. See <a href="#coil-test">coil test</a>.</td><td>Yes once dried, but fix the spark side first or it stays wet.</td></tr>
+        <tr><td>White or chalky, very clean, electrode dry</td><td>Running too lean (not enough fuel, or air leak). On Porikärbes the most likely cause is a damaged pilot-screw o-ring letting unmetered air past.</td><td>Yes — but lean running burns valves long-term, fix it before riding.</td></tr>
+        <tr><td>Oily wet, brownish sheen, smells like burnt oil</td><td>Engine oil is leaking into the cylinder past worn valve seals or piston rings. Top-end work needed.</td><td>Borderline — cleanable but pointless without fixing the oil leak. Plug will re-foul fast.</td></tr>
+        <tr><td>Centre electrode rounded off, ceramic cracked or chipped</td><td>The plug is just worn out or damaged.</td><td><strong>No.</strong> Replace.</td></tr>
+        <tr><td>Side electrode bent or melted</td><td>Pre-ignition / detonation damage — the plug got too hot. Often from running too lean.</td><td><strong>No.</strong> Replace, AND find out why (timing or mixture).</td></tr>
       </tbody>
     </table>
-    <p><strong>Compare side-to-side.</strong> Both plugs in the <em>same</em> cylinder should look similar — they share the chamber. Big differences between the front cylinder's plugs and the rear cylinder's plugs (e.g. front clean, rear sooty) point to a problem with one carb or one coil, not the engine as a whole.</p>
+    <p><strong>Haynes' rule</strong> (page 1-12 §7): "If the electrodes are not excessively worn, if no cracks or chips are visible in the insulator, and if the deposits can be easily removed with a wire brush, the plugs can be re-gapped and re-used. If in doubt concerning the condition of the plugs, replace them with new ones since the expense is minimal." Deposits don't kill plugs; mechanical damage does.</p>
+    <p><strong>Compare side-to-side.</strong> Both plugs in the <em>same</em> cylinder should look similar — they share the chamber. Big differences between the front pair and the rear pair (e.g. front clean, rear sooty) point to a problem with one carb or one coil, not the engine as a whole. Equal sootiness across all four plugs points to a systemic cause (air filter, choke, both pilots set wrong, float level on both bowls).</p>
 
     <h4>Manual reference</h4>
     <p>Haynes §5 "Spark plugs — check and adjustment" on page 1-11 (every 6,000 km). Renewal Section 11 (every 12,000 km). Specs page 1-1. HT lead labelling page 5-4 §3.20. Plug colour chart at the back of the manual.</p>
@@ -408,6 +410,7 @@ title: "Procedures — Porikärbes"
       <li><strong>Idle rises but then hunts:</strong> air leak at intake rubber or vacuum hose. Fix the leak first.</li>
       <li><strong>One carb responds, the other doesn't:</strong> the unresponsive side's pilot jet or passage is blocked. Pull that carb.</li>
       <li><strong>Screw feels gritty or won't turn smoothly:</strong> tip is damaged or o-ring is swollen. Pilot screw assembly: screw + spring + washer + o-ring (Haynes 4-15 §10.3). Replace the o-ring at minimum.</li>
+      <li><strong>Symptom is one cylinder running rich + sooty plugs:</strong> a breached o-ring lets fuel leak past the screw threads outward into the venturi (rich) — like an open tap. Distinct from the lean-leak case (air leaking <em>in</em> past the seal). Both are o-ring failures; the breach side determines which way the leak goes. CBR250 forum precedent shows the rich variant: <a href="https://www.cbr250.com/threads/pilot-screw-missing-o-ring-and-washer-can-foul-plug.11270/">missing o-ring → fouled plug → dropped cylinder</a>. Fix is the same: replace the o-ring (whole assembly preferred).</li>
     </ul>
 
     <h4>Manual reference</h4>
