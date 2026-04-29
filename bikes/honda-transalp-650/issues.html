@@ -8,76 +8,62 @@ title: "Active Issues — Porikärbes"
 
   <div class="entry" id="rear-cylinder-dead">
     <div class="entry-head">
-      <h3>Rear cylinder dead — after carb cleaner on stuck pilot screw</h3>
-      <span class="badge badge-warn">investigating — bike not rideable</span>
+      <h3>Rear cylinder dead — fouled by rich-running condition</h3>
+      <span class="badge badge-warn">partially resolved — bike runs on both cyls, rich condition pending</span>
     </div>
-    <p><strong>Status:</strong> investigating (2026-04-27). Diagnosis depends on plug inspection. Bike currently runs on one cylinder only.</p>
+    <p><strong>Status:</strong> updated 2026-04-28. Rear cylinder recovered after cleaning the rear-LH plug (no tank work). Both cylinders firing again. Underlying rich-running condition is still present — both cylinder plugs were sooty and smelled of unburned petrol, not solvent. Carb-cleaner-drowning theory turned out to be wrong; the bike has been running too rich on both carbs. Plugs will re-foul over time until the mixture issue is fixed. Bike is rideable for short trips but isn't a finished repair.</p>
 
-    <h4>Observed (2026-04-27)</h4>
+    <h4>Original symptoms (2026-04-27)</h4>
     <ul>
       <li>Bike runs on <strong>one cylinder only</strong> — very little power, needs constant throttle to stay alive.</li>
       <li><strong>Choke no longer raises RPM.</strong> Used to work normally before this.</li>
       <li>Symptom appeared after several days of spraying carb cleaner into the <strong>rear carb's stuck pilot screw</strong> (left side of bike) and wiggling the screw to try to free it. Screw still only moves about a quarter turn.</li>
     </ul>
 
-    <h4>Two main candidate causes (both consistent with the symptoms)</h4>
-    <ol>
-      <li><strong>Both rear plugs drowned with carb cleaner.</strong> Repeated solvent spray past the screw reaches the rear cylinder via the pilot (idle) circuit. Both plugs in that cylinder get coated, neither fires, cylinder goes dead. The choke can't help because the choke just adds more fuel — and a drowned plug won't ignite the fuel anyway. The XL650V has <a href="procedures.html#spark-plugs">two plugs per cylinder</a> sharing one combustion chamber, so it takes both being fouled to kill the cylinder — repeated dousing is enough to do that.</li>
-      <li><strong>The pilot screw's rubber seal (o-ring) is damaged.</strong> Carb cleaner attacks NBR rubber. Days of soaking + wiggling can swell or crack the seal. Without an intact seal the screw can no longer control the fuel/air mix at idle — that cylinder runs unmetered (effectively a permanent vacuum leak), too lean to fire. Direct precedent on a different Honda: <a href="https://www.cbr250.com/threads/pilot-screw-missing-o-ring-and-washer-can-foul-plug.11270/">CBR250 forum thread</a> — single carb's pilot screw with a missing seal dropped only that one cylinder, recurring until the seal was replaced. Haynes 4-13 §21 explicitly lists the o-ring as a wear/damage check item.</li>
-    </ol>
-    <p>A third, less likely possibility: the <strong>rear ignition coil</strong> (or its HT lead) has died. The XL650V has one coil per cylinder, firing both plugs at once via a Y-shaped lead (Haynes 5-2 §1). A coil failure kills both plugs simultaneously and looks like a dead cylinder. Easy to rule out with a <a href="procedures.html#coil-test">multimeter coil test</a>.</p>
+    <h4>Update — plug inspection (2026-04-28)</h4>
+    <ul>
+      <li>Pulled the rear-cylinder <strong>left-hand plug</strong> (RR-L, easy access). Plug was <strong>sooty black</strong>, smelled of <strong>unburned petrol</strong>, not solvent.</li>
+      <li>Wire-brushed and reseated. Engine fired up on <strong>both cylinders</strong>. Single clean plug in the rear cylinder is enough to keep that cylinder running (twin-plug head — the other plug can stay fouled).</li>
+      <li>Pulled the <strong>front-cylinder right-hand plug</strong> (FR-R) for comparison. Same sooty look. Cleaned and reinstalled.</li>
+      <li>Visible exhaust at idle — possibly cold-weather water vapour, possibly rich-burn smoke. Smell test pending.</li>
+      <li><strong>Conclusion:</strong> the cylinder dropped because both rear plugs were carbon-fouled by a long-running rich condition, not because they were drowned in carb cleaner. Both carbs are running rich, not just the rear. The pilot-screw o-ring breach (CBR250-style) is still on the candidate list — but as a <em>rich</em> leak (fuel past the threads into the venturi), not a <em>lean</em> air-leak. The screw is still stuck and the underlying mixture condition is not yet fixed.</li>
+    </ul>
+
+    <h4>What we now think happened</h4>
+    <p>The plugs told us the actual cause: the bike has been running <strong>too rich on both carbs</strong>, not specifically being drowned by carb cleaner. Rich running deposits sooty carbon on the insulator and electrode of each plug. Over time, both plugs in the rear cylinder fouled enough that neither could fire reliably — the cylinder dropped. The front cylinder was running just as rich but probably had one plug still firing, so it kept going.</p>
+    <p>The choke not raising RPM fits this too: when the carb is already dumping more fuel than the engine wants, adding the choke's enrichment circuit on top makes things worse, not better — it just adds more raw fuel that further fouls the spark.</p>
+    <p>The pilot-screw o-ring story is still on the list — but as a <strong>rich leak</strong>, not a lean leak. If the o-ring is breached, fuel can leak past the screw threads outward into the venturi (rich), as documented in the <a href="https://www.cbr250.com/threads/pilot-screw-missing-o-ring-and-washer-can-foul-plug.11270/">CBR250 forum precedent</a>: "basically like an open tap because there's no seal." Haynes 4-13 §21 explicitly lists the o-ring as a wear/damage check item.</p>
+    <p>Coil failure is now ruled out — the rear cylinder fires fine after a plug clean.</p>
 
     <h4>Why this happened</h4>
     <p>The <a href="procedures.html#mixture-tuning">stuck-pilot-screw procedure</a> documents that carb cleaner is the wrong tool here — the right approach is a real penetrating oil (50/50 power steering fluid + acetone, or Kroil, or PB Blaster), then heat, then re-cutting the screw slot, then pulling the carb. The conversational guidance that drove the days-of-spraying approach contradicted the documented procedure. Both the procedure and its "do not use" list have been tightened so this advice can't repeat.</p>
 
-    <h4>Diagnostic next step — pull rear cylinder LEFT plug</h4>
-    <p>Of the four plugs on this bike, the rear cylinder's left-hand plug is the only one accessible without propping the tank (Haynes 1-11 §5.3 — "easy and unrestricted"). Both plugs in the rear cylinder share the same combustion chamber, so whichever cause is at work, it should show on this easy-access plug.</p>
-    <p>Read the plug using the <a href="procedures.html#plug-reading">plug-reading guide</a>:</p>
-    <table>
-      <thead>
-        <tr><th>What the plug looks like</th><th>What it tells you</th><th>Next step</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Wet, black, smells of carb cleaner / solvent</td>
-          <td>Drowning theory holds. Cylinder is fouled, not broken.</td>
-          <td>Pull rear right plug too (needs <a href="procedures.html#tank-access">tank prop</a>) to confirm both look the same. Clean or replace both plugs. Stop spraying carb cleaner. Then re-test the bike.</td>
-        </tr>
-        <tr>
-          <td>White / chalky / very clean and dry</td>
-          <td>Lean misfire. Strongly points at a damaged pilot-screw rubber seal letting unmetered air in.</td>
-          <td>Pull the pilot screw assembly from the rear carb. Replace the o-ring (and ideally the whole 4-piece assembly) — Hippotech XL650V kit (~€10–20 on Amazon, includes 2 of each part).</td>
-        </tr>
-        <tr>
-          <td>Wet with raw fuel, no soot, smells of petrol (not solvent)</td>
-          <td>No spark on this cylinder. Coil-side problem.</td>
-          <td>Run the <a href="procedures.html#coil-test">coil test</a>. Likely outcome: bad rear coil or HT lead.</td>
-        </tr>
-        <tr>
-          <td>Healthy tan and dry</td>
-          <td>This plug is firing fine. The "dead cylinder" diagnosis may be wrong, or only one plug is dead.</td>
-          <td>Confirm which cylinder is actually dead with a "pull-cap" test: with engine running, pull each plug cap one at a time. The cap on the dead cylinder won't change engine note when removed. Both caps on a live cylinder need to be removed to kill it.</td>
-        </tr>
-        <tr>
-          <td>Oily wet, brown sheen, smells like burnt oil</td>
-          <td>Engine oil leaking into the chamber — top-end issue.</td>
-          <td>Different problem entirely. Check valve seals and piston rings — out of scope for this issue.</td>
-        </tr>
-      </tbody>
-    </table>
+    <h4>What's been done — and what's still open</h4>
+    <p>The plug pulls confirmed sooty rich-running fouling, not solvent drowning. Cleaning recovered the rear cylinder. The mixture condition that caused the fouling is still there.</p>
+    <p>Open items, in order of cheap-and-easy first:</p>
+    <ol>
+      <li><strong>Pull the other two plugs</strong> for a complete picture. Front-LH (FR-L, accessible without tank prop on stripped Porikärbes — mind the radiator fins) and rear-RH (RR-R, needs a <a href="procedures.html#tank-access">tank prop</a>). If all four are equally sooty → systemic cause (air filter, choke, both pilots set rich). If the rear pair is noticeably sootier than the front pair → rear-carb-specific cause (likely the o-ring or stuck pilot screw).</li>
+      <li><strong>Check the air filter.</strong> Tank up. Lift the airbox cover. Haynes interval is renewal every 18,000 km; at ~72,000 km with no documented service, it's probably overdue. A clogged filter restricts airflow and makes the mixture rich on both cylinders. Cheap to replace if it looks dirty.</li>
+      <li><strong>Verify the choke is fully off.</strong> The lever returns home, the cable isn't snagging, the plunger seats fully on each carb. A choke stuck partly open dumps fuel continuously.</li>
+      <li><strong>Free the rear pilot screw with proper penetrating oil.</strong> Shock Oil rust release at <a href="../../shops.html">Motohoov</a> works. 15 min soak, light tap, cycle the slop, repeat. Two rounds max before escalating to heat or pulling the carb (per <a href="procedures.html#mixture-tuning">stuck-screw ladder</a>). <strong>No more carb cleaner.</strong></li>
+      <li><strong>Inspect the pilot screw o-ring</strong> once the screw is out. If swollen, cracked, or torn — replace. Use the Keyster <a href="https://nrp-carbs.co.uk/shop/index.php?route=product/product&product_id=5061">XL650V '00–06 carb kit</a> from nrp-carbs.co.uk (£55.20 + UK→EE shipping, includes 2× pilot screw + spring + washer + o-ring + jets + needle valves — Made in Japan, anti-ethanol). The Honda OEM screw 16016-MCB-611 is end-of-life from EU stock, so aftermarket Keyster is the practical OEM-equivalent. Generic Amazon DE kits exist (€20–27) but contents are inconsistently listed.</li>
+      <li><strong>Adjust pilot screws together (Strategy B in <a href="procedures.html#mixture-tuning">mixture tuning</a>).</strong> Once both screws turn freely, find the highest-steady-idle position on each. If both are still set rich after that, lean them both out by ¼–½ turn from baseline. (NB: the original "left lean stall" theory at <a href="#carb-service">#carb-service</a> assumed the carbs were too lean — the rich finding may invalidate parts of that.)</li>
+      <li><strong>If steps 4–6 don't resolve the rich condition</strong> — pull the carbs, check float heights against Haynes 7 mm spec (15 mm is a documented Transalp problem), inspect needle valves and CV diaphragms for damage. Use the same Keyster kit's gaskets and o-rings on reassembly.</li>
+    </ol>
 
     <h4>What to stop doing immediately</h4>
     <ul>
-      <li><strong>Stop spraying carb cleaner</strong> at the stuck pilot screw. It's not freeing the screw and it's the suspected cause of the new symptoms.</li>
-      <li>Don't run the bike longer than necessary on one cylinder. The live (front) cylinder is doing 100% of the work that was being shared — running hotter and harder than designed. Meanwhile the dead cylinder pumps unburned fuel into the crankcase past the piston rings ("fuel wash"), thinning the oil and reducing its ability to lubricate. On a 23-year-old engine you don't want to accelerate that. <strong>Porikärbes has no catalytic converter</strong> (Arrow direct-through, see <a href="parts.html">parts</a>), so the cat-cooking risk that applies to a stock XL650V isn't a factor here. Riding it as transport is still a no — half power, won't idle, not safe in traffic. Brief idling for diagnosis (under a minute or two) is fine.</li>
+      <li><strong>No more carb cleaner</strong> at the stuck pilot screw. It doesn't free seized brass threads and it attacks the rubber seal. Use real penetrating oil instead (Shock Oil at Motohoov, or PB Blaster, or the ATF/PSF + acetone homebrew).</li>
+      <li><strong>Don't ride it as transport.</strong> Both cylinders fire now, but the bike is still running rich — the plugs will re-soot over time, and unburned fuel washes past the piston rings into the crankcase, thinning the engine oil. On a 23-year-old engine you don't want to accelerate any wear. Short test rides for diagnosis are fine; commuting on it isn't. Porikärbes has no cat (Arrow direct-through, see <a href="parts.html">parts</a>), so the cat-cooking risk doesn't apply here, but the oil-wash and plug-fouling risks do.</li>
     </ul>
 
-    <h4>Parts likely needed (whichever branch wins)</h4>
+    <h4>Parts to source</h4>
     <ul>
-      <li><strong>Hippotech XL650V pilot-screw kit</strong> (Amazon, ~€10–20) — includes 2× of: pilot screw, spring, washer, o-ring. Cheap insurance, fits both carbs. Order now even if the diagnosis is "drowning" — the o-ring on the rear carb has had several days of solvent exposure and is suspect anyway.</li>
-      <li>Spare NGK DPR8EA-9 spark plugs — if the drowning branch wins, easier to swap than to clean. Buy 4 (whole set) since they're cheap.</li>
-      <li>If pulling the carb: <strong>Keyster XL650V '00–06 carb kit</strong> (nrp-carbs.co.uk) — full set of jets, gaskets, o-rings.</li>
-      <li><strong>50/50 power steering fluid + acetone</strong> (or Kroil, or PB Blaster) — for the stuck-screw work, replacing the carb cleaner approach.</li>
+      <li><strong>Keyster XL650V '00–06 carb kit</strong> from <a href="https://nrp-carbs.co.uk/shop/index.php?route=product/product&product_id=5061">nrp-carbs.co.uk</a> — £55.20 + UK→EE shipping (~€80–90 landed). One kit covers both carbs; includes 2× pilot screw + spring + washer + o-ring, 2× MJ #132, 2× PJ #38, 2× needle valve and seat. Made in Japan, anti-ethanol, nickel-plated. The Honda OEM brass pilot screw (16016-MCB-611) is end-of-life from EU stock per CMSNL — Keyster is the practical OEM-equivalent. Hippotech aftermarket kit is currently unavailable on Amazon EU; generic Amazon DE kits (€20–27) have inconsistent content listings.</li>
+      <li><strong>Penetrating oil for the stuck screw</strong> — Shock Oil rust release at <a href="../../shops.html">Motohoov</a> (€7.32) is the closest local option. Or PB Blaster / Kroil / 50/50 power steering fluid + acetone. Not WD-40, not carb cleaner.</li>
+      <li><strong>4× NGK DPR8EA-9 spark plugs</strong> (Motohoov, €5.08 each, 11 in stock). Cleaning the existing plugs got the bike running again, but at ~72,000 km with no documented service they're overdue regardless. Cheap insurance.</li>
+      <li><strong>Air filter</strong> — only if inspection shows it's dirty. Haynes interval is 18,000 km renewal.</li>
+      <li><strong>Spark plug socket</strong> — already needed, missing from the bike's toolkit. KÜÜNLAVÕTI 16/21mm 123mm at Motohoov, €9.82.</li>
     </ul>
 
     <h4>Sources</h4>
@@ -94,7 +80,7 @@ title: "Active Issues — Porikärbes"
       <h3>Left lean stall / carb service</h3>
       <span class="badge badge-warn">not started</span>
     </div>
-    <p><strong>Status:</strong> on hold pending <a href="#rear-cylinder-dead">rear cylinder dead</a> diagnosis (2026-04-27). Step 0 (mixture screw test) was attempted in-situ but the rear carb's pilot screw seized after a partial turn; the in-situ recovery approach (carb cleaner flushing) caused the rear cylinder to drop. Continue here only after the rear-cylinder-dead issue is resolved.</p>
+    <p><strong>Status:</strong> on hold pending <a href="#rear-cylinder-dead">rear cylinder dead</a> work, with one caveat: the lean-stall theory below may be partly wrong. After the rear cylinder went dead and the plugs were pulled (2026-04-28), all inspected plugs were sooty and smelled of unburned petrol — the bike has been running <strong>rich</strong>, not lean. That contradicts the "PO set screws too lean" framing in this entry. The left-lean stall could still be a pilot-circuit issue (e.g. partially blocked pilot jet that's only marginal at extreme lean angles), but Strategy C below (symmetric enrich) is now the wrong direction — leaning the screws is more likely. Re-examine after pilot screws turn freely and a baseline mixture is set.</p>
 
     <h4>Symptoms</h4>
     <ul>
