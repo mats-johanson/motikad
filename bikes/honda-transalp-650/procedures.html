@@ -14,6 +14,7 @@ title: "Procedures — Porikärbes"
     <a href="#mixture-tuning">Pilot (mixture) screw tuning</a>
     <a href="#coil-test">Ignition coil test</a>
     <a href="#valve-cover-gasket">Valve cover gasket replacement</a>
+    <a href="#carb-service">Carburetor service — strip, clean, reassemble</a>
   </div>
 
   <div class="entry" id="tank-access">
@@ -394,7 +395,7 @@ title: "Procedures — Porikärbes"
       <li>From recorded PO baseline, back <strong>both</strong> screws out an additional ¼ turn.</li>
       <li>Reset idle, test.</li>
       <li>If improved but not fixed: ¼ more on both (½ turn total from baseline).</li>
-      <li>No change after ½ turn past baseline on both → stop. Problem is not pilot screw position — pilot circuit is likely clogged or float height is wrong. Proceed to carb overhaul (<a href="issues.html#carb-service">see service procedure</a>).</li>
+      <li>No change after ½ turn past baseline on both → stop. Problem is not pilot screw position — pilot circuit is likely clogged or float height is wrong. Proceed to carb overhaul (<a href="#carb-service">see service procedure</a>).</li>
     </ol>
 
     <h4>After adjustment</h4>
@@ -407,7 +408,7 @@ title: "Procedures — Porikärbes"
 
     <h4>Troubleshooting</h4>
     <ul>
-      <li><strong>No change across the full ¼-½-¾ turn sweep:</strong> pilot circuit is blocked downstream of the screw. Carb needs cleaning (<a href="issues.html#carb-service">full service</a>).</li>
+      <li><strong>No change across the full ¼-½-¾ turn sweep:</strong> pilot circuit is blocked downstream of the screw. Carb needs cleaning (<a href="#carb-service">full service</a>).</li>
       <li><strong>Idle rises but then hunts:</strong> air leak at intake rubber or vacuum hose. Fix the leak first.</li>
       <li><strong>One carb responds, the other doesn't:</strong> the unresponsive side's pilot jet or passage is blocked. Pull that carb.</li>
       <li><strong>Screw feels gritty or won't turn smoothly:</strong> tip is damaged or o-ring is swollen. Pilot screw assembly: screw + spring + washer + o-ring (Haynes 4-15 §10.3). Replace the o-ring at minimum.</li>
@@ -536,7 +537,7 @@ title: "Procedures — Porikärbes"
     <p>Before starting, decide whether you're doing the rear cover only, the front cover only, or both. The carbs come off either way. The front cover additionally requires the radiator to be displaced (not fully removed), and the front of the engine to be exposed.</p>
     <p><strong>Strongly recommended companion jobs while you're in there:</strong></p>
     <ul>
-      <li><a href="issues.html#carb-service">Full carb service</a> with the Keyster kit — the carbs are already off, install fresh jets / pilot screw assemblies / o-rings.</li>
+      <li><a href="#carb-service">Full carb service</a> with the Keyster kit — the carbs are already off, install fresh jets / pilot screw assemblies / o-rings.</li>
       <li><strong>Engine oil + filter change</strong> — drain pan is already out, oil is fuel-diluted from the rich-running, this is overdue anyway.</li>
       <li><strong>Valve clearance check</strong> — Haynes 1-19 calls for it every 12,000 km. With the cover off, you have direct access. Adds 1 hour. (Separate procedure not yet documented here.)</li>
       <li><strong>Spark plug replacement</strong> — fresh DPR8EA-9s. The plug wells will be open already.</li>
@@ -588,5 +589,196 @@ title: "Procedures — Porikärbes"
 
     <h4>Manual reference</h4>
     <p>Haynes §8 "Valve covers — removal and installation" on page 2-21. Torque settings page 2-15. Engine oil/coolant specs page 1-2. Carb removal Chapter 4 §7. Radiator removal Chapter 3.</p>
+  </div>
+
+  <div class="entry" id="carb-service">
+    <div class="entry-head">
+      <h3>Carburetor service — strip, clean, reassemble</h3>
+    </div>
+    <p><strong>Applies to:</strong> XL650V Transalp. Pair of Keihin CV (constant velocity) carbs, 34 mm bore, joined at the manifold. This procedure covers pulling them off the bike, full bench teardown of one carb, cleaning, inspection, reassembly with float height check, and refit. Sync and idle adjustment are separate procedures done with the bike running afterwards.</p>
+
+    <h4>What this fixes</h4>
+    <ul>
+      <li>Clogged pilot or main jets — most common cause of poor idle, hesitation, hard starting, lean-angle stall.</li>
+      <li>Hardened or torn diaphragms — flat spots in the rev range, weak throttle response.</li>
+      <li>Float height off spec — bowl level too low (lean, lean-angle sensitive) or too high (rich, flooding, fuel weep from overflow).</li>
+      <li>Hardened pilot screw O-ring — air leak past the screw, mixture won't respond to adjustment.</li>
+      <li>Cracked needle valve / seat — bowl floods, fuel leaks past, engine runs rich or won't shut off.</li>
+      <li>Stale fuel varnish in passages after long sitting — Haynes §6.4: "Most carburettor problems are caused by dirt particles, varnish and other deposits which build up in and block the fuel and air passages."</li>
+    </ul>
+
+    <h4>Difficulty + time</h4>
+    <p>Full day for a careful first-timer. Removal off the bike is 30–45 minutes once the tank is off. Bench teardown of one carb is 20 minutes. Cleaning + inspection is the time sink — at least 30 minutes of soak, plus compressed-air pass through every passage. Reassembly is another 30 minutes per carb. Float height check is fiddly. Plan for the bike to be down for two days if you're ordering a Keyster kit mid-job.</p>
+
+    <h4>Specs (XL650V)</h4>
+    <table>
+      <thead>
+        <tr><th>Spec</th><th>Value</th><th>Source</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Carb type</td><td>2× Keihin CV, 34 mm bore</td><td>Haynes 1-1</td></tr>
+        <tr><td>Main jet</td><td>#132</td><td>Keyster kit / forums</td></tr>
+        <tr><td>Pilot (slow) jet</td><td>#38</td><td>Keyster kit / forums</td></tr>
+        <tr><td>Float height</td><td><strong>7 mm</strong> (base of carb body to bottom of float, needle valve just seated)</td><td>Haynes Ch.4 Specs / §10.8</td></tr>
+        <tr><td>Pilot screw baseline</td><td>3 turns out from lightly seated</td><td>Haynes 4-1 Specs</td></tr>
+        <tr><td>Idle speed</td><td>1200 ± 100 rpm</td><td>Haynes 1-1</td></tr>
+        <tr><td>Sync tolerance</td><td>≤ 20 mm Hg between cylinders</td><td>Haynes 1-1</td></tr>
+        <tr><td>Throttle freeplay</td><td>2–6 mm</td><td>Haynes 1-2</td></tr>
+      </tbody>
+    </table>
+
+    <figure class="procedure-figure">
+      <a href="{{ '/bikes/honda-transalp-650/photos/procedures/haynes-carb-exploded-p4-10.jpg' | relative_url }}" target="_blank">
+        <img src="{{ '/bikes/honda-transalp-650/photos/procedures/haynes-carb-exploded-p4-10.jpg' | relative_url }}" alt="Haynes page 4-10 figure 8.1a: exploded view of XL carburetor showing all internal components">
+      </a>
+      <figcaption><strong>XL650V carburetor exploded view</strong> (Haynes fig 8.1a). Component map for the disassembly steps below. 1 top cover · 2 spring · 3 piston/diaphragm · 4 needle holder · 5 spring · 6 jet needle · 7 float chamber · 8 drain screw · 9 rubber seal · 10 float + float pin · 11 main jet · 12 needle jet · 13 pilot jet · 14 float needle valve · 15 float needle valve seat · 16 pilot screw · 17 air cut-off valve cover · 18 spring · 19 diaphragm · 20 O-ring. Source: Haynes 3919, page 4-10.</figcaption>
+    </figure>
+
+    <h4>Parts</h4>
+    <ul>
+      <li><strong>Keyster carb repair kit for XL650V '00–06</strong> (nrp-carbs.co.uk) — covers both carbs. Includes: main jets (#132 ×2), pilot jets (#38 ×2), float needle valves + seats, float chamber gaskets, pilot screw assemblies (screw + spring + washer + O-ring ×2), top cover O-rings, and assorted small O-rings. The standard option for a full service.</li>
+      <li><strong>Generic Hippotech pilot screw kit</strong> (Amazon) — if you only need pilot screw + O-ring, this includes 2× of each. Useful if a screw is mushroomed or seized (see <a href="#mixture-tuning">stuck-pilot-screw ladder</a>) and the rest of the carb is fine.</li>
+      <li><strong>Petroleum-based carb cleaner</strong> — for bench cleaning of disassembled metal parts. Haynes §8 Cleaning explicitly forbids caustic cleaners (will attack the brass and the carb body's plating).</li>
+      <li><strong>Float chamber gaskets</strong> — included in the Keyster kit. Haynes §8.6: "Discard the rubber seal as a new one must be fitted" — do not reuse, even if it looks fine.</li>
+      <li><strong>Air filter</strong> — inspect; if degraded, replace. Haynes schedule calls for replacement every 18,000 km. If the carbs are this dirty, the filter probably needs renewing too.</li>
+      <li><strong>CV piston diaphragms</strong> — not in every Keyster kit. Inspect first by holding to a light; only order if torn or perished. New OEM Honda diaphragms are expensive (~€50+ each) but mandatory if the existing ones leak.</li>
+    </ul>
+
+    <h4>Tools</h4>
+    <ul>
+      <li>Phillips screwdriver — short and stubby for top-cover screws, long shaft for the throttle cable bracket and float chamber screws. Quality only — soft Phillips screws strip in soft carb-body castings if the driver cams out.</li>
+      <li>Flat screwdriver that <em>fills</em> the slot in the pilot screw (no narrower) — for seating the pilot screw without mushrooming the tip.</li>
+      <li>10 mm and 8 mm sockets for intake clamps and ancillary fasteners.</li>
+      <li>Pliers — water-pump or needle-nose, for spring hose clamps.</li>
+      <li>Thin-nose pliers + a small punch or nail — for the float pivot pin.</li>
+      <li>Small flat-bottomed jet wrench OR a snug-fitting flat screwdriver — for the brass jets. Jets are easily rounded off by a sloppy fit.</li>
+      <li>Accurate steel ruler with 1 mm graduations — for the float height check. A vernier caliper is better.</li>
+      <li>Compressed air with a nozzle (or a can of compressed air with a straw) — for blowing out passages after solvent. <strong>Do not use a wire or drill bit</strong> (Haynes Caution §8.19: enlarges the passages, changes the fuel/air metering).</li>
+      <li>Nylon-bristled brush — for stubborn deposits after the soak (Haynes §8.18). Wire brush is NOT acceptable on brass jets.</li>
+      <li>Soft cloth-lined tray or egg carton — to organise small parts by carb (front vs rear) and by sub-assembly. Mixing up front and rear carb parts is a top mistake.</li>
+      <li>Phone/camera — photograph the throttle linkage, the synchronisation spring, and the choke linkage <strong>before disturbing them</strong>. Haynes §9.3 calls these out specifically.</li>
+      <li>Plus all the tools needed for <a href="#tank-access">tank prop or removal</a>.</li>
+    </ul>
+
+    <h4>Before you start — critical warnings</h4>
+    <ul>
+      <li><strong>Twin-plug head failure mode.</strong> The XL650V has two plugs per cylinder sharing one chamber, so a single fouled plug doesn't show on a compression test or by a misfire — the second plug fires the charge anyway. The early warning that a single carb is going wrong (one fouled plug) doesn't exist on this engine. By the time you notice anything, both plugs are dead and the cylinder is gone. This bike has already seen one such incident — see <a href="issues.html#rear-cylinder-dead">rear cylinder dead (2026-04)</a>. Practical effect: don't be slow about a carb that's running rich, and don't dump carb cleaner into the intake hoping it'll dissolve a problem in situ — pull the carbs and clean them on the bench.</li>
+      <li><strong>Pilot screw tip is fragile.</strong> The narrow brass taper seals on a brass seat. The classic damage is mushrooming the tip by forcing the screw past first contact. Once mushroomed it can no longer meter fuel correctly and must be replaced. Always seat with the lightest possible pressure; stop at the <em>first</em> resistance, don't press harder to confirm. Detail in <a href="#mixture-tuning">pilot screw tuning</a>.</li>
+      <li><strong>Don't separate the two carbs unless you have to.</strong> Haynes §8.1: "Do not separate the carburettors unless absolutely necessary; each carburettor can be dismantled sufficiently for all normal cleaning and adjustments while in place on the mounting brackets." Separating them adds a synchronisation step (the sync spring + linkage between them) and creates more O-ring sealing surfaces that can leak after reassembly. Strip them as a pair on the bench.</li>
+      <li><strong>One carb at a time.</strong> Haynes §6.6: "Dismantle the carburettors separately to avoid mixing up parts." Front-cylinder jets and rear-cylinder jets are typically the same on this bike, but the throttle linkage, return springs, and float assemblies are paired and matched. Finish, reassemble, set aside; then start the other.</li>
+      <li><strong>Keep the assembly upright while removing from the bike.</strong> Haynes §7.8 Note: "Keep the carburettors as upright as possible to prevent fuel spillage from the float chambers and the possibility of the piston diaphragms being damaged." Tilting can also push float needle pins out of position.</li>
+    </ul>
+
+    <h4>Removal — getting the carbs off the bike (Haynes §7)</h4>
+    <ol>
+      <li><strong>Engine cold, fuel cap on.</strong> Disconnect the battery negative terminal as a precaution near electrical connectors.</li>
+      <li><a href="#tank-access">Remove the fuel tank fully</a> (not propped). The throttle cable bracket on top of the carbs needs full access from above.</li>
+      <li><strong>Remove the air filter / duct housing.</strong> Loosen the clamp on the carb-to-airbox boot at the rear of the carbs, slacken the airbox-to-frame fasteners, then ease the airbox back and out. On XL models, Haynes §7.2 notes: also remove the rear cylinder ignition HT coil (refer to Chapter 5) — it sits in the way.</li>
+      <li><strong>Throttle cables off.</strong> Undo the two screws holding the throttle cable bracket to the top of the carbs (Haynes photo 7.3). Detach the inner cable ends from the throttle cam — note which cable fits where (the pull cable goes to the larger pulley, the close/return goes to the smaller). Mark them with tape if not obvious.</li>
+      <li><strong>Choke plungers out.</strong> Undo the knurled nut on top of each choke plunger and draw the plunger assembly up out of the carb body (Haynes photos 7.4a, 7.4b). The choke cable stays attached to the plunger — set the plunger pair aside without disconnecting the cable.</li>
+      <li><strong>Air vent hoses off.</strong> Detach the bowl vent hoses at the carbs (Haynes 7.5a). Note the routing.</li>
+      <li><strong>TPS connector off.</strong> XL650V has a throttle position sensor on the carb body. Disconnect its wiring connector (Haynes 7.6a). Do <em>not</em> unscrew the sensor itself unless absolutely necessary — its position relative to the throttle shaft is calibrated.</li>
+      <li><strong>Carb heater connectors</strong> (UK XL650V — likely present on this Estonian-market bike too). Trace the wiring back from each carb body and disconnect the bullet connectors (Haynes 7.6b). Two of them, one per carb.</li>
+      <li><strong>Drain the bowls.</strong> Place a small container under the carbs. Slacken the bowl drain screw on the underside of each carb (Haynes 7.9a, arrowed). Let fuel drain. Tighten the drain screws back snug.</li>
+      <li><strong>Slacken the intake rubber clamps.</strong> Two clamps — one to the front cylinder intake rubber, one to the rear. Loosen but don't remove (Haynes 7.8a).</li>
+      <li><strong>Ease the carbs out.</strong> Pull the pair upward and rearward off the intake rubbers, then manoeuvre them out of the frame (Haynes 7.8b, 7.8c). Keep them upright. Plug the intake rubbers with clean rags so nothing falls into the cylinders.</li>
+      <li><strong>Inspect the intake rubbers</strong> while access is clear. Cracks or splits = vacuum leak = lean running. If marginal, order replacements before reassembly. Haynes §7.11 install note: "Make sure the carburettors engage fully in the ducts."</li>
+    </ol>
+
+    <h4>Disassembly — one carb at a time (Haynes §8)</h4>
+    <p>Work on a clean bench with the exploded-view figure (above) in sight. Lay out a tray with sections for each sub-assembly. Photograph each step before you commit.</p>
+    <ol>
+      <li><strong>Top cover and slide.</strong> Undo the four top-cover screws (Haynes 8.2). Lift the cover and remove the spring from inside the piston.</li>
+      <li><strong>Diaphragm and piston.</strong> Carefully peel the rubber diaphragm out of its sealing groove with your fingertip. <strong>Do not use a sharp instrument</strong> (Haynes Caution §8.3: "easily damaged"). Note how the tab on the diaphragm rim fits in the recess in the carb body — this is the alignment reference for reassembly. Withdraw the diaphragm-and-piston as one assembly.</li>
+      <li><strong>Jet needle.</strong> Push down on the jet needle retainer inside the piston using a Phillips screwdriver or a suitable socket, and rotate the retainer until its tabs are released from the protrusions inside the piston (Haynes 8.4a). Remove the retainer, noting the small spring on its underside — it should stay in place, but pocket it if it falls out (Haynes 8.4b, 8.4c). Push the needle up from the bottom of the piston and withdraw it from the top (Haynes 8.4d).</li>
+      <li><strong>Float chamber.</strong> Invert the carb (or lay on its side). Undo the four screws holding the float chamber to the base of the carb (Haynes 8.6). Lift the chamber off. Discard the rubber seal — new one on reassembly.</li>
+      <li><strong>Main jet, needle jet, pilot jet.</strong> Three brass jets in the body. (a) Main jet — unscrews from the end of the needle jet (Haynes 8.7). (b) Needle jet — unscrews from the body (Haynes 8.8). (c) Pilot jet — separate, unscrews from the body (Haynes 8.9, arrowed). Use a flat blade that fully fills the slot. Light, even pressure — these are soft brass and the slots strip easily.</li>
+      <li><strong>Float and needle valve.</strong> Use thin-nose pliers to withdraw the float pivot pin (Haynes 8.10a). If the pin is tight, displace it from the opposite side with a small punch or nail. Lift the float out, unhook the float needle valve from the tab on the float (Haynes 8.10b). On XL models: unscrew the float needle valve seat from the body — careful with the gauze filter on its underside, it's easy to damage (Haynes 8.10c).</li>
+      <li><strong>Pilot screw — only if needed.</strong> Haynes §8.11: "The pilot screw can be removed from the carburettor, but note that its setting will be disturbed." Record the current setting first by turning the screw <em>in</em>, counting turns to lightly seated, then unscrewing. Remove the screw along with its spring, washer, and O-ring. On this bike, removing and replacing the screw assembly is recommended because the original O-rings are 23 years old and likely hardened (the same failure mode that started the rear-cylinder-dead incident). Use the new screw + O-ring from the Keyster kit on reassembly.</li>
+      <li><strong>Done for normal service.</strong> Steps 12–16 in Haynes cover air cut-off valve, throttle position sensor removal, air intake funnels (XRV), and carb heaters — these don't apply to a routine XL650V clean.</li>
+    </ol>
+
+    <h4>Cleaning (Haynes §8.17–8.19)</h4>
+    <p><strong>Caution (Haynes):</strong> Use only a <em>petroleum-based</em> solvent. No caustic cleaners. No wire or drill bit in the jets or passages — they will be enlarged, throwing off the fuel/air metering rates permanently.</p>
+    <ol>
+      <li><strong>Sort the metal-only parts</strong> from the rubber/plastic parts. Diaphragm, O-rings, float needle valve tip (rubber-tipped), and plastic floats stay <em>out</em> of the solvent bath. Brass jets, the carb body, float chamber, top cover, pilot screw body, and metal floats go in.</li>
+      <li><strong>Submerge the metal parts</strong> in petroleum-based carb cleaner per the product's instructions (typically 15–60 minutes). A sealed jar works well — agitate occasionally.</li>
+      <li><strong>Scrub stubborn deposits with a nylon brush</strong> (Haynes §8.18). No wire brush — brass jets and plated body are too soft.</li>
+      <li><strong>Rinse, then dry with compressed air.</strong> Filtered, unlubricated air — oil-laden air leaves a residue.</li>
+      <li><strong>Blow every fuel and air passage with compressed air</strong> (Haynes §8.19): main jet passage, pilot jet passage, the four pilot-circuit drillings around the throttle bore, the bowl-vent passages, the air bleed jets in the carb intake mouth (easy to forget), and the pilot screw seat. If a passage isn't clear, soak again — never poke with wire.</li>
+      <li><strong>Wipe the diaphragm and plastic parts</strong> with a clean rag damp with cleaner, lightly. Don't soak rubber in carb cleaner — it attacks NBR.</li>
+    </ol>
+
+    <h4>Inspection (Haynes §8.20–8.29)</h4>
+    <ul>
+      <li><strong>Choke plunger</strong> — wear or damage on the tapered face? Worn = choke not fully closing fuel circuit when off = high idle when warm. Replace if pitted.</li>
+      <li><strong>Pilot screw</strong> — tapered tip mushroomed, cracked, or worn? Spring fatigued? O-ring hardened, swollen, or split? Replace as a set. The brass tip should still have a sharp, even taper to a fine point — any bulge or flat means it's done.</li>
+      <li><strong>Carb body, float chamber, top cover</strong> — cracks, distorted sealing surfaces, stripped threads. Haynes notes: replacement of the entire carb may be necessary if a body is cracked, since separate components may not be available.</li>
+      <li><strong>Piston/diaphragm</strong> — hold the diaphragm up to a strong light. Any pinhole, split, or thinned area = replace. The diaphragm rim around the edge must be intact and elastic; if it stays creased when stretched, it's perished.</li>
+      <li><strong>Piston in body</strong> — insert the piston (without diaphragm) into the carb body and slide it up and down. Should be smooth, no scrape, no binding. If it sticks or rocks, the piston or body is worn.</li>
+      <li><strong>Jet needle</strong> — roll on a flat surface (a piece of glass or a steel rule edge). Any wobble = bent, replace. Inspect the tapered tip for wear lines or steps — replace if not a clean taper.</li>
+      <li><strong>Float needle valve tip and seat</strong> — grooves or scratches on the rubber-tipped face of the needle, or on the brass seat = replace as a set. Push down on the spring-loaded rod on top of the needle and release — if it doesn't spring back, the internal spring is fatigued, replace.</li>
+      <li><strong>Throttle butterfly</strong> — open and close it via the throttle shaft. Should be smooth, with crisp return under spring pressure. Sticky = clean the linkage (final cleaning pass while assembled). Won't return = throw the carb.</li>
+      <li><strong>Float</strong> — shake it next to your ear. Sloshing fuel inside = pinhole, replace. (Plastic floats on the XL650V can crack at the pin boss — inspect the boss closely.)</li>
+      <li><strong>Pilot screw O-ring on the carb side</strong> — there are <em>two</em> O-rings in the pilot circuit on some Keihins: the one on the screw and the one in the body seat. If you only replace the screw's O-ring and leave a hardened one in the body, the symptom persists. Confirm by feel: a fresh O-ring sits flush and squishes; a hardened one feels like a hard plastic ring.</li>
+    </ul>
+
+    <h4>Reassembly + float height check (Haynes §10)</h4>
+    <p>Note: <strong>use new O-rings, seals, and gaskets from the rebuild kit</strong>. Do not overtighten jets or screws — brass into soft alloy, easy to strip.</p>
+    <ol>
+      <li><strong>Pilot screw (if removed).</strong> Fit screw + spring + washer + new O-ring into the carb body. Turn in until lightly seated — first resistance only — then back out 3 turns (factory baseline) or the count you recorded before disassembly.</li>
+      <li><strong>Float needle valve seat</strong> (XL models). Install with its washer, making sure the gauze filter is still attached and clean.</li>
+      <li><strong>Float assembly.</strong> Hook the float needle valve onto the tab on the float (Haynes 10.5). Position the float in the carb body, slide the pivot pin home. Make sure the pin is fully seated and the float swings freely with no binding.</li>
+      <li><strong>Pilot jet</strong> — screw into its seat in the body, snug (Haynes 10.6).</li>
+      <li><strong>Needle jet, then main jet</strong> — screw the needle jet into the body, then the main jet into the bottom of the needle jet (Haynes 10.7a, 10.7b). Snug, not gorilla-tight.</li>
+      <li><strong>Float height check — critical step (Haynes 10.8).</strong>
+        <ul>
+          <li>Hold the carb so the float hangs down with the body inverted (float chamber side up, float pointing away from you).</li>
+          <li>Tilt the carb <em>slowly</em> back toward upright. As the float rises, watch the spring-loaded rod on top of the needle valve. Stop tilting the moment the needle valve is just seated — i.e. when the float just touches the rod — <strong>but not so far that the spring-loaded tip is compressed</strong>. This is the measurement position.</li>
+          <li>Measure the distance from the base of the carb body (the sealing surface where the float chamber bolts on) to the bottom of the float, with a steel ruler or vernier. Target: <strong>7 mm</strong>.</li>
+          <li>If off: on a brass float you can carefully bend the small metal tab that contacts the needle valve, then re-measure. On a plastic float (likely on this XL650V) the float can't be adjusted — replace it. Known issue on Transalps: floats sometimes measure 15 mm (too low → bowl level too low → lean running, especially at lean angles).</li>
+        </ul>
+      </li>
+      <li><strong>Float chamber.</strong> Fit a new rubber seal into the chamber's groove (Haynes 10.9). Position the chamber on the carb body, install the four screws, snug evenly. Don't crush the seal — uniform light torque.</li>
+      <li><strong>Jet needle into piston</strong> (Haynes step 10 for XL). Drop the needle into the piston from the top. Check the spring is on the retainer underside (or in the base of the holder, depending on revision). Insert the retainer, push down with a Phillips/socket against the spring, rotate to lock its tabs under the piston's internal protrusions.</li>
+      <li><strong>Diaphragm and piston into the carb.</strong> Turn the diaphragm inside out so its rim points downward (Haynes §10.12). Insert the piston into the carb body, aligning the needle with the needle jet. Keep a fingertip on the bottom of the piston (reach in through the air intake) to hold the piston raised so the diaphragm stays inside out — this prevents the rim from popping out as you work. Align the locating loop on the diaphragm rim with its groove in the carb body. Press the diaphragm outer edge into its groove all the way round, checking it's fully seated.</li>
+      <li><strong>Spring and top cover.</strong> Keeping the piston raised, drop the spring in, locating it over the needle holder. Position the top cover, locating the top of the spring inside the raised section in the cover. Align the protrusion on the underside of the cover with the locating loop on the diaphragm (Haynes 10.13c). Make sure the diaphragm rim does <strong>not</strong> get pinched between the cover and the carb body — a pinched rim tears and the slide stops working in days. Fit the four cover screws and tighten evenly.</li>
+      <li><strong>Test the slide.</strong> Let the piston drop. Lift it with a finger via the intake bore and let it fall under its own weight. It should move smoothly with no binding and drop fully. If it doesn't, the diaphragm is pinched or the needle is misaligned — remove the cover and check.</li>
+      <li><strong>Repeat the entire procedure on the second carb.</strong></li>
+    </ol>
+
+    <h4>Reinstall to the bike (Haynes §7 install, reverse of removal)</h4>
+    <ol>
+      <li><strong>Inspect intake rubbers</strong> one more time. If installed loose, check the slotted tab on the rubber adapter aligns with the raised lip on the underside of the cylinder head stub. Haynes §7.11 explicitly calls this out.</li>
+      <li><strong>Seat the carbs into the intake rubbers</strong> from above, working them in evenly so both seat at the same depth. Haynes: "Make sure the carburettors are fully engaged with the cylinder head inlet rubbers." A partially seated carb = vacuum leak = lean = won't idle.</li>
+      <li><strong>Tighten the intake clamps</strong> securely. Don't overdo — these aren't structural, just airtight.</li>
+      <li><strong>Reconnect</strong> in reverse order: TPS connector, carb heater connectors, bowl vent hoses, choke plungers (drop into the bodies, snug their nuts), throttle cables onto the cam with the bracket back on top.</li>
+      <li><strong>Refit the air filter / duct housing</strong> and its boot to the carbs. Tighten the airbox-to-carb clamp.</li>
+      <li><strong>Refit the fuel tank.</strong></li>
+      <li><strong>Check throttle and choke operation</strong> from the bar (cables not interfering with anything, snap-back is clean). Adjust throttle freeplay to 2–6 mm (Haynes 1-2) if needed.</li>
+      <li><strong>Start the bike.</strong> Expect a slightly rough start as the bowls fill — the vacuum tap won't open fuel until cranking, then it takes a few seconds for the bowls to fill via the needle valves. Listen for fuel leaks and look for fuel weep at the bowl gasket joints. If a bowl drips, stop immediately — the seal is pinched or the float is stuck.</li>
+      <li><strong>Set idle to 1200 ± 100 rpm</strong> (<a href="#idle-tuning">idle tuning procedure</a>).</li>
+      <li><strong>Tune pilot screws</strong> (<a href="#mixture-tuning">pilot screw tuning procedure</a>). Start from the recorded baseline or 3 turns out.</li>
+      <li><strong>Sync the carbs</strong> with vacuum gauges. Tolerance ≤ 20 mm Hg difference (Haynes 1-1). Refer to Haynes Chapter 1 §17 — sync procedure not yet documented as a standalone procedure in this repo.</li>
+      <li><strong>Log work in <code>history.html</code>:</strong> date, mileage, parts used (kit code, jet sizes confirmed), final pilot screw turns out per carb, float heights measured per carb.</li>
+    </ol>
+
+    <h4>Common mistakes</h4>
+    <ul>
+      <li><strong>Reusing old O-rings and gaskets.</strong> Haynes explicitly mandates new on the float chamber gasket and the top cover O-ring on each disassembly. A €5 set of O-rings saves €100 of repeat labour.</li>
+      <li><strong>Wire through a jet.</strong> Permanent damage. The jet's hole is calibrated to the third decimal — even one pass with a brass strand changes the metering. Solvent and compressed air only.</li>
+      <li><strong>Caustic cleaner (oven cleaner, sodium hydroxide).</strong> Attacks the brass jets and the carb body plating. Petroleum-based only.</li>
+      <li><strong>Pinched diaphragm rim under the top cover.</strong> The most common reassembly error. Slide stops moving freely within days. Always look around the entire rim of the cover-to-body joint before tightening the cover screws.</li>
+      <li><strong>Forcing the pilot screw past first contact when seating.</strong> Mushrooms the tip. The mushroom looks like a tiny lip on the brass taper — barely visible, but the screw won't meter fuel correctly anymore. New screw needed, or worst case a new carb if the seat is also damaged.</li>
+      <li><strong>Mixing front and rear carb parts.</strong> Most parts look identical but the throttle linkage and return spring arrangement are different (Haynes §9.3 photos). Always finish one carb fully before starting the other.</li>
+      <li><strong>Float height eyeballed instead of measured.</strong> Bowl level is the single biggest determinant of mixture richness across the whole rev range. A 2 mm float-height error throws the bike rich or lean everywhere. Measure with a steel ruler, even on a "looks fine" float.</li>
+      <li><strong>Diaphragm cleaned in carb cleaner solvent.</strong> Swells the rubber, ruins the seal. Wipe damp only.</li>
+      <li><strong>Cover screws gorilla-tight.</strong> The cover is soft alloy, the screws are mild steel. Snug, not torqued. Strip and you're tapping a thread or scrapping the carb top.</li>
+      <li><strong>Skipping the float height check on reassembly.</strong> It's tedious and feels redundant if you didn't bend a tab. Do it anyway — confirms the float swings freely and the needle valve seats correctly.</li>
+      <li><strong>Reinstall and immediately ride.</strong> Idle, watch for leaks, sync the carbs, <em>then</em> ride. A leaking bowl gasket can drip onto a hot exhaust.</li>
+    </ul>
+
+    <h4>Manual reference</h4>
+    <p>Haynes Chapter 4 "Fuel and exhaust systems" — §6 Carburettor overhaul general info (page 4-8), §7 Removal and installation (page 4-9 to 4-10), §8 Disassembly, cleaning and inspection (page 4-11 to 4-13), §9 Separation and joining (page 4-14, skip for routine service), §10 Reassembly and float height check (page 4-15 to 4-17). Specifications (jet sizes, float height, pilot screw baseline, sync tolerance) at page 4-1. Exploded view at fig 8.1a, page 4-10.</p>
   </div>
 </section>
