@@ -11,7 +11,7 @@ title: "Active Issues — Porikärbes"
       <h3>Rear cylinder dead — fouled by rich-running condition</h3>
       <span class="badge badge-warn">partially resolved — bike runs on both cyls, rich condition pending</span>
     </div>
-    <p><strong>Status:</strong> updated 2026-04-28. Rear cylinder recovered after cleaning the rear-LH plug (no tank work). Both cylinders firing again. Underlying rich-running condition is still present — both cylinder plugs were sooty and smelled of unburned petrol, not solvent. Carb-cleaner-drowning theory turned out to be wrong; the bike has been running too rich on both carbs. Plugs will re-foul over time until the mixture issue is fixed. Bike is rideable for short trips but isn't a finished repair.</p>
+    <p><strong>Status:</strong> updated 2026-05-23. Rear cylinder recovered after cleaning the rear-LH plug on 2026-04-28 (no tank work). Both cylinders firing again. Underlying rich-running condition is still present — both cylinder plugs were sooty and smelled of unburned petrol, not solvent — but the touring weekend on 2026-05-16/17 (Saaremaa + Haapsalu, several hundred km) ran without incident and without re-fouling, so the rich condition is borderline rather than acute. Bike is genuinely usable as transport. The carb pull is still the right plan — both for the rich condition and for the slosh-sensitive idle stall at <a href="#carb-service">#carb-service</a>.</p>
 
     <h4>Original symptoms (2026-04-27)</h4>
     <ul>
@@ -54,7 +54,7 @@ title: "Active Issues — Porikärbes"
     <h4>What to stop doing immediately</h4>
     <ul>
       <li><strong>No more carb cleaner</strong> at the stuck pilot screw. It doesn't free seized brass threads and it attacks the rubber seal. Use real penetrating oil instead (Shock Oil at Motohoov, or PB Blaster, or the ATF/PSF + acetone homebrew).</li>
-      <li><strong>Don't ride it as transport.</strong> Both cylinders fire now, but the bike is still running rich — the plugs will re-soot over time, and unburned fuel washes past the piston rings into the crankcase, thinning the engine oil. On a 23-year-old engine you don't want to accelerate any wear. Short test rides for diagnosis are fine; commuting on it isn't. Porikärbes has no cat (Arrow direct-through, see <a href="parts.html">parts</a>), so the cat-cooking risk doesn't apply here, but the oil-wash and plug-fouling risks do.</li>
+      <li><strong>Don't postpone the carb pull indefinitely.</strong> Touring is OK — the bike has done a Saaremaa + Haapsalu weekend (2026-05-16/17) without re-fouling — but it's still running rich enough that some unburned fuel washes past the piston rings into the crankcase and thins the engine oil. On a 23-year-old engine you don't want to accelerate any wear. Plan the carb-pull session before the season really builds up km; doing it together with the valve-cover-gasket job (shared disassembly, see shopping list below) is the efficient path.</li>
     </ul>
 
     <h4>Parts to source — combined repair session</h4>
@@ -133,17 +133,26 @@ title: "Active Issues — Porikärbes"
 
   <div class="entry" id="carb-service">
     <div class="entry-head">
-      <h3>Left lean stall / carb service</h3>
-      <span class="badge badge-warn">not started</span>
+      <h3>Idle stall on braking + left lean / carb service</h3>
+      <span class="badge badge-warn">residual — bike usable, carb pull pending</span>
     </div>
-    <p><strong>Status:</strong> on hold pending <a href="#rear-cylinder-dead">rear cylinder dead</a> work, with one caveat: the lean-stall theory below may be partly wrong. After the rear cylinder went dead and the plugs were pulled (2026-04-28), all inspected plugs were sooty and smelled of unburned petrol — the bike has been running <strong>rich</strong>, not lean. That contradicts the "PO set screws too lean" framing in this entry. The left-lean stall could still be a pilot-circuit issue (e.g. partially blocked pilot jet that's only marginal at extreme lean angles), but Strategy C below (symmetric enrich) is now the wrong direction — leaning the screws is more likely. Re-examine after pilot screws turn freely and a baseline mixture is set.</p>
+    <p><strong>Status:</strong> updated 2026-05-23. The bike has now been ridden a full touring weekend (Saaremaa + Haapsalu, <a href="history.html">2026-05-16/17</a>) without re-fouling plugs or dropping a cylinder, so the rich-running condition from <a href="#rear-cylinder-dead">rear cylinder dead</a> is less acute than initially feared — the bike is usable as transport. What remains is two idle-only stalls that are both consistent with <strong>fuel slosh in the float bowls</strong>: the pilot-circuit fuel pickup goes momentarily dry when the bowl level shifts to one side, and a V-twin at idle won't sustain on one cylinder. Carb pull / pilot screw o-ring / Keyster kit / <strong>float-height check</strong> is the right next step (combined with the valve cover gasket session — see <a href="#rear-cylinder-dead">rear cylinder dead</a> shopping list).</p>
 
-    <h4>Symptoms</h4>
+    <h4>Symptoms (as of 2026-05-23)</h4>
     <ul>
-      <li><strong>Stalls at idle only when leaned LEFT</strong> — right lean is fine, no RPM dip. Fast left lean dies quickly. Upright idle holds but feels marginal.</li>
-      <li><strong>Throttle keeps it alive</strong> even when leaned left — giving gas sustains the engine regardless of lean angle.</li>
-      <li><strong>Previous owner's note:</strong> admitted he may have set the mixture screws too lean during a past idle adjustment — "Maybe I once turned it too tight while adjusting idle."</li>
+      <li><strong>Stalls at idle when braking to a stop</strong> — deceleration sloshes bowl fuel forward, away from the pilot jet pickup. New observation from the touring weekend.</li>
+      <li><strong>Stalls at idle when leaned LEFT</strong> — right lean is fine, no RPM dip. Fast left lean dies quickly. Upright idle holds but feels marginal.</li>
+      <li><strong>Throttle keeps it alive</strong> in both cases — giving gas sustains the engine regardless of lean angle or deceleration. Pilot circuit is the suspect, not the main.</li>
+      <li><strong>Previous owner's note:</strong> admitted he may have set the mixture screws too lean during a past idle adjustment — "Maybe I once turned it too tight while adjusting idle." Now contradicted by the rich plugs at 2026-04-28; PO's account is unreliable.</li>
     </ul>
+
+    <h4>Working theory (updated 2026-05-23)</h4>
+    <p>Both stalls are the same problem — <strong>marginal pilot-circuit fuel supply, exposed when bowl fuel level shifts under acceleration of any kind</strong> (braking = longitudinal, left lean = lateral). On a healthy carb the bowl is full enough that the pilot pickup stays submerged through normal vehicle dynamics; on Porikärbes it's not. Two plausible mechanical causes, both addressed by the same carb pull:</p>
+    <ul>
+      <li><strong>Float height set low</strong> — Haynes spec is 7 mm; some Transalps have been found at 15 mm (low bowl level → slosh-sensitive pilot). Check on the bench when the carbs are off.</li>
+      <li><strong>Partially blocked pilot jet or pilot passage</strong> — restricts flow enough that the pickup can't keep up when the level momentarily drops on one side. Clean during the bench service.</li>
+    </ul>
+    <p>The pilot-screw o-ring breach (rich leak) discussed at <a href="#rear-cylinder-dead">rear cylinder dead</a> can coexist with this — both get fixed by the Keyster kit on reassembly. Strategy C (symmetric enrich) from below is the wrong direction (plugs show rich, not lean); skip the mixture-screw bench test and go directly to the carb pull.</p>
 
     <h4>Diagnosis</h4>
     <p>Points to the <strong>left carburetor's pilot (idle) circuit being marginal</strong> — either set too lean or partially blocked:</p>
